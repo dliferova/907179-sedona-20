@@ -55,6 +55,70 @@
       </div>
     </section>
 
+
+    <form class="introduce-form">
+      <fieldset class="introduce-form__fieldset">
+        <legend class="introduce-form__legend">Представьтесь:</legend>
+        <label class="introduce-form__name" for="person-name">Имя:</label>
+        <input class="name-input" type="text" name="person-name" id="person-name" value="Петр" required>
+        <label class="introduce-form__first-name" for="person-first-name">Фамилия:</label>
+        <input class="first-name-input" type="text" name="first-name" id="first-name" value="Иванов" required>
+        <label class="introduce-form__patronymic-name" for="patronymic-name">Отчество:</label>
+        <input class="patronymic-name-input" type="text" name="patronymic-name" id="patronymic-name"
+          value="Александрович">
+      </fieldset>
+    </form>
+
+    <form class="contacts-form">
+      <fieldset class="contacts-form__fieldset">
+        <legend сlass="contacts-form__legend">Контактная информация:</legend>
+        <label class="contacts-form__phone-number" for="phone-number">Контактный телефон</label>
+        <input class="phone-number-input" type="tel" name="phone-number" id="phone-number" value="Введите телефон"
+          required>
+        <label class="contacts-form__email" for="email">Электронная почта</label>
+        <input type="email-input" type="email" id="email" name="email" value="Введите e-mail">
+      </fieldset>
+    </form>
+
+    <form class="guests-impressions-form">
+      <fieldset class="guests-impressions-form__fieldset">
+        <legend сlass="guests-impressions-form__legend">Ваше общее впечатление:</legend>
+        <input type="radio" id="rather-like" name="rather-like" value="Скорее положительное" checked>
+        <label for="rather-like">Скорее положительное</label><br>
+        <input type="radio" id="rather-negative" name="rather-negative" value="Скорее отрицательное">
+        <label for="rather-negative">Скорее отрицательное</label><br>
+        <input type="radio" id="no-answer" name="no-answer" value="Затрудняюсь ответить">
+        <label for="no-answer">Затрудняюсь ответить</label><br>
+      </fieldset>>
+    </form>
+
+    <form class="visited-places-form">
+      <fieldset class="visited-places-form__fieldset">
+        <legend class="visited-places-form__legend">Посещенные достопримечательности</legend>
+        <input class="visited-places-form__input bridge-checkbox" type="checkbox" id="bridge" name="bridge"
+          value="Мост Дьявола" checked>
+        <label for="bridge-checkbox">Мост Дьявола</label><br>
+        <input class="visited-places-form__input mountain-checkbox" type="checkbox" id="mountain" name="mountain"
+          value="Гора-Колокол" checked>
+        <label for="mountain-checkbox">Гора-Колокол</label><br>
+        <input class="visited-places-form__park park-checkbox" type="checkbox" id="park" name="park" value="Слайд-парк"
+          checked>
+        <label for="park-checkbox">Слайд-парк</label><br>
+        <input class="visited-places-form__rocks rocks-checkbox" type="checkbox" id="rocks" name="rocks"
+          value="Красные скалы">
+        <label for="rocks-checkbox">Красные скалы</label><br>
+      </fieldset>
+    </form>
+
+    <form class="comments-form">
+      <fieldset class="comments-form__fieldset">
+        <legend class="comments-form__legend">Опишите свои эмоции</legend>
+        <textarea name="comment">Опишите подробно все свои восторги</textarea>
+        <button class="comments-form__button" type="button" aria-label="Отправить отзыв о посещении">Отправить
+          отзыв</button>
+      </fieldset>
+    </form>
+
   </main>
   <footer class="page-footer">
     <div class="page-footer__hashtag hashtag">
