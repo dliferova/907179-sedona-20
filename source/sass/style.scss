@@ -1,16 +1,15 @@
-@import 'global/global.scss';
-@import 'global/variables.scss';
-@import 'global/fonts.scss';
-
-@import 'blocks/page-header.scss';
-@import 'blocks/main-nav.scss';
-@import 'blocks/page-footer.scss';
+@import "global/global.scss";
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-footer.scss";
 
 // Blocks page index.html
-@import 'blocks/intro.scss';
-@import 'blocks/advantages.scss';
+@import "blocks/intro.scss";
+@import "blocks/advantages.scss";
 
 // Blocks page photo.html
-@import 'blocks/photo-album.scss';
+@import "blocks/photo-album.scss";
 
 // Blocks page form.html
