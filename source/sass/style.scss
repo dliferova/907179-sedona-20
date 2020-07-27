@@ -1,15 +1,26 @@
 @import "global/global.scss";
 @import "global/variables.scss";
 @import "global/fonts.scss";
+@import "blocks/page.scss";
+
+// Blocks header
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
-@import "blocks/page-footer.scss";
 
 // Blocks page index.html
 @import "blocks/intro.scss";
 @import "blocks/advantages.scss";
+@import "blocks/inscription.scss";
+@import "blocks/city-item.scss";
+@import "blocks/bridge-item.scss";
 
 // Blocks page photo.html
 @import "blocks/photo-album.scss";
 
 // Blocks page form.html
+
+// Blocks footer
+@import "blocks/page-footer.scss";
+@import "blocks/hashtag.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
