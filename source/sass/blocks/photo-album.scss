@@ -1,0 +1,12 @@
+.photo-album__cover {
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  background-color: #81b3d2;
+}
+
+.photo-album__title {
+  @include font-titles-black;
+}
+
+.photo-album__text {
+  line-height: 24px;
+}

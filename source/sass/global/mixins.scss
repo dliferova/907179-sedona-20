@@ -1,0 +1,19 @@
+@mixin font-header-mobil {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+@mixin font-titles-white {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+@mixin font-titles-black {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}

@@ -1,0 +1,8 @@
+.page-header {
+  @include font-header-mobil;
+  background-color: #ffffff;
+}
+
+.page-header__logo {
+  height: 94px;
+}

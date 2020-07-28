@@ -1,0 +1,8 @@
+.bridge-item {
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.bridge-item__title {
+  @include font-titles-white;
+}
