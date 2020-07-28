@@ -1,13 +1,5 @@
-.main-nav__list {
-  list-style-type: none;
-}
-
-.site-list__link {
-  text-decoration: none;
-  color: #ffffff;
-}
-
 .page-header {
+  @include font-header-mobil;
   background-color: #ffffff;
 }
 

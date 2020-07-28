@@ -1,0 +1,17 @@
+.card {
+  border-bottom: 1px groove #e5e5e5;
+}
+
+.card__title {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.card__author-name {
+  text-transform: none;
+  line-height: 24px;
+}
+
+.card__like-count {
+  line-height: 24px;
+}

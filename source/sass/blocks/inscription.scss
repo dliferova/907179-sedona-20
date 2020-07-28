@@ -1,8 +1,10 @@
 .inscription__slogan {
-  font-weight: bold;
+  @include font-titles-black;
   text-align: center;
 }
 
 .inscription__text {
   text-align: center;
+  font-size: 14px;
+  line-height: 26px;
 }

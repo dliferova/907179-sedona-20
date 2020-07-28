@@ -1,1 +1,4 @@
 // Стили для оформления списка преимуществ
+.advantages__title {
+  @include font-titles-black;
+}

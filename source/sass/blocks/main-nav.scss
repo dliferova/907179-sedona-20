@@ -1,5 +1,8 @@
 .main-nav {
   background-color: #81b3d2;
-  color: #ffffff;
-  line-height: 40px;
+}
+
+.main-nav__list {
+  list-style-type: none;
+  text-decoration: none;
 }
