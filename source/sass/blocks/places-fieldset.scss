@@ -1,0 +1,8 @@
+.places-fieldset__legend {
+  @include font-titles-black;
+}
+
+.check-block__label {
+  @include font-titles-black;
+  text-transform: none;
+}

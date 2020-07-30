@@ -1,0 +1,9 @@
+// Стили для оформления текста
+.client-review__title {
+  @include font-titles-black;
+  text-align: center;
+}
+
+.client-review__text {
+  text-align: center;
+}

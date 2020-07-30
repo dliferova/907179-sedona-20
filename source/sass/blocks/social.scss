@@ -1,0 +1,16 @@
+// Стили для оформления секции ссылок на социальные сети
+.social__list {
+  display: flex;
+  flex-direction: row;
+}
+
+.social__item {
+  background-color: $main-color;
+
+  width: 46px;
+  height: 48px;
+}
+
+.social__img {
+  fill: $white-color;
+}

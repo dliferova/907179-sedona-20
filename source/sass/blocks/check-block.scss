@@ -1,0 +1,18 @@
+.check-block {
+  &__input-square {
+    position: relative;
+    background-color: #f2f2f2f2;
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+  }
+  &__input-square::before {
+    content: "";
+    width: 23px;
+    height: 16px;
+    position: absolute;
+    top: 31%;
+    right: 25%;
+    background-image: url(../../img/icon-tick.svg);
+  }
+}

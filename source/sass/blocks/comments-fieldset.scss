@@ -1,0 +1,8 @@
+.comments-fieldset__legend,
+.comments-fieldset__input {
+  @include font-titles-black;
+}
+
+.comments-fieldset__input {
+  background-color: $grey-color;
+}
