@@ -9,6 +9,7 @@
 .first-name__input,
 .last-name__input,
 .middle-name__input {
+  @include font-titles-black;
   display: block;
   background-color: $grey-color;
   border: none;
@@ -25,10 +26,4 @@
 .last-name__label,
 .middle-name__label {
   line-height: 26px;
-}
-
-.first-name__input,
-.last-name__input,
-.middle-name__input {
-  @include font-titles-black;
 }
