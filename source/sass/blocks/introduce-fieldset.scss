@@ -1,9 +1,10 @@
-.introduce-fieldset,
-.contacts-fieldset,
-.impressions-fieldset,
-.places-fieldset,
-.comments-fieldset {
+.introduce-fieldset {
   border: 0 none;
+}
+
+.introduce-fieldset__legend {
+  @include font-titles-black;
+  text-align: center;
 }
 
 .first-name__input,
@@ -15,11 +16,6 @@
   border: none;
   min-width: 230px;
   min-height: 58px;
-}
-
-.introduce-fieldset__legend {
-  @include font-titles-black;
-  text-align: center;
 }
 
 .first-name__label,

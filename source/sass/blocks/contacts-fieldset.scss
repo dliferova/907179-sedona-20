@@ -3,6 +3,10 @@
   line-height: 26px;
 }
 
+.contacts-fieldset {
+  border: 0 none;
+}
+
 .contacts-fieldset__legend {
   @include font-titles-black;
   text-align: center;
