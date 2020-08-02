@@ -1,0 +1,10 @@
+.square-item {
+  width: 268px;
+  text-align: center;
+  margin-left: 26px;
+
+  @media (min-width: $tablet-width) {
+    width: 189px;
+    margin-left: 34px;
+  }
+}
