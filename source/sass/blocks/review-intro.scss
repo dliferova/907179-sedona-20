@@ -5,3 +5,8 @@
 .review-intro__text {
   line-height: 24px;
 }
+
+.review-intro__cover {
+  background: url("/img/bg-back-mobile@1x.jpg") no-repeat;
+  background-color: $grey-color;
+}

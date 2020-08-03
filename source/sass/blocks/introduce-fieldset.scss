@@ -1,0 +1,25 @@
+.introduce-fieldset {
+  border: 0 none;
+}
+
+.introduce-fieldset__legend {
+  @include font-titles-black;
+  text-align: center;
+}
+
+.first-name__input,
+.last-name__input,
+.middle-name__input {
+  @include font-titles-black;
+  display: block;
+  background-color: $grey-color;
+  border: none;
+  min-width: 230px;
+  min-height: 58px;
+}
+
+.first-name__label,
+.last-name__label,
+.middle-name__label {
+  line-height: 26px;
+}

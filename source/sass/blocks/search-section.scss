@@ -1,0 +1,18 @@
+.search-section__subject {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.search-section__text {
+  line-height: 24px;
+}
+
+.search-section__link {
+  color: hsl(0, 0%, 100%);
+}
+
+.search-section__button {
+  @include style-btn;
+}

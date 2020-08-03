@@ -5,8 +5,10 @@
 
 .photo-album__title {
   @include font-titles-black;
+  text-align: center;
 }
 
 .photo-album__text {
   line-height: 24px;
+  text-align: center;
 }

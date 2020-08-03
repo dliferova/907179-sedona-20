@@ -49,9 +49,9 @@
       <div class="review-intro__cover main-cover">
         <img class="main-cover__inscription" src="img/text-sedona.svg" alt="Надпись Седона">
       </div>
-      <div class="review-intro__description">
-        <h2 class="review-intro__title">Оставьте свой отзыв</h2>
-        <p class="review-intro__text">Помогите нашим отелям стать лучше!
+      <div class="review-intro__text client-review">
+        <h2 class="client-review__title">Оставьте свой отзыв</h2>
+        <p class="client-review__text">Помогите нашим отелям стать лучше!
           Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
     </section>
@@ -59,58 +59,129 @@
 
     <form class="review-form" name="review-form">
 
-      <fieldset class="introduce-fieldset">
+      <fieldset class="review-form__fieldset introduce-fieldset">
         <legend class="introduce-fieldset__legend">Представьтесь:</legend>
-        <input class="introduce-fieldset__name" type="text" name="person-name" id="person-name" value="Петр" required>
-        <label class="name-label" for="person-name">Имя:</label>
-        <input class="introduce-fieldset__first-name" type="text" name="first-name" id="first-name" value="Иванов"
-          required>
-        <label class="first-name-label" for="first-name">Фамилия:</label>
-        <input class="introduce-fieldset__patronymic-name" type="text" name="patronymic-name" id="patronymic-name"
-          value="Александрович">
-        <label class="patronymic-name-label" for="patronymic-name">Отчество:</label>
+        <div class="introduce-fieldset__first-name first-name">
+          <label class="first-name__label" for="first-name">Имя*:</label>
+          <input class="first-name__input" type="text" name="first-name" id="first-name" value="Петр" required>
+        </div>
+        <div class="introduce-fieldset__last-name last-name">
+          <label class="last-name__label" for="last-name">Фамилия*:</label>
+          <input class="last-name__input" type="text" name="last-name" id="last-name" value="Иванов" required>
+        </div>
+        <div class="introduce-fieldset__middle-name middle-name">
+          <label class="middle-name__label" for="middle-name">Отчество*:</label>
+          <input class="middle-name__input" type="text" name="middle-name" id="middle-name" value="Александрович">
+        </div>
       </fieldset>
 
-      <fieldset class="contacts-fieldset">
+      <fieldset class="review-form__fieldset contacts-fieldset">
         <legend сlass="contacts-fieldset__legend">Контактная информация:</legend>
-        <input class="contacts-fieldset__phone-number" type="tel" name="phone-number" id="phone-number"
-          value="Введите телефон" required>
-        <label class="phone-number-label" for="phone-number">Контактный телефон</label>
-        <input type="contacts-fieldset__email" type="email" id="email" name="email" value="Введите e-mail">
-        <label class="email-label" for="email">Электронная почта</label>
+        <div class="contacts-fieldset__phone phone">
+          <label class="phone__label" for="phone">Контактный телефон*</label>
+          <div class="phone__input-block phone-block">
+            <input class="phone-block__input" type="tel" name="phone" id="phone" value="Введите телефон" required>
+            <div class="phone-block__icon">
+              <svg class="phone-block__svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px"
+                viewbox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
+                <g id="Page-1">
+                  <g id="Icons-Communication" transform="translate(-85.000000, -126.000000)">
+                    <g id="phone" transform="translate(85.000000, 126.000000)">
+                      <path id="Shape" fill="#010101"
+                        d="M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z" />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="contacts-fieldset__email email">
+          <label class="email__label" for="email">Электронная почта*</label>
+          <div class="email__input-block email-block">
+            <input class="email-block__input" type="email" id="email" name="email" value="Введите e-mail">
+            <div class="email-block__icon">
+              <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px"
+                viewbox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                <path
+                  d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z" />
+              </svg>
+            </div>
+          </div>
+        </div>
       </fieldset>
 
-      <fieldset class="impressions-fieldset">
+      <fieldset class="review-form__fieldset impressions-fieldset">
         <legend сlass="impressions-fieldset__legend">Ваше общее впечатление:</legend>
-        <input type="radio" id="rather-like" name="opinion" value="Скорее положительное" checked>
-        <label for="rather-like">Скорее положительное</label><br>
-        <input type="radio" id="rather-negative" name="opinion" value="Скорее отрицательное">
-        <label for="rather-negative">Скорее отрицательное</label><br>
-        <input type="radio" id="no-answer" name="opinion" value="Затрудняюсь ответить">
-        <label for="no-answer">Затрудняюсь ответить</label><br>
+        <div class="impressions-fieldset__choice-block choice-block">
+          <div class="choice-block__input-wrapper">
+            <input class="choice-block__input" type="radio" id="rather-like" name="opinion" value="Скорее положительное"
+              checked>
+          </div>
+          <label class="choice-block__label" for="rather-like">Скорее положительное</label><br>
+        </div>
+        <div class="impressions-fieldset__choice-block choice-block">
+          <div class="choice-block__input-wrapper">
+            <input class="choice-block__input" type="radio" id="rather-negative" name="opinion"
+              value="Скорее отрицательное">
+          </div>
+          <label class="choice-block__label" for="rather-negative">Скорее отрицательное</label><br>
+        </div>
+        <div class="impressions-fieldset__choice-block choice-block">
+          <div class="choice-block__input-wrapper">
+            <input class="choice-block__input" type="radio" id="no-answer" name="opinion" value="Затрудняюсь ответить">
+          </div>
+          <label class="choice-block__label" for="no-answer">Затрудняюсь ответить</label><br>
+        </div>
       </fieldset>
 
-      <fieldset class="places-fieldset">
+      <fieldset class="review-form__fieldset places-fieldset">
         <legend class="places-fieldset__legend">Посещенные достопримечательности</legend>
-        <input class="places-fieldset__bridge" type="checkbox" name="bridge-check" id="bridge-checkbox"
-          value="Мост Дьявола" checked>
-        <label for="bridge-checkbox">Мост Дьявола</label><br>
-        <input class="places-fieldset__mountain" type="checkbox" name="mountain-check" id="mountain-checkbox"
-          value="Гора-Колокол" checked>
-        <label for="mountain-checkbox">Гора-Колокол</label><br>
-        <input class="places-fieldset__park" type="checkbox" name="park-check" id="park-checkbox" value="Слайд-парк"
-          checked>
-        <label for="park-checkbox">Слайд-парк</label><br>
-        <input class="places-fieldset__rocks" type="checkbox" name="rocks-check" id="rocks-checkbox"
-          value="Красные скалы">
-        <label for="rocks-checkbox">Красные скалы</label><br>
+        <div class="places-fieldset__check-block check-block">
+          <div class="check-block__input-wrapper">
+            <div class="check-block__input-square"></div>
+            <input class="check-block__input visually-hidden" type="checkbox" name="devil-bridge" id="devil-bridge"
+              value="Мост Дьявола" checked>
+          </div>
+          <label class="check-block__label" for="devil-bridge">Мост Дьявола</label>
+        </div>
+        <br>
+        <div class="places-fieldset__check-block check-block">
+          <div class="check-block__input-wrapper">
+            <div class="check-block__input-square"></div>
+            <input class="check-block__input visually-hidden" type="checkbox" name="bell-mountain" id="bell-mountain"
+              value="Гора-Колокол" checked>
+          </div>
+          <label class="check-block__label" for="bell-mountain">Гора-Колокол</label>
+        </div>
+        <br>
+        <div class="places-fieldset__check-block check-block">
+          <div class="check-block__input-wrapper">
+            <div class="check-block__input-square"></div>
+            <input class="check-block__input visually-hidden" type="checkbox" name="slide-park" id="slide-park"
+              value="Слайд-парк" checked>
+          </div>
+          <label class="check-block__label" for="slide-park">Слайд-парк</label>
+        </div>
+        <br>
+        <div class="places-fieldset__check-block check-block">
+          <div class="check-block__input-wrapper">
+            <div class="check-block__input-square"></div>
+            <input class="check-block__input visually-hidden" type="checkbox" name="red-rocks" id="red-rocks"
+              value="Красные скалы">
+          </div>
+          <label class="check-block__label" for="red-rocks">Красные скалы</label>
+        </div>
       </fieldset>
 
-      <fieldset class="comments-fieldset">
+      <fieldset class="review-form__fieldset comments-fieldset">
         <legend class="comments-fieldset__legend">Опишите свои эмоции</legend>
-        <textarea name="comment">Опишите подробно все свои восторги</textarea>
-        <button class="comments-fieldset__button">Отправить отзыв</button>
+        <textarea class="comments-fieldset__input" name="comment">Опишите подробно все свои восторги</textarea>
       </fieldset>
+
+      <input class="review-form__submit-button" type="submit" value="Отправить отзыв">
     </form>
 
   </main>
@@ -122,17 +193,36 @@
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--twitter" href="#" aria-label="Иконка Twitter">
-            <img src="img/icon-twitter.svg">
+            <svg class="social__img" version="1.0" id="Layer" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px"
+              viewbox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+              <g id="W6EeEF_1_">
+                <g>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z" />
+                </g>
+              </g>
+            </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--facebook" href="#" aria-label="Седона в Facebook">
-            <img src="img/icon-facebook.svg">
+            <svg class="social__img" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px"
+              viewbox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
+              <path
+                d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z" />
+            </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="#" aria-label="Седона на YouTube">
-            <img src="img/icon-youtube.svg">
+            <svg class="social__img" version="1.0" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px"
+              viewbox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
+              <path
+                d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z" />
+            </svg>
           </a>
         </li>
       </ul>

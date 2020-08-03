@@ -1,0 +1,12 @@
+.impressions-fieldset__legend {
+  @include font-titles-black;
+}
+
+.choice-block__label {
+  @include font-titles-black;
+  text-transform: none;
+}
+
+.impressions-fieldset {
+  border: 0 none;
+}

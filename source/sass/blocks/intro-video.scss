@@ -1,0 +1,13 @@
+.intro-video__title {
+  @include font-titles-black;
+  text-align: center;
+}
+
+.intro-video__text {
+  line-height: 24px;
+  text-align: center;
+}
+
+.intro-video__view-back {
+  background-color: $grey-color;
+}

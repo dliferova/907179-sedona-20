@@ -1,1 +1,7 @@
 // Стили для блока footer
+.page-footer {
+  min-height: 233px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
