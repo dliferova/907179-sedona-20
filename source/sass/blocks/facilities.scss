@@ -4,6 +4,7 @@
     flex-direction: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: grid;

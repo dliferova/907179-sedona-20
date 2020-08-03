@@ -5,6 +5,7 @@
     grid-template-columns: 324px 324px;
     grid-template-rows: 480px 347px 347px;
   }
+
   @media (min-width: $desktop-width) {
     display: grid;
     width: 100%;

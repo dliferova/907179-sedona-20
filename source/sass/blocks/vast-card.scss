@@ -19,6 +19,7 @@
     flex-direction: row;
     justify-content: space-around;
   }
+
   @media (min-width: $desktop-width) {
     background-color: $black-color;
     opacity: 30%;
