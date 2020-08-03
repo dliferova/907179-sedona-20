@@ -37,3 +37,21 @@
   color: $white-color;
   border: none;
 }
+
+@mixin style-btn-tablet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 49px;
+  width: 458px;
+  min-height: 58px;
+  background-color: $main-color;
+  color: $white-color;
+  border: none;
+}

@@ -1,3 +1,32 @@
+.facilities {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .facilities__title {
   @include font-titles-black;
+}
+
+// Секция жилье
+.facilities__section-first {
+  width: 240px;
+  margin-left: 69px;
+}
+// Секция сувениры
+.facilities__section-second {
+  width: 229px;
+  margin-left: 70px;
+}
+// Секция еда
+.facilities__section-third {
+  width: 210px;
+  margin-left: 70px;
 }

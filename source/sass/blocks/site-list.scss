@@ -1,3 +1,11 @@
-.site-list__link {
-  color: #ffffff;
+@media (min-width: $tablet-width) {
+  .site-list {
+    width: 723px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    width: 1069px;
+  }
 }

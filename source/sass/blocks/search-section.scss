@@ -7,6 +7,7 @@
 
 .search-section__text {
   line-height: 24px;
+  text-align: center;
 }
 
 .search-section__link {
@@ -15,4 +16,8 @@
 
 .search-section__button {
   @include style-btn;
+
+  @media (min-width: $tablet-width) {
+    @include style-btn-tablet;
+  }
 }

@@ -2,3 +2,20 @@
 .advantages__title {
   @include font-titles-black;
 }
+
+.advantages__section-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $grey-color;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}

@@ -5,3 +5,22 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 665px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 976px;
+    display: flex;
+    flex-direction: row;
+  }
+}

@@ -1,8 +1,15 @@
-.city-item {
-  background-color: #81b3d2;
-  color: #ffffff;
+.city-item__description {
+  background-color: $main-color;
+  color: $white-color;
 }
 
 .city-item__title {
   @include font-titles-white;
+}
+
+.city-item__section {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
 }

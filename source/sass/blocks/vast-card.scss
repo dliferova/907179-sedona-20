@@ -1,0 +1,31 @@
+// Карточка неродные просторы
+.vast-card {
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+  }
+}
+
+.vast-card__content {
+  @media (min-width: $tablet-width) {
+    background-color: $grey-color;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  @media (min-width: $desktop-width) {
+    background-color: $black-color;
+    opacity: 30%;
+    width: 100%;
+    color: $white-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
