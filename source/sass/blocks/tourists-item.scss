@@ -1,10 +1,8 @@
 .tourists-item {
-  width: 276px;
   text-align: center;
   margin-left: 22px;
 
   @media (min-width: $tablet-width) {
-    width: 134px;
     margin-right: 40px;
   }
 }

@@ -1,9 +1,4 @@
 .road-item {
-  width: 237px;
   text-align: center;
   margin-left: 42px;
-
-  @media (min-width: $tablet-width) {
-    width: 157px;
-  }
 }

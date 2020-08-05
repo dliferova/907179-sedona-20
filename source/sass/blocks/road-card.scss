@@ -14,16 +14,17 @@
 
 .road-card__content {
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: $grey-color;
   }
 
   @media (min-width: $desktop-width) {
+    flex-direction: row;
     background-color: $black-color;
     opacity: 30%;
     width: 100%;
     color: $white-color;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
   }
 }

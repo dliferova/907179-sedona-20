@@ -4,10 +4,6 @@
   @media (min-width: $tablet-width) {
     background-color: $white-color;
   }
-
-  @media (min-width: $desktop-width) {
-    background-color: $white-color;
-  }
 }
 
 .main-nav__list {
@@ -30,12 +26,6 @@
       font-size: 14px;
       line-height: 26px;
     }
-
-    @media (min-width: $desktop-width) {
-      color: $black-color;
-      font-size: 14px;
-      line-height: 26px;
-    }
   }
 }
 
@@ -52,11 +42,11 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__wrapper {
-    width: 1069px;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 1069px;
+    margin: 0 auto;
   }
 
   .main-nav__toggle {
