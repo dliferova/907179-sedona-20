@@ -1,0 +1,14 @@
+.cards-section {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 324px 324px;
+    grid-template-rows: 480px 347px 347px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 267px;
+  }
+}

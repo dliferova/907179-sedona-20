@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -59,57 +60,71 @@
         <p class="inscription__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
       <ul class="advantages__list">
-        <li class="city-item advantages__item">
-          <div class="city-item__description">
-            <h3 class="city-item__title">Настоящий городок</h3>
-            <p>&ndash;№1&ndash;</p>
-            <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
-            <img class="city-item__photo" src="img/main-city-mobile@1x.jpg" alt="Изображение города">
+        <li class="advantages__item city-item">
+          <div class="city-item__section">
+            <div class="city-item__description">
+              <h3 class="city-item__title">Настоящий городок</h3>
+              <p>&ndash;№1&ndash;</p>
+              <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <div class="city-item__photo-section">
+              <img class="city-item__photo" src="img/main-city-mobile@1x.jpg" alt="Изображение города">
+            </div>
           </div>
         </li>
         <ul class="facilities city-item__facilities">
           <li class="facilities__item">
-            <h4 class="facilities__title">Жилье</h4>
-            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <div class="facilities__section-first">
+              <h4 class="facilities__title">Жилье</h4>
+              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </div>
           </li>
           <li class="facilities__item">
-            <h4 class="facilities__title">Сувениры</h4>
-            <p>Не только китайского, но и местного производства!</p>
+            <div class="facilities__section-second">
+              <h4 class="facilities__title">Сувениры</h4>
+              <p>Не только китайского, но и местного производства!</p>
+            </div>
           </li>
           <li class="facilities__item">
-            <h4 class="facilities__title">Еда</h4>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <div class="facilities__section-third">
+              <h4 class="facilities__title">Еда</h4>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </div>
           </li>
 
         </ul>
 
-        <li class="bridge-item advantages__item">
-          <div class="bridge-item__description">
-            <h3 class="bridge-item__title">Там есть мост дьявола</h3>
-            <p>&ndash;№2&ndash;</p>
-            <p>Да, по нему можно пройти, если вы осмелитесь, конечно </p>
+        <li class="advantages__item bridge-item">
+          <div class="bridge-item__section">
+            <div class="bridge-item__description">
+              <h3 class="bridge-item__title">Там есть мост дьявола</h3>
+              <p>&ndash;№2&ndash;</p>
+              <p>Да, по нему можно пройти, если вы осмелитесь, конечно </p>
+            </div>
+            <div class="city-item__photo-section">
+              <img class="bridge-item__photo" src="img/photo-bridge-mobile@1x.jpg" alt="Мост Дьявола">
+            </div>
           </div>
-          <img class="bridge-item__photo" src="img/photo-bridge-mobile@1x.jpg" alt="Мост Дьявола">
         </li>
+        <div class="advantages__section-cards">
+          <li class="advantages__item square-item">
+            <h3 class="advantages__title">Небольшая площадь</h3>
+            <p>&ndash;№3&ndash;</p>
+            <p>Все интересные места находятся очень близко </p>
+          </li>
 
-        <li class="square-item advantages__item">
-          <h3 class="advantages__title">Небольшая площадь</h3>
-          <p>&ndash;№3&ndash;</p>
-          <p>Все интересные места находятся очень близко </p>
-        </li>
+          <li class="advantages__item road-item">
+            <h3 class="advantages__title">Красивая дорога</h3>
+            <p>&ndash;№4&ndash;</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
 
-        <li class="road-item advantages__item">
-          <h3 class="advantages__title">Красивая дорога</h3>
-          <p>&ndash;№4&ndash;</p>
-          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </li>
-
-        <li class="tourists-item advantages__item">
-          <h3 class="advantages__title">Мало туристов</h3>
-          <p>&ndash;№5&ndash;</p>
-          <p>Большинство едет в гранд каньон и толпится там</p>
-        </li>
-
+          <li class="advantages__item tourists-item">
+            <h3 class="advantages__title">Мало туристов</h3>
+            <p>&ndash;№5&ndash;</p>
+            <p>Большинство едет в гранд каньон и толпится там</p>
+          </li>
+        </div>
       </ul>
     </section>
 
@@ -128,7 +143,7 @@
         <map name="navigation">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381003.256085881!2d-114.17823951985389!3d34.15245640453722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08ebcb4c186b%3A0x423927b17fc1cd71!2z0JDRgNC40LfQvtC90LAsINCh0KjQkA!5e0!3m2!1sru!2scz!4v1595419092166!5m2!1sru!2scz"
-            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
             tabindex="0"></iframe>
         </map>
       </p>
@@ -136,52 +151,54 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__hashtag hashtag">
-      <p class="hashtag__text">#Visitsedona</p>
-    </div>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="#" aria-label="Иконка Twitter">
-            <svg class="social__img" version="1.0" id="Layer" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px"
-              viewbox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
-              <g id="W6EeEF_1_">
-                <g>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z" />
+    <div class="page-footer__wrapper">
+      <div class="page-footer__hashtag hashtag">
+        <p class="hashtag__text">#Visitsedona</p>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#" aria-label="Седона в Twitter">
+              <svg class="social__img" version="1.0" id="Layer" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px"
+                viewbox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                <g id="W6EeEF_1_">
+                  <g>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z" />
+                  </g>
                 </g>
-              </g>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#" aria-label="Седона в Facebook">
-            <svg class="social__img" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px"
-              viewbox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
-              <path
-                d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z" />
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="#" aria-label="Седона на YouTube">
-            <svg class="social__img" version="1.0" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px"
-              viewbox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
-              <path
-                d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z" />
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано:</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/logo-htmlacademy.svg"
-          alt="Страница HTML Academy" width="27px" height="34px">
-      </a>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#" aria-label="Седона в Facebook">
+              <svg class="social__img" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px"
+                viewbox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
+                <path
+                  d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z" />
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#" aria-label="Седона на YouTube">
+              <svg class="social__img" version="1.0" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px"
+                viewbox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
+                <path
+                  d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано:</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/logo-htmlacademy.svg"
+            alt="Страница HTML Academy" width="27px" height="34px">
+        </a>
+      </div>
     </div>
   </footer>
 </body>

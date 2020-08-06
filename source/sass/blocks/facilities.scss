@@ -1,3 +1,10 @@
+.facilities {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .facilities__title {
   @include font-titles-black;
 }

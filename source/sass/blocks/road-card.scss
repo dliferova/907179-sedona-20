@@ -1,0 +1,30 @@
+// Карточка дорога на север
+
+.road-card {
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+}
+
+.road-card__content {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: $grey-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    background-color: $black-color;
+    opacity: 30%;
+    width: 100%;
+    color: $white-color;
+  }
+}

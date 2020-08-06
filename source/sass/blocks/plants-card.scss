@@ -1,0 +1,29 @@
+// Карточка местная растительность
+.plants-card {
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+}
+
+.plants-card__content {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: $grey-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    width: 100%;
+    background-color: $black-color;
+    opacity: 30%;
+    color: $white-color;
+  }
+}
