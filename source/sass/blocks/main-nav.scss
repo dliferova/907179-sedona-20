@@ -2,9 +2,11 @@
   background-color: $main-color;
   position: relative;
   width: auto;
+  order: 1;
 
   @media (min-width: $tablet-width) {
     background-color: $white-color;
+    order: 2;
   }
 }
 

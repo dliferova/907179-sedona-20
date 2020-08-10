@@ -1,11 +1,14 @@
 .page-header {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 
   @include font-header-mobil;
 }
 
 .page-header__logo {
-  height: 84px;
+  height: 56px;
   text-align: center;
+  order: 2;
+  z-index: 2;
 }
