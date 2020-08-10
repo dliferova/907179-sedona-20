@@ -1,4 +1,6 @@
-.card {
+// Общие стили для карточек фото альбома
+
+.cards-section__square {
   border-bottom: 1px groove #e5e5e5;
 
   @media (min-width: $tablet-width) {
@@ -6,20 +8,26 @@
   }
 }
 
-.card__title {
+.card-title {
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
 }
 
-.card__author-name {
+.card-author-name {
   text-transform: none;
   line-height: 24px;
 }
 
-.card__like-count {
+.like-count {
   line-height: 24px;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    font-weight: bold;
+  }
 }
 
-.card__photo {
+.card-photo {
   background-color: $grey-color;
 }

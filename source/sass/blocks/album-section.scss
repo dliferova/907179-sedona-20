@@ -1,0 +1,24 @@
+.album-section {
+  @media (min-width: $tablet-width) {
+    margin-top: 65px;
+  }
+}
+
+.album-section__description {
+  @media (min-width: $tablet-width) {
+    padding-left: 155px;
+    padding-right: 170px;
+  }
+}
+
+.album-section__title {
+  @include font-titles-black;
+  text-align: center;
+  margin: 0;
+}
+
+.album-section__text {
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
+}

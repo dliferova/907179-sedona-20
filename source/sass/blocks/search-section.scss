@@ -19,6 +19,10 @@
   line-height: 26px;
   font-weight: bold;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .search-section__subtitle {
@@ -36,6 +40,6 @@
   @media (min-width: $tablet-width) {
     @include style-btn-tablet;
     margin-top: 37px;
-    margin-top: 58px;
+    margin-bottom: 58px;
   }
 }

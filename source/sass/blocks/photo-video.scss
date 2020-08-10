@@ -1,0 +1,9 @@
+.photo-video__cover {
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  background-color: $main-color;
+
+  @media (min-width: $tablet-width) {
+    min-height: 289px;
+    width: 100vw;
+  }
+}

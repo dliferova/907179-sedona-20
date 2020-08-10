@@ -1,9 +1,6 @@
 // Стили для блока footer
 .page-footer {
-  min-height: 233px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  min-height: 120px;
 }
 
 .page-footer__wrapper {
@@ -13,5 +10,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    padding-left: 45px;
+    padding-right: 60.5px;
   }
 }

@@ -1,14 +1,22 @@
 // Стили для оформления секции ссылок на социальные сети
+.social {
+  @media (min-width: $tablet-width) {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+}
+
 .social__list {
   display: flex;
   flex-direction: row;
+  margin: 0;
 }
 
 .social__item {
-  background-color: $main-color;
-
   width: 46px;
   height: 48px;
+  background-color: $main-color;
+  text-align: center;
 }
 
 .social__img {
