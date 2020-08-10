@@ -55,3 +55,18 @@
   color: $white-color;
   border: none;
 }
+
+// Оформление cостояний кнопки и элементов пункта меню
+@mixin style-hover {
+  background-color: #669ec0;
+}
+
+@mixin style-active {
+  background-color: #5496bd;
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+@mixin style-disable {
+  background-color: #e5e5e5;
+}

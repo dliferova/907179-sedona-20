@@ -1,4 +1,8 @@
-.road-item {
+.road-item__section {
   text-align: center;
-  margin-left: 42px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 42px;
+    padding-bottom: 41px;
+  }
 }

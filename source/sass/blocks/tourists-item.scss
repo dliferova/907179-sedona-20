@@ -1,8 +1,10 @@
 .tourists-item {
   text-align: center;
-  margin-left: 22px;
+}
 
+.tourists-item__section {
   @media (min-width: $tablet-width) {
-    margin-right: 40px;
+    padding-top: 42px;
+    padding-bottom: 42px;
   }
 }

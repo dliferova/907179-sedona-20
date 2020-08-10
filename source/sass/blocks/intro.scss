@@ -1,4 +1,12 @@
 .intro {
+  height: 389px;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
   background-color: $main-color;
+  background-position: center;
+  background-size: cover;
+}
+
+.intro__section {
+  padding-top: 90px;
+  padding-bottom: 85px;
 }

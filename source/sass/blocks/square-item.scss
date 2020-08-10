@@ -1,8 +1,9 @@
-.square-item {
+.square-item__section {
   text-align: center;
-  margin-left: 26px;
+  // margin-left: 26px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 34px;
+    padding-top: 42px;
+    padding-bottom: 63px;
   }
 }

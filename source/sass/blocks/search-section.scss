@@ -1,3 +1,19 @@
+.search-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.search-section__text {
+  @media (min-width: $tablet-width) {
+    padding-top: 58px;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
 .search-section__subject {
   font-size: 21px;
   line-height: 26px;
@@ -5,7 +21,7 @@
   text-align: center;
 }
 
-.search-section__text {
+.search-section__subtitle {
   line-height: 24px;
   text-align: center;
 }
@@ -19,5 +35,7 @@
 
   @media (min-width: $tablet-width) {
     @include style-btn-tablet;
+    margin-top: 37px;
+    margin-top: 58px;
   }
 }

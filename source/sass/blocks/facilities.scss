@@ -2,9 +2,57 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "living food syvenirs";
+    align-content: center;
   }
+}
+
+.facilities__item-1 {
+  grid-area: living;
+}
+
+.facilities__item-2 {
+  grid-area: syvenirs;
+}
+
+.facilities__item-3 {
+  grid-area: food;
 }
 
 .facilities__title {
   @include font-titles-black;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.facilities__section-first,
+.facilities__section-second,
+.facilities__section-third {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 158px;
+  }
+}
+
+.facilities__section-first {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 60px;
+  }
+}
+
+.facilities__section-second {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 59px;
+  }
+}
+
+.facilities__section-third {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 81px;
+  }
 }

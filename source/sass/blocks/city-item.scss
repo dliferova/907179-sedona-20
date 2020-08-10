@@ -1,10 +1,32 @@
 .city-item__description {
   background-color: $main-color;
   color: $white-color;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 44px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+.city-item__description p {
+  margin: 0;
 }
 
 .city-item__title {
   @include font-titles-white;
+  margin: 0;
+}
+
+.city-item__title br {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }
 
 .city-item__section {

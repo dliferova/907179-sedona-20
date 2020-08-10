@@ -1,10 +1,18 @@
+.inscription {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+
+    padding-bottom: 52.5px;
+    padding-top: 43.5px;
+  }
+}
+
 .inscription__slogan {
   @include font-titles-black;
-  text-align: center;
 }
 
 .inscription__text {
-  text-align: center;
   font-size: 14px;
   line-height: 26px;
 }
