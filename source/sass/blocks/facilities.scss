@@ -7,16 +7,35 @@
   }
 }
 
-.facilities__item-1 {
+.facilities__item-first {
   grid-area: living;
+  margin-top: 30px;
+  padding-left: 69px;
+  padding-right: 11px;
 }
 
-.facilities__item-2 {
+.facilities__title {
+  margin: 0;
+}
+
+.facilities__slogan {
+  margin: 0;
+  padding-top: 15px;
+}
+
+.facilities__item-second {
   grid-area: syvenirs;
+  padding-top: 26px;
+  padding-left: 70px;
+  padding-right: 37px;
 }
 
-.facilities__item-3 {
+.facilities__item-third {
   grid-area: food;
+  padding-top: 28px;
+  padding-left: 70px;
+  padding-right: 71px;
+  margin-bottom: 36px;
 }
 
 .facilities__title {

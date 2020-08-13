@@ -1,5 +1,7 @@
 .copyright {
   display: flex;
+  justify-content: center;
+  padding-top: 43px;
 
   @media (min-width: $tablet-width) {
     padding-top: 48px;
@@ -10,4 +12,8 @@
   font-size: 14px;
   line-height: 26px;
   margin: 0;
+}
+
+.copyright__link {
+  padding-left: 12px;
 }

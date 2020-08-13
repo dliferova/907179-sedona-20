@@ -3,8 +3,21 @@
 }
 
 .tourists-item__section {
+  padding-top: 31px;
+
   @media (min-width: $tablet-width) {
     padding-top: 42px;
     padding-bottom: 42px;
   }
+}
+
+.tourists-item__number {
+  margin: 0;
+  padding-top: 8px;
+}
+
+.tourists-item__slogan {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 27px;
 }

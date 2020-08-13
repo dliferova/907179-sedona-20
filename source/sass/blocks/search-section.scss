@@ -5,6 +5,8 @@
 }
 
 .search-section__text {
+  padding-top: 13px;
+
   @media (min-width: $tablet-width) {
     padding-top: 58px;
   }
@@ -28,6 +30,9 @@
 .search-section__subtitle {
   line-height: 24px;
   text-align: center;
+  padding-top: 22px;
+  padding-right: 22px;
+  padding-left: 22px;
 }
 
 .search-section__link {
@@ -35,6 +40,9 @@
 }
 
 .search-section__button {
+  margin-top: 33px;
+  margin-bottom: 33px;
+
   @include style-btn;
 
   @media (min-width: $tablet-width) {

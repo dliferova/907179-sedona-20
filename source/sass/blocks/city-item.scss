@@ -1,6 +1,11 @@
 .city-item__description {
   background-color: $main-color;
   color: $white-color;
+  text-align: center;
+  padding-top: 69px;
+  padding-bottom: 39px;
+  padding-left: 23px;
+  padding-right: 23px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -23,6 +28,14 @@
   margin: 0;
 }
 
+.city-item__number {
+  padding-top: 9px;
+}
+
+.city-item__slogan {
+  padding-top: 15px;
+}
+
 .city-item__title br {
   @media (max-width: $mobile-width-only) {
     display: none;
@@ -34,4 +47,9 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
+}
+
+.city-item__bridge-photo {
+  height: auto;
+  background-color: $grey-color;
 }

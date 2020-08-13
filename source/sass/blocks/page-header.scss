@@ -11,4 +11,14 @@
   text-align: center;
   order: 2;
   z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

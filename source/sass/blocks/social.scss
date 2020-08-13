@@ -7,9 +7,12 @@
 }
 
 .social__list {
+  padding-top: 36px;
   display: flex;
   flex-direction: row;
   margin: 0;
+  padding-left: 84px;
+  padding-right: 85px;
 }
 
 .social__item {
@@ -21,4 +24,26 @@
 
 .social__img {
   fill: $white-color;
+}
+
+.twitter-item {
+  margin-right: 6px;
+  width: 47px;
+  height: 48px;
+}
+
+.twitter-icon {
+  margin-top: 16px;
+}
+
+.facebook-item {
+  margin-right: 6px;
+}
+
+.facebook-icon {
+  margin-top: 13px;
+}
+
+.youtube-icon {
+  margin-top: 17px;
 }

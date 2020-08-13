@@ -7,6 +7,35 @@
     padding-right: 60px;
   }
 
+  .cards-section__photo {
+    padding-top: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 9px;
+  }
+
+  .cards-section__content {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 19px;
+  }
+
+  .cards-section__review {
+    display: flex;
+    padding-top: 7px;
+  }
+
+  .cards-section__icon {
+    opacity: 0.3;
+  }
+
+  .cards-section__like-count {
+    margin: 0;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-top: 3px;
+  }
+
   // @media (min-width: $desktop-width) {
   //   // width: 100%;
   //   // grid-template-columns: 1fr 1fr 1fr;

@@ -9,6 +9,14 @@
   }
 }
 
+.bridge-item__number {
+  padding-top: 9px;
+}
+
+.bridge-item__slogan {
+  padding-top: 15px;
+}
+
 .bridge-item__section {
   @media (min-width: $tablet-width) {
     display: grid;
@@ -25,6 +33,11 @@
   grid-area: description;
   background-color: $main-color;
   color: $white-color;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 38px;
+  padding-left: 15px;
+  padding-right: 16px;
 
   @media (min-width: $tablet-width) {
     display: flex;

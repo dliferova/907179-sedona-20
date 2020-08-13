@@ -1,11 +1,21 @@
+.intro-video__promo {
+  padding-top: 5px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
 .intro-video__title {
   @include font-titles-black;
   text-align: center;
+  margin: 0;
+  padding-top: 19px;
 }
 
 .intro-video__text {
   line-height: 24px;
   text-align: center;
+  margin: 0;
+  padding-top: 25px;
 }
 
 .intro-video__view-back {
