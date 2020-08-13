@@ -66,8 +66,11 @@
         <div class="cards-section__square vast-card">
           <div class="cards-section__photo vast-card__photo">
             <a href="img/photo-sunset-mobile@1x.jpg">
-              <img class="card-photo" src="img/photo-sunset-mobile@1x.jpg" alt="Закат в Седоне" width="280px"
-                height="280px">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg">
+                <img class="card-photo" src="img/photo-sunset-mobile@1x.jpg" alt="Закат в Седоне" width="280px"
+                  height="280px">
+              </picture>
             </a>
           </div>
 
@@ -76,10 +79,11 @@
               <h3 class="vast-card__name card-title">Неродные просторы</h3>
               <span class="vast-card__author card-author-name">Автор фото: Борис</span>
             </div>
+
             <div class="cards-section__review vast-card__review">
-              <svg class="cards-section__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px"
-                viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
+              <svg class="cards-section__icon vast-card__like-icon" version="1.0" id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
                 <g id="Page-1">
                   <g id="Core" transform="translate(-295.000000, -464.000000)">
                     <g id="thumb-up" transform="translate(295.000000, 464.000000)">
@@ -89,7 +93,7 @@
                   </g>
                 </g>
               </svg>
-              <p class="cards-section__like-count">1350</p>
+              <p class="cards-section__like-count vast-card__like-count">1350</p>
             </div>
           </div>
         </div>
@@ -134,7 +138,7 @@
             </a>
           </div>
           <div class="cards-section__content road-card__content">
-            <div class="road-card__description">
+            <div class="cards-section__descriprion road-card__description">
               <h3 class="road-card__name card-title">Дорога на север</h3>
               <span class="road-card__author card-author-name">Автор фото: Петр</span>
             </div>
@@ -165,7 +169,7 @@
             </a>
           </div>
           <div class="cards-section__content bridge-card__content">
-            <div class="bridge-card__description">
+            <div class="cards-section__descriprion bridge-card__description">
               <h3 class="bridge-card__name card-title">Мост дьявола</h3>
               <span class="bridge-card__author card-author-name">Автор фото: Антон</span>
             </div>
@@ -210,9 +214,9 @@
       </div>
       <div class="page-footer__social social">
         <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#" aria-label="Иконка Twitter">
-              <svg class="social__img" version="1.0" id="Layer" xmlns="http://www.w3.org/2000/svg"
+          <li class="social__item twitter-item">
+            <a class="social__link social__link--twitter" href="#" aria-label="Седона в Twitter">
+              <svg class="social__img twitter-icon" version="1.0" id="Layer" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px"
                 viewbox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
                 <g id="W6EeEF_1_">
@@ -224,9 +228,9 @@
               </svg>
             </a>
           </li>
-          <li class="social__item">
+          <li class="social__item facebook-item">
             <a class="social__link social__link--facebook" href="#" aria-label="Седона в Facebook">
-              <svg class="social__img" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              <svg class="social__img facebook-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px"
                 viewbox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
                 <path
@@ -234,9 +238,9 @@
               </svg>
             </a>
           </li>
-          <li class="social__item">
+          <li class="social__item youtube-item">
             <a class="social__link social__link--youtube" href="#" aria-label="Седона на YouTube">
-              <svg class="social__img" version="1.0" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
+              <svg class="social__img youtube-icon" version="1.0" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px"
                 viewbox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
                 <path
@@ -247,7 +251,7 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано:</p>
+        <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/logo-htmlacademy.svg"
             alt="Страница HTML Academy" width="27px" height="34px">
         </a>

@@ -7,17 +7,50 @@
     padding-right: 60px;
   }
 
+  @media (min-width: $desktop-width) {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   .cards-section__photo {
     padding-top: 24px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 9px;
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
   }
 
   .cards-section__content {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 19px;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 100%;
+      max-height: 80px;
+      background-color: $grey-color;
+      padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-color: #000000;
+      opacity: 0.3;
+    }
+  }
+
+  .cards-section__descriprion {
+    @media (min-width: $tablet-width) {
+      padding-left: 20px;
+      padding-top: 22px;
+      padding-bottom: 15px;
+    }
   }
 
   .cards-section__review {
@@ -27,6 +60,14 @@
 
   .cards-section__icon {
     opacity: 0.3;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 28px;
+    }
+
+    @media (min-width: $desktop-width) {
+      fill: #ffffff;
+    }
   }
 
   .cards-section__like-count {
@@ -34,6 +75,12 @@
     font-weight: bold;
     padding-left: 15px;
     padding-top: 3px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 30px;
+      padding-left: 9px;
+      padding-right: 21px;
+    }
   }
 
   // @media (min-width: $desktop-width) {

@@ -4,7 +4,7 @@
   padding-top: 43px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 48px;
+    padding-top: 62px;
   }
 }
 
@@ -12,6 +12,9 @@
   font-size: 14px;
   line-height: 26px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+  }
 }
 
 .copyright__link {

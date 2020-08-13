@@ -2,6 +2,10 @@
   @media (min-width: $tablet-width) {
     margin-top: 65px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 102px;
+  }
 }
 
 .album-section__description {
@@ -13,6 +17,14 @@
     padding-top: 12px;
     padding-left: 143px;
     padding-right: 143px;
+
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 12px;
+    padding-left: 370px;
+    padding-right: 331px;
 
     border: none;
   }
@@ -37,6 +49,10 @@
   padding-right: 28px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding-top: 30px;
   }
 }

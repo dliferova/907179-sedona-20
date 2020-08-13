@@ -1,7 +1,7 @@
 // Стили для оформления секции ссылок на социальные сети
 .social {
   @media (min-width: $tablet-width) {
-    padding-top: 36px;
+    padding-top: 19px;
     padding-bottom: 36px;
   }
 }
@@ -13,6 +13,11 @@
   margin: 0;
   padding-left: 84px;
   padding-right: 85px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 27px;
+    padding-right: 36px;
+  }
 }
 
 .social__item {
