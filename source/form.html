@@ -47,42 +47,53 @@
     <main class="page-main">
       <h1 class="visually-hidden">Отзывы о посещении Седоны</h1>
 
-      <section class="review-intro">
-        <div class="review-intro__cover main-cover">
-          <img class="main-cover__inscription" src="img/text-sedona.svg" alt="Надпись Седона">
+      <section class="intro-background">
+        <div class="intro-background__cover">
+          <img class="intro-background__inscription" src="img/text-sedona.svg" alt="Надпись Седона" width="100%"
+            height="160px">
         </div>
-        <div class="review-intro__text client-review">
+      </section>
+
+      <section class="client-review">
+        <div class="client-review__text">
           <h2 class="client-review__title">Оставьте свой отзыв</h2>
-          <p class="client-review__text">Помогите нашим отелям стать лучше!
+          <p class="client-review__slogan">Помогите нашим отелям стать лучше!
             Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
       </section>
 
-
-      <form class="review-form" name="review-form">
+      <form class="review-form" name="review-form" method="GET">
 
         <fieldset class="review-form__fieldset introduce-fieldset">
-          <legend class="introduce-fieldset__legend">Представьтесь:</legend>
-          <div class="introduce-fieldset__first-name first-name">
-            <label class="first-name__label" for="first-name">Имя*:</label>
-            <input class="first-name__input" type="text" name="first-name" id="first-name" value="Петр" required>
-          </div>
-          <div class="introduce-fieldset__last-name last-name">
-            <label class="last-name__label" for="last-name">Фамилия*:</label>
-            <input class="last-name__input" type="text" name="last-name" id="last-name" value="Иванов" required>
-          </div>
-          <div class="introduce-fieldset__middle-name middle-name">
-            <label class="middle-name__label" for="middle-name">Отчество*:</label>
-            <input class="middle-name__input" type="text" name="middle-name" id="middle-name" value="Александрович">
+          <div class="introduce-fieldset__section">
+            <legend class="introduce-fieldset__legend">Представьтесь:</legend>
+            <div class="introduce-fieldset__first-name first-name">
+              <label class="first-name__label" for="first-name">Имя*:</label>
+              <input class="first-name__input" type="text" name="first-name" id="first-name" value="Петр" required>
+            </div>
+
+            <div class="introduce-fieldset__last-name last-name">
+              <label class="last-name__label" for="last-name">Фамилия*:</label>
+              <input class="last-name__input" type="text" name="last-name" id="last-name" value="Иванов" required>
+            </div>
+
+            <div class="introduce-fieldset__middle-name middle-name">
+              <label class="middle-name__label" for="middle-name">Отчество*:</label>
+              <input class="middle-name__input" type="text" name="middle-name" id="middle-name" value="Александрович">
+            </div>
           </div>
         </fieldset>
 
         <fieldset class="review-form__fieldset contacts-fieldset">
+
           <legend сlass="contacts-fieldset__legend">Контактная информация:</legend>
+
           <div class="contacts-fieldset__phone phone">
-            <label class="phone__label" for="phone">Контактный телефон*</label>
+            <label class="phone__label" for="phone">Контактный телефон*:</label>
+
             <div class="phone__input-block phone-block">
               <input class="phone-block__input" type="tel" name="phone" id="phone" value="Введите телефон" required>
+
               <div class="phone-block__icon">
                 <svg class="phone-block__svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px"
@@ -100,7 +111,7 @@
             </div>
           </div>
           <div class="contacts-fieldset__email email">
-            <label class="email__label" for="email">Электронная почта*</label>
+            <label class="email__label" for="email">Электронная почта*:</label>
             <div class="email__input-block email-block">
               <input class="email-block__input" type="email" id="email" name="email" value="Введите e-mail">
               <div class="email-block__icon">
@@ -142,7 +153,9 @@
 
         <fieldset class="review-form__fieldset places-fieldset">
           <legend class="places-fieldset__legend">Посещенные достопримечательности</legend>
+
           <div class="places-fieldset__check-block check-block">
+
             <div class="check-block__input-wrapper">
               <div class="check-block__input-square"></div>
               <input class="check-block__input visually-hidden" type="checkbox" name="devil-bridge" id="devil-bridge"

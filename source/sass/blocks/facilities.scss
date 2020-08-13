@@ -14,10 +14,6 @@
   padding-right: 11px;
 }
 
-.facilities__title {
-  margin: 0;
-}
-
 .facilities__slogan {
   margin: 0;
   padding-top: 15px;
@@ -39,6 +35,8 @@
 }
 
 .facilities__title {
+  margin: 0;
+
   @include font-titles-black;
 
   @media (min-width: $tablet-width) {

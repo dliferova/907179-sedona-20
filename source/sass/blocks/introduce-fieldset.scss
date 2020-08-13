@@ -1,20 +1,24 @@
 .introduce-fieldset {
   border: 0 none;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .introduce-fieldset__legend {
   @include font-titles-black;
   text-align: center;
+  padding-top: 16px;
 }
 
 .first-name__input,
 .last-name__input,
 .middle-name__input {
   @include font-titles-black;
-  display: block;
+
+  display: inline-block;
+
   background-color: $grey-color;
   border: none;
-  min-width: 230px;
   min-height: 58px;
 }
 
@@ -22,4 +26,38 @@
 .last-name__label,
 .middle-name__label {
   line-height: 26px;
+}
+
+// Стили для расположения секций форм
+
+.first-name__label {
+  padding-left: 8px;
+}
+
+.last-name__label {
+  padding-left: 7px;
+}
+
+.middle-name__label {
+  padding-left: 7px;
+}
+
+// Поле для заполнения
+
+.first-name__input {
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-bottom: 21px;
+  padding-right: 21px;
+}
+
+.last-name__input {
+  width: 192px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.middle-name__input {
+  width: 192px;
+  margin-left: 10px;
 }
