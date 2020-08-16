@@ -1,15 +1,3 @@
-@media (min-width: $tablet-width) {
-  .site-list {
-    width: 723px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .site-list {
-    width: 1069px;
-  }
-}
-
 // Стилизация ссылок в меню
 .site-list {
   a {
@@ -28,5 +16,17 @@
       background: none;
       border: none;
     }
+  }
+}
+
+.site-list__second-block {
+  @media (min-width: $tablet-width) {
+    margin-right: 20%;
+  }
+}
+
+.site-list__item {
+  @media (min-width: $tablet-width) {
+    width: 20%;
   }
 }
