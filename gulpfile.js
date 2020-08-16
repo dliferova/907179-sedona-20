@@ -27,10 +27,19 @@ exports.styles = styles;
 
 const normalize = () => {
   return gulp.src("node_modules/normalize.css/normalize.css")
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("source/css/normalize"))
 }
 
 exports.normalize = normalize;
+
+// Pixel Glass
+
+const pixelGlass = () => {
+  return gulp.src("node_modules/pixel-glass/*")
+    .pipe(gulp.dest("source/js/pixel-glass"))
+}
+
+exports.pixelGlass = pixelGlass;
 
 // Server
 
@@ -57,5 +66,5 @@ const watcher = () => {
 }
 
 exports.default = gulp.series(
-  styles, normalize, server, watcher
+  styles, normalize, pixelGlass, server, watcher
 );
