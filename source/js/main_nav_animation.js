@@ -15,6 +15,7 @@
 // })
 
 (() => {
+  const nav = document.querySelector('.main-nav');
   const menuButton = document.querySelector('.main-nav__button');
   const menuList = document.querySelector('.main-nav__list');
 
@@ -23,5 +24,7 @@
     menuButton.setAttribute('aria-expanded', !expanded);
     menuButton.classList.toggle('main-nav__button--open');
     menuList.classList.toggle('main-nav__list--open');
+    nav.classList.toggle('main-nav--closed')
+    nav.classList.toggle('main-nav--opened')
   });
 })();
