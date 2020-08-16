@@ -5,10 +5,12 @@
 }
 
 .search-section__text {
-  padding-top: 13px;
+  @media (max-width: $mobile-width-only) {
+    padding-top: 13px;
+  }
 
   @media (min-width: $tablet-width) {
-    padding-top: 58px;
+    margin-top: 58px;
   }
 
   p {
@@ -28,11 +30,13 @@
 }
 
 .search-section__subtitle {
-  line-height: 24px;
-  text-align: center;
-  padding-top: 22px;
-  padding-right: 22px;
-  padding-left: 22px;
+  @media (max-width: $mobile-width-only) {
+    line-height: 24px;
+    text-align: center;
+    padding-top: 22px;
+    padding-right: 22px;
+    padding-left: 22px;
+  }
 }
 
 .search-section__link {

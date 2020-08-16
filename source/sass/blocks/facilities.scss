@@ -8,10 +8,15 @@
 }
 
 .facilities__item-first {
-  grid-area: living;
-  margin-top: 30px;
-  padding-left: 69px;
-  padding-right: 11px;
+  @media (max-width: $mobile-width-only) {
+    margin-top: 30px;
+    padding-left: 69px;
+    padding-right: 11px;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-area: living;
+  }
 }
 
 .facilities__slogan {
@@ -20,18 +25,39 @@
 }
 
 .facilities__item-second {
-  grid-area: syvenirs;
-  padding-top: 26px;
-  padding-left: 70px;
-  padding-right: 37px;
+  @media (max-width: $mobile-width-only) {
+    padding-top: 26px;
+    padding-left: 70px;
+    padding-right: 37px;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-area: syvenirs;
+  }
 }
 
 .facilities__item-third {
-  grid-area: food;
-  padding-top: 28px;
-  padding-left: 70px;
-  padding-right: 71px;
-  margin-bottom: 36px;
+  @media (max-width: $mobile-width-only) {
+    padding-top: 28px;
+    padding-left: 70px;
+    padding-right: 71px;
+    margin-bottom: 36px;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-area: food;
+  }
+}
+
+.facilities__section-first,
+.facilities__section-second,
+.facilities__section-third {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
 }
 
 .facilities__title {
@@ -44,32 +70,66 @@
   }
 }
 
-.facilities__section-first,
-.facilities__section-second,
-.facilities__section-third {
+// Icons
+.facilities__icon-house,
+.facilities__icon-gift,
+.facilities__icon-burger {
+  fill: #81b3d2;
+}
+
+.facilities__icon-house {
+  width: 75px;
+  height: 72px;
+
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    padding-top: 158px;
+    padding-top: 60px;
+    padding-left: 90px;
+    padding-right: 89px;
   }
 }
 
-.facilities__section-first {
+.facilities__icon-burger {
+  width: 76px;
+  height: 68px;
+
   @media (min-width: $tablet-width) {
-    padding-bottom: 60px;
+    padding-top: 63px;
+    padding-left: 87px;
+    padding-right: 88px;
   }
 }
 
-.facilities__section-second {
+.facilities__icon-gift {
+  width: 64px;
+  height: 75px;
+
   @media (min-width: $tablet-width) {
-    padding-bottom: 59px;
+    padding-top: 57px;
+    padding-right: 97px;
+    padding-left: 95px;
   }
 }
 
-.facilities__section-third {
+.facilities__text-house {
   @media (min-width: $tablet-width) {
-    padding-bottom: 81px;
+    padding-top: 20px;
+    padding-left: 36px;
+    padding-right: 33px;
+  }
+}
+
+.facilities__text-burger {
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-left: 38px;
+    padding-right: 40px;
+  }
+}
+
+.facilities__text-gift {
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-right: 31px;
+    padding-left: 32px;
   }
 }

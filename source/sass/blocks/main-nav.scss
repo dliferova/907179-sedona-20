@@ -21,43 +21,64 @@
 }
 
 // Базовые стили для кнопки переключения мобильного меню
-.main-nav__toggle {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  cursor: auto;
-  border: none;
-  padding: 0;
-  z-index: 1;
 
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
+// button
 
-.main-nav__svg {
-  fill: $white-color;
-  width: 23px;
-  height: 23px;
-  background-color: $main-color;
-}
+@media (min-width: $mobile-width-only) {
+  .main-nav__button {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
 
-.main-nav__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  text-decoration: none;
-  width: 100%;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 1;
   }
 
-  a {
-    color: $white-color;
+  // icon
+
+  @media (min-width: $mobile-width-only) {
+    .main-nav__icon-menu,
+    .main-nav__icon-cross {
+      fill: $white-color;
+      width: 23px;
+      height: 23px;
+    }
+
+    .main-nav__icon-menu,
+    .main__button--open .main-nav__icon-cross {
+      display: block;
+    }
+
+    .main-nav__icon-cross,
+    .main__button--open .main-nav__icon-menu {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .main-nav__button {
+      display: none;
+    }
+  }
+
+  .main-nav__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    width: 100%;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: center;
+    }
 
     @media (min-width: $tablet-width) {
       color: $black-color;
@@ -67,20 +88,10 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .main-nav__wrapper {
-    margin: 0 auto;
-  }
-
-  .main-nav__toggle {
-    display: none;
-  }
-}
-
 .main-nav__wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     margin: 0 auto;
   }

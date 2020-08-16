@@ -6,15 +6,18 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 4;
+    position: relative;
   }
 }
 
 .vast-card__content {
   @media (min-width: $desktop-width) {
-    background-color: $black-color;
-    opacity: 30%;
+    background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
     color: $white-color;
+    position: absolute;
+    left: 0;
+    bottom: 0;
   }
 }
 
