@@ -6,8 +6,10 @@
   padding-top: 31px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 42px;
-    padding-bottom: 42px;
+    padding-top: 16%;
+    padding-left: 19%;
+    padding-right: 19%;
+    padding-bottom: 16%;
   }
 }
 
@@ -20,4 +22,10 @@
   margin: 0;
   padding-top: 15px;
   padding-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
+  }
 }

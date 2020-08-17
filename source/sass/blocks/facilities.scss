@@ -4,14 +4,17 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "living food syvenirs";
     align-content: center;
+
+    br {
+      display: none;
+    }
   }
 }
 
 .facilities__item-first {
   @media (max-width: $mobile-width-only) {
     margin-top: 30px;
-    padding-left: 69px;
-    padding-right: 11px;
+    padding-left: 21px;
   }
 
   @media (min-width: $tablet-width) {
@@ -27,8 +30,7 @@
 .facilities__item-second {
   @media (max-width: $mobile-width-only) {
     padding-top: 26px;
-    padding-left: 70px;
-    padding-right: 37px;
+    padding-left: 21px;
   }
 
   @media (min-width: $tablet-width) {
@@ -39,8 +41,7 @@
 .facilities__item-third {
   @media (max-width: $mobile-width-only) {
     padding-top: 28px;
-    padding-left: 70px;
-    padding-right: 71px;
+    padding-left: 21px;
     margin-bottom: 36px;
   }
 
@@ -52,8 +53,12 @@
 .facilities__section-first,
 .facilities__section-second,
 .facilities__section-third {
-  @media (min-width: $tablet-width) {
+  @media (max-width: $mobile-width-only) {
     display: flex;
+    flex-direction: row;
+  }
+
+  @media (min-width: $tablet-width) {
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
@@ -78,10 +83,14 @@
 }
 
 .facilities__icon-house {
-  width: 75px;
-  height: 72px;
+  @media (max-width: $mobile-width-only) {
+    width: 39px;
+    height: 37px;
+  }
 
   @media (min-width: $tablet-width) {
+    width: 75px;
+    height: 72px;
     padding-top: 60px;
     padding-left: 90px;
     padding-right: 89px;
@@ -89,10 +98,14 @@
 }
 
 .facilities__icon-burger {
-  width: 76px;
-  height: 68px;
+  @media (max-width: $mobile-width-only) {
+    width: 40px;
+    height: 35px;
+  }
 
   @media (min-width: $tablet-width) {
+    width: 76px;
+    height: 68px;
     padding-top: 63px;
     padding-left: 87px;
     padding-right: 88px;
@@ -100,10 +113,14 @@
 }
 
 .facilities__icon-gift {
-  width: 64px;
-  height: 75px;
+  @media (max-width: $mobile-width-only) {
+    width: 32px;
+    height: 38px;
+  }
 
   @media (min-width: $tablet-width) {
+    width: 64px;
+    height: 75px;
     padding-top: 57px;
     padding-right: 97px;
     padding-left: 95px;
@@ -111,25 +128,40 @@
 }
 
 .facilities__text-house {
+  @media (max-width: $mobile-width-only) {
+    padding-left: 9px;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 20px;
-    padding-left: 36px;
-    padding-right: 33px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 60px;
   }
 }
 
 .facilities__text-burger {
+  @media (max-width: $mobile-width-only) {
+    padding-left: 9px;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 20px;
-    padding-left: 38px;
-    padding-right: 40px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 60px;
   }
 }
 
 .facilities__text-gift {
+  @media (max-width: $mobile-width-only) {
+    padding-left: 9px;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 20px;
-    padding-right: 31px;
-    padding-left: 32px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 81px;
   }
 }

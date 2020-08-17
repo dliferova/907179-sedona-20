@@ -18,12 +18,9 @@
     display: none;
   }
 }
-//Сетка на главной
 
-// .advantages__wrapper {
-//   @media (min-width: $tablet-width) {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr 1fr;
-//     grid-template-rows: 1fr 1fr 1fr 1fr;
-//   }
-// }
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

@@ -34,10 +34,13 @@
   background-color: $main-color;
   color: $white-color;
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 38px;
-  padding-left: 15px;
-  padding-right: 16px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 40px;
+    padding-bottom: 38px;
+    padding-left: 15px;
+    padding-right: 16px;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;

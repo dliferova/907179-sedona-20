@@ -2,10 +2,13 @@
   background-color: $main-color;
   color: $white-color;
   text-align: center;
-  padding-top: 69px;
-  padding-bottom: 39px;
-  padding-left: 23px;
-  padding-right: 23px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 69px;
+    padding-bottom: 39px;
+    padding-left: 23px;
+    padding-right: 23px;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -46,6 +49,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    margin-top: 53px;
   }
 }
 

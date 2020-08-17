@@ -9,8 +9,10 @@
   padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 42px;
-    padding-bottom: 63px;
+    padding-top: 16%;
+    padding-left: 13%;
+    padding-right: 13%;
+    padding-bottom: 24%;
   }
 }
 
@@ -22,4 +24,10 @@
 .square-item__slogan {
   margin: 0;
   padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
+  }
 }

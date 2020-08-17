@@ -8,8 +8,10 @@
   padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 42px;
-    padding-bottom: 41px;
+    padding-top: 16%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 16%;
   }
 }
 
@@ -21,4 +23,10 @@
 .road-item__slogan {
   margin: 0;
   padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
+  }
 }

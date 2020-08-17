@@ -15,17 +15,15 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 12px;
-    padding-left: 143px;
-    padding-right: 143px;
-
+    padding-left: 18%;
+    padding-right: 18%;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 12px;
-    padding-left: 370px;
-    padding-right: 331px;
-
+    padding-left: 26%;
+    padding-right: 26%;
     border: none;
   }
 }
@@ -44,9 +42,12 @@
   line-height: 24px;
   text-align: center;
   margin: 0;
-  padding-top: 26px;
-  padding-left: 25px;
-  padding-right: 28px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 26px;
+    padding-left: 25px;
+    padding-right: 28px;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 30px;

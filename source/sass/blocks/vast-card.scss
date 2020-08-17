@@ -10,17 +10,6 @@
   }
 }
 
-.vast-card__content {
-  @media (min-width: $desktop-width) {
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 100%;
-    color: $white-color;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-  }
-}
-
 .vast-card__review {
   @media (min-width: $desktop-width) {
     align-self: flex-end;
