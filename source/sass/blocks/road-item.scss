@@ -1,4 +1,32 @@
 .road-item {
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.road-item__section {
   text-align: center;
-  margin-left: 42px;
+  padding-top: 30px;
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 16%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 16%;
+  }
+}
+
+.road-item__number {
+  margin: 0;
+  padding-top: 8px;
+}
+
+.road-item__slogan {
+  margin: 0;
+  padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
+  }
 }

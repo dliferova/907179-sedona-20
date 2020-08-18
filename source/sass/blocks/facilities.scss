@@ -2,9 +2,166 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "living food syvenirs";
+    align-content: center;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+.facilities__item-first {
+  @media (max-width: $mobile-width-only) {
+    margin-top: 30px;
+    padding-left: 21px;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-area: living;
+  }
+}
+
+.facilities__slogan {
+  margin: 0;
+  padding-top: 15px;
+}
+
+.facilities__item-second {
+  @media (max-width: $mobile-width-only) {
+    padding-top: 26px;
+    padding-left: 21px;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-area: syvenirs;
+  }
+}
+
+.facilities__item-third {
+  @media (max-width: $mobile-width-only) {
+    padding-top: 28px;
+    padding-left: 21px;
+    margin-bottom: 36px;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-area: food;
+  }
+}
+
+.facilities__section-first,
+.facilities__section-second,
+.facilities__section-third {
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
   }
 }
 
 .facilities__title {
+  margin: 0;
+
   @include font-titles-black;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+// Icons
+.facilities__icon-house,
+.facilities__icon-gift,
+.facilities__icon-burger {
+  fill: #81b3d2;
+}
+
+.facilities__icon-house {
+  @media (max-width: $mobile-width-only) {
+    width: 39px;
+    height: 37px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 75px;
+    height: 72px;
+    padding-top: 60px;
+    padding-left: 90px;
+    padding-right: 89px;
+  }
+}
+
+.facilities__icon-burger {
+  @media (max-width: $mobile-width-only) {
+    width: 40px;
+    height: 35px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 76px;
+    height: 68px;
+    padding-top: 63px;
+    padding-left: 87px;
+    padding-right: 88px;
+  }
+}
+
+.facilities__icon-gift {
+  @media (max-width: $mobile-width-only) {
+    width: 32px;
+    height: 38px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 64px;
+    height: 75px;
+    padding-top: 57px;
+    padding-right: 97px;
+    padding-left: 95px;
+  }
+}
+
+.facilities__text-house {
+  @media (max-width: $mobile-width-only) {
+    padding-left: 9px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 60px;
+  }
+}
+
+.facilities__text-burger {
+  @media (max-width: $mobile-width-only) {
+    padding-left: 9px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 60px;
+  }
+}
+
+.facilities__text-gift {
+  @media (max-width: $mobile-width-only) {
+    padding-left: 9px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 81px;
+  }
 }

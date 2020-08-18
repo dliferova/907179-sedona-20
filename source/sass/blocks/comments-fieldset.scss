@@ -1,6 +1,10 @@
-.comments-fieldset__legend,
-.comments-fieldset__input {
+.comments-fieldset__legend {
+  text-align: center;
+
   @include font-titles-black;
+
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 
 .comments-fieldset {
@@ -9,4 +13,13 @@
 
 .comments-fieldset__input {
   background-color: $grey-color;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  border: none;
+  padding-left: 21px;
+  padding-right: 23px;
+  min-height: 160px;
+  margin-left: 19px;
+  margin-right: 22px;
 }

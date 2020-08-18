@@ -1,11 +1,35 @@
+.intro-video__promo {
+  text-align: center;
+  padding-top: 5px;
+  padding-right: 25px;
+  padding-left: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 59px;
+    padding-right: 161px;
+    padding-left: 161px;
+  }
+}
+
 .intro-video__title {
   @include font-titles-black;
-  text-align: center;
+
+  margin: 0;
+  padding-top: 19px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .intro-video__text {
   line-height: 24px;
-  text-align: center;
+  margin: 0;
+  padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
+  }
 }
 
 .intro-video__view-back {

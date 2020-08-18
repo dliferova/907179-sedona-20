@@ -1,15 +1,59 @@
 .city-item__description {
   background-color: $main-color;
   color: $white-color;
+  text-align: center;
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 69px;
+    padding-bottom: 39px;
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 44px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+.city-item__description p {
+  margin: 0;
 }
 
 .city-item__title {
   @include font-titles-white;
+  margin: 0;
+}
+
+.city-item__number {
+  padding-top: 9px;
+}
+
+.city-item__slogan {
+  padding-top: 15px;
+}
+
+.city-item__title br {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }
 
 .city-item__section {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    margin-top: 53px;
   }
+}
+
+.city-item__bridge-photo {
+  height: auto;
+  background-color: $grey-color;
 }

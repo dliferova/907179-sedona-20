@@ -1,9 +1,12 @@
-.places-fieldset__legend {
-  @include font-titles-black;
-}
-
 .places-fieldset {
   border: 0 none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.places-fieldset__legend {
+  @include font-titles-black;
+  text-align: center;
+  padding-top: 15px;
 }
 
 .check-block__label {

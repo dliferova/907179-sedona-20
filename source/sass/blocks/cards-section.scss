@@ -1,14 +1,99 @@
 .cards-section {
   @media (min-width: $tablet-width) {
     display: grid;
-    width: 100%;
-    grid-template-columns: 324px 324px;
-    grid-template-rows: 480px 347px 347px;
+
+    @media (max-width: $tablet-width) {
+      grid-template-columns: 1fr 1fr;
+      margin-top: 65px;
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100%;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 400px 267px;
+  .cards-section__photo {
+    padding-top: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 9px;
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
+  }
+
+  .cards-section__content {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 19px;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      max-height: 80px;
+      background-color: $grey-color;
+      padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 2;
+      background-color: rgba(0, 0, 0, 0.3);
+      color: $white-color;
+    }
+  }
+
+  .cards-section__square {
+    @media (min-width: $desktop-width) {
+      position: relative;
+    }
+  }
+
+  .cards-section__descriprion {
+    @media (min-width: $tablet-width) {
+      padding-left: 20px;
+      padding-top: 22px;
+      padding-bottom: 15px;
+    }
+  }
+
+  .cards-section__review {
+    display: flex;
+    padding-top: 7px;
+  }
+
+  .cards-section__icon {
+    @media (max-width: $mobile-width-only) {
+      opacity: 0.3;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-top: 28px;
+    }
+
+    @media (min-width: $desktop-width) {
+      fill: #ffffff;
+    }
+  }
+
+  .cards-section__like-count {
+    margin: 0;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-top: 3px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 30px;
+      padding-left: 9px;
+      padding-right: 21px;
+    }
   }
 }

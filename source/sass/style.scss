@@ -1,3 +1,4 @@
+// Global
 @import "global/global.scss";
 @import "global/variables.scss";
 @import "global/mixins.scss";
@@ -20,19 +21,20 @@
 @import "blocks/road-item.scss";
 @import "blocks/tourists-item.scss";
 @import "blocks/search-section.scss";
+@import "blocks/map.scss";
 
 // Blocks page photo.html
-@import "blocks/photo-album.scss";
+@import "blocks/intro-background.scss";
+@import "blocks/album-section.scss";
 @import "blocks/card.scss";
+@import "blocks/bridge-card.scss";
 @import "blocks/intro-video.scss";
 @import "blocks/cards-section.scss";
 @import "blocks/vast-card.scss";
 @import "blocks/plants-card.scss";
 @import "blocks/road-card.scss";
-@import "blocks/bridge-card.scss";
 
 // Blocks page form.html
-@import "blocks/review-intro.scss";
 @import "blocks/client-review.scss";
 @import "blocks/review-form.scss";
 @import "blocks/introduce-fieldset.scss";

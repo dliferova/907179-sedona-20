@@ -23,6 +23,24 @@ const styles = () => {
 
 exports.styles = styles;
 
+// Normalize
+
+const normalize = () => {
+  return gulp.src("node_modules/normalize.css/normalize.css")
+    .pipe(gulp.dest("source/css/normalize"))
+}
+
+exports.normalize = normalize;
+
+// Pixel Glass
+
+const pixelGlass = () => {
+  return gulp.src("node_modules/pixel-glass/*")
+    .pipe(gulp.dest("source/js/pixel-glass"))
+}
+
+exports.pixelGlass = pixelGlass;
+
 // Server
 
 const server = (done) => {
@@ -44,8 +62,9 @@ exports.server = server;
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/js/*.js").on("change", sync.reload);
 }
 
 exports.default = gulp.series(
-  styles, server, watcher
+  styles, normalize, pixelGlass, server, watcher
 );

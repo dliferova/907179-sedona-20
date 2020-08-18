@@ -30,7 +30,6 @@
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 49px;
   width: 280px;
   min-height: 58px;
   background-color: $main-color;
@@ -54,4 +53,19 @@
   background-color: $main-color;
   color: $white-color;
   border: none;
+}
+
+// Оформление cостояний кнопки и элементов пункта меню
+@mixin style-hover {
+  background-color: #669ec0;
+}
+
+@mixin style-active {
+  background-color: #5496bd;
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+@mixin style-disable {
+  background-color: #e5e5e5;
 }

@@ -1,5 +1,14 @@
+.hashtag {
+  padding-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 64px;
+  }
+}
+
 .hashtag__text {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
+  margin: 0;
 }

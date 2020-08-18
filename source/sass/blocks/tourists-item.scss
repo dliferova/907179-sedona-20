@@ -1,8 +1,31 @@
 .tourists-item {
   text-align: center;
-  margin-left: 22px;
+}
+
+.tourists-item__section {
+  padding-top: 31px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 40px;
+    padding-top: 16%;
+    padding-left: 19%;
+    padding-right: 19%;
+    padding-bottom: 16%;
+  }
+}
+
+.tourists-item__number {
+  margin: 0;
+  padding-top: 8px;
+}
+
+.tourists-item__slogan {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
   }
 }

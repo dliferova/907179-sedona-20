@@ -1,8 +1,78 @@
 .main-nav {
   background-color: $main-color;
+  position: relative;
+  width: auto;
+  order: 1;
 
   @media (min-width: $tablet-width) {
     background-color: $white-color;
+    order: 2;
+  }
+
+  &--opened {
+    max-height: 400px;
+    transition: max-height 0.5s ease-out;
+  }
+
+  &--closed {
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+  }
+}
+
+// Базовые стили для кнопки переключения мобильного меню
+
+// button
+
+.main-nav__button {
+  display: none;
+
+  @media (max-width: $mobile-width-only) {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 2;
+  }
+}
+
+// icon
+
+@media (max-width: $mobile-width-only) {
+  .main-nav__icon-menu,
+  .main-nav__icon-cross {
+    width: 23px;
+    height: 23px;
+  }
+
+  .main-nav__icon-cross {
+    fill: $white-color;
+  }
+
+  .main-nav__icon-menu {
+    fill: $main-color;
+  }
+
+  .main-nav__icon-menu,
+  .main-nav__button--open .main-nav__icon-cross {
+    display: block;
+  }
+
+  .main-nav__icon-cross,
+  .main-nav__button--open .main-nav__icon-menu {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__button {
+    display: none;
   }
 }
 
@@ -11,45 +81,24 @@
   padding: 0;
   list-style-type: none;
   text-decoration: none;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-
-  a {
-    color: $white-color;
-
-    @media (min-width: $tablet-width) {
-      color: $black-color;
-      font-size: 14px;
-      line-height: 26px;
-    }
+    text-align: center;
+    color: $black-color;
+    font-size: 14px;
+    line-height: 26px;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .main-nav__wrapper {
-    margin: 0 auto;
-    width: 723px;
-  }
-
-  .main-nav__toggle {
-    display: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-nav__wrapper {
+.main-nav__wrapper {
+  @media (min-width: $desktop-width) {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    width: 1069px;
     margin: 0 auto;
-  }
-
-  .main-nav__toggle {
-    display: none;
   }
 }

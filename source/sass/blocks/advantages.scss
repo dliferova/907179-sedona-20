@@ -1,16 +1,26 @@
 // Стили для оформления списка преимуществ
 .advantages__title {
   @include font-titles-black;
+  margin: 0;
 }
 
 .advantages__section-cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   background-color: $grey-color;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
+}
+
+.advantages__title br {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }

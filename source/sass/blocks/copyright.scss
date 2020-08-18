@@ -1,9 +1,19 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  padding-top: 43px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 62px;
+  }
+}
+
 .copyright__text {
   font-size: 14px;
   line-height: 26px;
+  margin: 0;
 }
 
-.copyright {
-  min-width: 150px;
-  display: flex;
+.copyright__link {
+  padding-left: 12px;
 }
