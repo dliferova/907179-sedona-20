@@ -105,8 +105,8 @@
       @media (max-width: $mobile-width-only) {
         width: 23px;
         height: 21px;
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
       }
 
       @media (min-width: $tablet-width) {
