@@ -41,7 +41,11 @@
   <div class="page__container">
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="img/logo-sedona-mobile.svg" width="102px" height="84px" alt="Логотип Седона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Седона">
+        </picture>
       </a>
       <nav class="main-nav main-nav--opened">
         <button class="main-nav__button main-nav__button--open" type="button">
@@ -96,15 +100,17 @@
 
       <section class="intro">
         <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-        <img class="intro__img" src="img/text-sedona-index.svg" width="282px" height="214px"
-          alt="Добро пожаловать в Седону">
+        <picture>
+          <img class="intro__img" src="img/text-sedona-index.svg" width="282" height="214"
+            alt="Добро пожаловать в Седону">
+        </picture>
       </section>
 
 
       <section class="advantages">
         <h2 class="visually-hidden">Почему стоит выбрать Седону</h2>
         <section class="advantages__intro inscription">
-          <p class="inscription__slogan">Седона &ndash; небольшой <br> городок в Аризоне, <br> заслуживающий большего!
+          <p class="inscription__slogan">Седона &mdash; небольшой <br> городок в Аризоне, <br> заслуживающий большего!
           </p>
           <p class="inscription__text">Рассмотрим 5 причин, по которым <br> Седона круче, чем Гранд Каньон!</p>
         </section>
@@ -116,12 +122,20 @@
               <div class="city-item__section">
                 <div class="city-item__description">
                   <h3 class="city-item__title">Настоящий<br> городок</h3>
-                  <p class="city-item__number">&ndash;№1&ndash;</p>
+                  <p class="city-item__number">&mdash;№1&mdash;</p>
                   <p class="city-item__slogan">Седона не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
 
                 <div class="city-item__city-photo">
-                  <img class="city-item__photo" src="img/main-city-mobile@1x.jpg" alt="Изображение города">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+
+                    <img class="city-item__photo" src="img/main-city-mobile@1x.jpg"
+                      srcset="img/main-city-mobile@2x.jpg 2x" width="320" height="260" alt="Изображение города">
+                  </picture>
                 </div>
               </div>
             </li>
@@ -198,15 +212,25 @@
             </ul>
 
             <li class="advantages__item bridge-item">
+
               <div class="bridge-item__section">
+
                 <div class="bridge-item__description">
+
                   <h3 class="bridge-item__title">Там есть<br> мост дьявола</h3>
-                  <p class="bridge-item__number">&ndash;№2&ndash;</p>
+                  <p class="bridge-item__number">&mdash;№2&mdash;</p>
                   <p class="bridge-item__slogan">Да, по нему можно пройти! Eсли вы осмелитесь, конечно </p>
                 </div>
-                <div class="city-item__bridge-photo">
-                  <img class="bridge-item__photo" src="img/photo-bridge-mobile@1x.jpg" alt="Мост Дьявола" width="100%"
-                    height="260px">
+
+                <div class="bridge-item__bridge-photo">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                    <img class="bridge-item__photo" src="img/photo-bridge-mobile@1x.jpg"
+                      srcset="img/photo-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Мост Дьявола">
+                  </picture>
                 </div>
               </div>
             </li>
@@ -216,7 +240,7 @@
               <li class="advantages__item square-item">
                 <div class="square-item__section">
                   <h3 class="advantages__title">Небольшая <br> площадь</h3>
-                  <p class="square-item__number">&ndash;№3&ndash;</p>
+                  <p class="square-item__number">&mdash;№3&mdash;</p>
                   <p class="square-item__slogan">Все интересные места находятся <br> очень близко </p>
                 </div>
               </li>
@@ -224,7 +248,7 @@
               <li class="advantages__item road-item">
                 <div class="road-item__section">
                   <h3 class="advantages__title">Красивая <br> дорога</h3>
-                  <p class="road-item__number">&ndash;№4&ndash;</p>
+                  <p class="road-item__number">&mdash;№4&mdash;</p>
                   <p class="road-item__slogan">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
                 </div>
               </li>
@@ -232,7 +256,7 @@
               <li class="advantages__item tourists-item">
                 <div class="tourists-item__section">
                   <h3 class="advantages__title">Мало <br> туристов</h3>
-                  <p class="tourists-item__number">&ndash;№5&ndash;</p>
+                  <p class="tourists-item__number">&mdash;№5&mdash;</p>
                   <p class="tourists-item__slogan">Большинство едет в гранд каньон <br> и толпится там</p>
                 </div>
               </li>

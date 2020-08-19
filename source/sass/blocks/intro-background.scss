@@ -7,7 +7,7 @@
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
   background-color: #46494e;
   background-position: 60% 90%;
-  max-height: 159px;
+  min-height: 159px;
 
   &::after {
     content: "";
@@ -47,7 +47,11 @@
 }
 
 .intro-background__inscription {
-  max-width: 229px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 456px;
+    height: 130px;
+  }
 }
