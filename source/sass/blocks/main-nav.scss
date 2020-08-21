@@ -3,19 +3,20 @@
   position: relative;
   width: auto;
   order: 1;
+  max-height: 0;
 
   @media (min-width: $tablet-width) {
     background-color: $white-color;
     order: 2;
   }
 
-  &--opened {
-    max-height: 400px;
+  &--closed {
+    max-height: 0;
     transition: max-height 0.5s ease-out;
   }
 
-  &--closed {
-    max-height: 0;
+  &--opened {
+    max-height: 400px;
     transition: max-height 0.5s ease-out;
   }
 }
@@ -52,20 +53,22 @@
   }
 
   .main-nav__icon-cross {
+    display: none;
     fill: $white-color;
   }
 
   .main-nav__icon-menu {
+    display: block;
     fill: $main-color;
   }
 
-  .main-nav__icon-menu,
-  .main-nav__button--open .main-nav__icon-cross {
+  .main-nav__button--closed .main-nav__icon-menu,
+  .main-nav__button--opened .main-nav__icon-cross {
     display: block;
   }
 
-  .main-nav__icon-cross,
-  .main-nav__button--open .main-nav__icon-menu {
+  .main-nav__button--opened .main-nav__icon-menu,
+  .main-nav__button--closed .main-nav__icon-cross {
     display: none;
   }
 }

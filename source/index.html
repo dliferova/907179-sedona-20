@@ -44,11 +44,11 @@
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-          <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Седона">
+          <img src="img/logo-sedona-mobile.svg" alt="Логотип Седона">
         </picture>
       </a>
       <nav class="main-nav main-nav--opened">
-        <button class="main-nav__button main-nav__button--open" type="button">
+        <button class="main-nav__button main-nav__button--opened" type="button">
           <span class="visually-hidden">Открыть меню</span>
 
           <svg class="main-nav__icon-menu" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +69,7 @@
           </svg>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list main-nav__list--open site-list">
+          <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a class="site-list__link">
                 Главная
@@ -100,10 +100,8 @@
 
       <section class="intro">
         <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-        <picture>
-          <img class="intro__img" src="img/text-sedona-index.svg" width="282" height="214"
-            alt="Добро пожаловать в Седону">
-        </picture>
+        <img class="intro__img" src="img/text-sedona-index.svg" width="282" height="214"
+          alt="Добро пожаловать в Седону">
       </section>
 
 
@@ -127,23 +125,24 @@
                 </div>
 
                 <div class="city-item__city-photo">
-                  <picture>
-                    <source media="(min-width: 1200px)"
-                      srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)"
-                      srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
-
-                    <img class="city-item__photo" src="img/main-city-mobile@1x.jpg"
-                      srcset="img/main-city-mobile@2x.jpg 2x" width="320" height="260" alt="Изображение города">
-                  </picture>
+                  <p class="city-item__photo-wrapper">
+                    <picture>
+                      <source media="(min-width: 1200px)"
+                        srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+                      <img class="city-item__photo" src="img/main-city-mobile@1x.jpg"
+                        srcset="img/main-city-mobile@2x.jpg 2x" alt="Изображение города">
+                    </picture>
+                  </p>
                 </div>
               </div>
             </li>
 
             <ul class="city-item__facilities facilities">
 
-              <li class="facilities__item-first">
-                <div class="facilities__section-first">
+              <li class="facilities__item">
+                <div class="facilities__section">
                   <svg class="facilities__icon-house" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.695px" height="72.346px"
                     viewBox="0 0 74.695 72.346" enable-background="new 0 0 74.695 72.346" xml:space="preserve">
@@ -163,30 +162,30 @@
                       <rect x="54.784" y="47.407" width="3" height="3.938" />
                     </g>
                   </svg>
-                  <div class="facilities__text-house">
+                  <div class="facilities__text">
                     <h4 class="facilities__title">Жилье</h4>
                     <p class="facilities__slogan">Рекомендуем пожить в <br> настоящем мотеле, все как в <br> кино!</p>
                   </div>
                 </div>
               </li>
 
-              <li class="facilities__item-second">
-                <div class="facilities__section-second">
+              <li class="facilities__item">
+                <div class="facilities__section">
                   <svg class="facilities__icon-gift" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="63px" height="75.084px"
                     viewBox="0 0 63 75.084" enable-background="new 0 0 63 75.084" xml:space="preserve">
                     <path
                       d="M60.165,22.23h-0.103H35.758c13.604-6.815,14.688-11.115,14.188-13.52c-1.145-3.916-5.604-6.938-9.848-5.341 c-5.484,2.063-7.029,10.262-8.514,16.19C29.69,13.561,27.858,5.91,23.573,2.034c-1.242-1.125-3.049-2.237-5.676-2.003 c-3.965,0.352-9.652,5.317-7.344,10.849c2.217,5.313,9.539,8.67,14.354,11.35H2.834C1.275,22.23,0,23.506,0,25.065V36.25 c0,1.559,1.275,2.834,2.835,2.834h0.27v35.999h56.958V39.084h0.104c1.561,0,2.835-1.275,2.835-2.834V25.065 C63,23.506,61.725,22.23,60.165,22.23z M41.766,5.873c2.07-0.306,4.907,1.283,5.176,3.171c0.386,2.723-3.349,5.192-5.008,6.343 c-2.484,1.723-4.853,2.611-7.178,4.006C35.628,15.748,37.268,6.539,41.766,5.873z M19.232,15.721 c-2.19-1.467-6.444-4.378-6.342-7.678c0.11-3.552,5.655-6.491,8.68-3.839c3.797,3.331,5.625,10.972,7.01,16.357 C25.381,19.042,22.35,17.808,19.232,15.721z M25.114,72.147H6.042V39.084h19.072V72.147z M25.114,36.084H3V25.23h22.114V36.084z  M35.115,72.146h-7.063V25.23h7.063V72.146z M57.125,72.147H38.053V39.084h19.072V72.147z M60,36.084H38.053V25.23H60V36.084z" />
                   </svg>
-                  <div class="facilities__text-gift">
+                  <div class="facilities__text">
                     <h4 class="facilities__title">Сувениры</h4>
                     <p class="facilities__slogan">Не только китайского, но и <br> местного производства!</p>
                   </div>
                 </div>
               </li>
 
-              <li class="facilities__item-third">
-                <div class="facilities__section-third">
+              <li class="facilities__item">
+                <div class="facilities__section">
                   <svg class="facilities__icon-burger" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="76.166px" height="68.959px"
                     viewBox="0 0 76.166 68.959" enable-background="new 0 0 76.166 68.959" xml:space="preserve">
@@ -202,13 +201,12 @@
                       <circle cx="46.083" cy="10.083" r="2" />
                     </g>
                   </svg>
-                  <div class="facilities__text-burger">
+                  <div class="facilities__text">
                     <h4 class="facilities__title">Еда</h4>
                     <p class="facilities__slogan">Всегда заказывайте <br> фирменный бургер, вы не разочаруетесь!</p>
                   </div>
                 </div>
               </li>
-
             </ul>
 
             <li class="advantages__item bridge-item">
@@ -223,14 +221,16 @@
                 </div>
 
                 <div class="bridge-item__bridge-photo">
-                  <picture>
-                    <source media="(min-width: 1200px)"
-                      srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)"
-                      srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-                    <img class="bridge-item__photo" src="img/photo-bridge-mobile@1x.jpg"
-                      srcset="img/photo-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Мост Дьявола">
-                  </picture>
+                  <p class="bridge-item__photo-wrapper">
+                    <picture>
+                      <source media="(min-width: 1200px)"
+                        srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                      <img class="bridge-item__photo" src="img/photo-bridge-mobile@1x.jpg"
+                        srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
+                    </picture>
+                  </p>
                 </div>
               </div>
             </li>
@@ -269,7 +269,7 @@
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <div class="search-section__text">
           <p class="search-section__subject">Заинтересовались?</p>
-          <p class="search-section__subtitle">Укажите предполагаемые даты поездки, и мы покажем вам
+          <p class="search-section__subtitle">Укажите предполагаемые даты поездки, <br> и мы покажем вам
             лучшие предложения гостиниц в Cедоне</p>
         </div>
         <div class="search-section__button">
@@ -278,14 +278,16 @@
       </section>
 
       <section class="map">
-        <p>
-          <!-- <map name="navigation">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381003.256085881!2d-114.17823951985389!3d34.15245640453722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08ebcb4c186b%3A0x423927b17fc1cd71!2z0JDRgNC40LfQvtC90LAsINCh0KjQkA!5e0!3m2!1sru!2scz!4v1595419092166!5m2!1sru!2scz"
-            width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-            tabindex="0"></iframe>
-        </map> -->
-        </p>
+        <h2 class="visually-hidden">Где находится Седона</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381003.256085881!2d-114.17823951985389!3d34.15245640453722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08ebcb4c186b%3A0x423927b17fc1cd71!2z0JDRgNC40LfQvtC90LAsINCh0KjQkA!5e0!3m2!1sru!2scz!4v1595419092166!5m2!1sru!2scz"
+          width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe>
+        <picture class="map__photo">
+          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+          <img src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Седона на карте">
+        </picture>
       </section>
     </main>
 

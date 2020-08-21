@@ -1,30 +1,24 @@
-// var nav = document.querySelector('.main-nav')
-// var closeButton = document.querySelector('.main-nav__toggle')
-// var openButton = document.querySelector('.page-header__logo')
-
-// closeButton.addEventListener('click', () => {
-//   console.log("close button click")
-//   nav.classList.add('main-nav--closed')
-//   nav.classList.remove('main-nav--opened')
-// })
-
-// openButton.addEventListener('click', () => {
-//   console.log("open button click")
-//   nav.classList.remove('main-nav--closed')
-//   nav.classList.add('main-nav--opened')
-// })
-
 (() => {
   const nav = document.querySelector('.main-nav');
   const menuButton = document.querySelector('.main-nav__button');
-  const menuList = document.querySelector('.main-nav__list');
+
+  menuButton.classList.remove('main-nav__button--opened');
+  nav.classList.remove('main-nav--opened')
 
   menuButton.addEventListener('click', () => {
     let expanded = menuButton.getAttribute('aria-expanded') === 'true';
     menuButton.setAttribute('aria-expanded', !expanded);
-    menuButton.classList.toggle('main-nav__button--open');
-    menuList.classList.toggle('main-nav__list--open');
-    nav.classList.toggle('main-nav--closed')
-    nav.classList.toggle('main-nav--opened')
+
+    if (expanded) {
+      menuButton.classList.add('main-nav__button--closed');
+      menuButton.classList.remove('main-nav__button--opened');
+      nav.classList.add('main-nav--closed')
+      nav.classList.remove('main-nav--opened')
+    } else {
+      menuButton.classList.add('main-nav__button--opened');
+      menuButton.classList.remove('main-nav__button--closed');
+      nav.classList.add('main-nav--opened')
+      nav.classList.remove('main-nav--closed')
+    }
   });
 })();
