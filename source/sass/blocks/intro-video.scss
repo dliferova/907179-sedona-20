@@ -32,6 +32,140 @@
   }
 }
 
-.intro-video__view-back {
-  background-color: $grey-color;
+.intro-video__view {
+  margin-top: 33px;
+  @media (min-width: $tablet-width) {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
+.intro-video__wrapper {
+  overflow: hidden;
+  margin: 0;
+
+  .video-image {
+    display: block;
+    width: 100%;
+  }
+}
+
+// Пробные стили для видео
+
+// блок player
+
+.intro-video__player {
+  display: grid;
+
+  @media (max-width: $mobile-width-only) {
+    grid-template-columns: 60% 20% 20%;
+    grid-template-rows: 45px 66px;
+    grid-template-areas: "timeline replay subtitles fullscreen";
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -45px;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 10% 70% 10% 10%;
+    grid-template-rows: 93px;
+    grid-template-areas: "replay timeline subtitles fullscreen";
+    position: relative;
+    top: -93px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.player__timeline {
+  display: flex;
+  grid-area: timeline;
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    padding-left: 22px;
+    padding-right: 22px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.timeline__bar {
+  align-self: center;
+  width: 100%;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.timeline__seek {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-45%);
+  width: 10px;
+  height: 10px;
+  border-radius: 6px;
+  background-color: $white-color;
+}
+
+.player__button-replay {
+  display: flex;
+  grid-area: replay;
+  margin: 0;
+
+  @media (max-width: $mobile-width-only) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: #f2f2f2;
+    padding-left: 25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.player__button-subtitles {
+  display: flex;
+  grid-area: subtitles;
+  margin: 0;
+
+  @media (max-width: $mobile-width-only) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: #f2f2f2;
+    justify-content: space-around;
+  }
+
+  @media (min-width: $tablet-width) {
+    img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.player__button-fullscreen {
+  display: flex;
+  grid-area: fullscreen;
+  margin: 0;
+
+  @media (max-width: $mobile-width-only) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    background-color: #f2f2f2;
+    justify-content: space-around;
+  }
+
+  @media (min-width: $tablet-width) {
+    img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }

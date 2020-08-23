@@ -1,7 +1,7 @@
 // Общие стили для карточек фото альбома
 
 .cards-section__square {
-  border-bottom: 1px groove #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
