@@ -12,7 +12,7 @@
 <body class="page__body">
   <div class="page__container">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
+      <a class="page-header__logo">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
@@ -20,7 +20,7 @@
         </picture>
       </a>
       <nav class="main-nav main-nav--opened">
-        <button class="main-nav__button main-nav__button--open" type="button">
+        <button class="main-nav__button main-nav__button--opened" type="button">
           <span class="visually-hidden">Открыть меню</span>
 
           <svg class="main-nav__icon-menu" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -41,13 +41,13 @@
           </svg>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list main-nav__list--open site-list">
+          <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a class="site-list__link">
                 Главная
               </a>
             </li>
-            <li class="site-list__item site-list__second-block">
+            <li class="site-list__item">
               <a class="site-list__link" href="#">
                 Фото и видео
               </a>
@@ -290,5 +290,6 @@
     </footer>
   </div>
 </body>
+<script src="js/main_nav_animation.js"></script>
 
 </html>

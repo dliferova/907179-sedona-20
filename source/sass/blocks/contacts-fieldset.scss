@@ -21,10 +21,15 @@
   padding-top: 15px;
 }
 
+.phone-block,
+.email-block {
+  display: flex;
+}
+
 .phone-block__input,
 .email-block__input {
   @include font-titles-black;
-
+  padding: 0;
   background-color: $grey-color;
   border: none;
   min-width: 230px;
@@ -34,7 +39,10 @@
 
 .phone-block__icon,
 .email-block__icon {
-  background-color: $grey-color;
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 58px;
   height: 58px;
   text-align: center;
