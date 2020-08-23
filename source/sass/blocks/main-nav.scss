@@ -6,6 +6,7 @@
   max-height: 0;
 
   @media (min-width: $tablet-width) {
+    max-height: 400px;
     background-color: $white-color;
     order: 2;
   }
