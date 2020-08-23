@@ -7,7 +7,7 @@
     text-decoration: none;
     padding-top: 10px;
     padding-bottom: 5px;
-    border-bottom: 1px solid #ffffff;
+    // border-bottom: 1px solid #ffffff;
     // box-shadow: 0px 1px 0px 0px (#010101, 20%);
 
     @media (max-width: $mobile-width-only) {
@@ -25,14 +25,12 @@
   }
 }
 
-.site-list__second-block {
-  @media (min-width: $tablet-width) {
-    margin-right: 20%;
-  }
-}
-
 .site-list__item {
   @media (min-width: $tablet-width) {
     width: 20%;
+
+    &:nth-child(2) {
+      margin-right: 20%;
+    }
   }
 }

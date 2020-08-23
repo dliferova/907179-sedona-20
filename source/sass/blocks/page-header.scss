@@ -12,6 +12,11 @@
   order: 2;
   z-index: 2;
 
+  @media (max-width: $mobile-width-only) {
+    position: relative;
+    top: -1px;
+  }
+
   @media (min-width: $tablet-width) {
     display: inline-block;
     vertical-align: middle;
