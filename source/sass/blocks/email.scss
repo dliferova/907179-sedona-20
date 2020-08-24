@@ -1,0 +1,27 @@
+.email-block {
+  display: flex;
+}
+
+.email-block__input {
+  @include font-titles-black;
+  padding: 0;
+  background-color: $grey-color;
+  border: none;
+  min-width: 230px;
+  min-height: 58px;
+  font-weight: bold;
+}
+
+.email-block__icon {
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 58px;
+  text-align: center;
+}
+
+.email__label {
+  line-height: 26px;
+}

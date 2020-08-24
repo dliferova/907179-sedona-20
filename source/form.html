@@ -152,20 +152,20 @@
         <fieldset class="review-form__fieldset impressions-fieldset">
           <legend сlass="impressions-fieldset__legend">Ваше общее впечатление:</legend>
           <ul class="impressions-fieldset__choices">
-            <li class="impressions-fieldset__choice choice">
-              <input class="choice-block__input visually-hidden" type="radio" id="rather-like" name="opinion"
+            <li class="impressions-fieldset__choice impression-choice">
+              <input class="impression-choice__input visually-hidden" type="radio" id="rather-like" name="opinion"
                 value="Скорее положительное" checked>
-              <label class="choice-block__label" for="rather-like">Скорее положительное</label><br>
+              <label class="impression-choice__label" for="rather-like">Скорее положительное</label><br>
             </li>
-            <li class="impressions-fieldset__choice choice">
-              <input class="choice-block__input visually-hidden" type="radio" id="rather-negative" name="opinion"
+            <li class="impressions-fieldset__choice impression-choice">
+              <input class="impression-choice__input visually-hidden" type="radio" id="rather-negative" name="opinion"
                 value="Скорее отрицательное">
-              <label class="choice-block__label" for="rather-negative">Скорее отрицательное</label><br>
+              <label class="impression-choice__label" for="rather-negative">Скорее отрицательное</label><br>
             </li>
-            <li class="impressions-fieldset__choice choice">
-              <input class="choice-block__input visually-hidden" type="radio" id="no-answer" name="opinion"
+            <li class="impressions-fieldset__choice impression-choice">
+              <input class="impression-choice__input visually-hidden" type="radio" id="no-answer" name="opinion"
                 value="Затрудняюсь ответить">
-              <label class="choice-block__label" for="no-answer">Затрудняюсь ответить</label><br>
+              <label class="impression-choice__label" for="no-answer">Затрудняюсь ответить</label><br>
             </li>
           </ul>
 
@@ -174,42 +174,34 @@
         <fieldset class="review-form__fieldset places-fieldset">
           <legend class="places-fieldset__legend">Посещенные достопримечательности</legend>
 
-          <div class="places-fieldset__check-block check-block">
 
-            <div class="check-block__input-wrapper">
-              <div class="check-block__input-square"></div>
-              <input class="check-block__input visually-hidden" type="checkbox" name="devil-bridge" id="devil-bridge"
+          <ul class="places-fieldset__choices">
+
+            <li class="places-fieldset__choice place-choice">
+              <input class="place-choice__input visually-hidden" type="checkbox" name="devil-bridge" id="devil-bridge"
                 value="Мост Дьявола" checked>
-            </div>
-            <label class="check-block__label" for="devil-bridge">Мост Дьявола</label>
-          </div>
-          <br>
-          <div class="places-fieldset__check-block check-block">
-            <div class="check-block__input-wrapper">
-              <div class="check-block__input-square"></div>
-              <input class="check-block__input visually-hidden" type="checkbox" name="bell-mountain" id="bell-mountain"
+              <label class="place-choice__label" for="devil-bridge">Мост Дьявола</label>
+            </li>
+
+            <li class="places-fieldset__choice place-choice">
+              <input class="place-choice__input visually-hidden" type="checkbox" name="bell-mountain" id="bell-mountain"
                 value="Гора-Колокол" checked>
-            </div>
-            <label class="check-block__label" for="bell-mountain">Гора-Колокол</label>
-          </div>
-          <br>
-          <div class="places-fieldset__check-block check-block">
-            <div class="check-block__input-wrapper">
-              <div class="check-block__input-square"></div>
-              <input class="check-block__input visually-hidden" type="checkbox" name="slide-park" id="slide-park"
+              <label class="place-choice__label" for="bell-mountain">Гора-Колокол</label>
+            </li>
+
+            <li class="places-fieldset__choice place-choice">
+              <input class="place-choice__input visually-hidden" type="checkbox" name="slide-park" id="slide-park"
                 value="Слайд-парк" checked>
-            </div>
-            <label class="check-block__label" for="slide-park">Слайд-парк</label>
-          </div>
-          <br>
-          <div class="places-fieldset__check-block check-block">
-            <div class="check-block__input-wrapper">
-              <div class="check-block__input-square"></div>
-              <input class="check-block__input visually-hidden" type="checkbox" name="red-rocks" id="red-rocks"
+              <label class="place-choice__label" for="slide-park">Слайд-парк</label>
+            </li>
+
+            <li class="places-fieldset__choice place-choice">
+              <input class="place-choice__input visually-hidden" type="checkbox" name="red-rocks" id="red-rocks"
                 value="Красные скалы">
-            </div>
-            <label class="check-block__label" for="red-rocks">Красные скалы</label>
-          </div>
+              <label class="place-choice__label" for="red-rocks">Красные скалы</label>
+            </li>
+
+          </ul>
         </fieldset>
 
         <fieldset class="review-form__fieldset comments-fieldset">

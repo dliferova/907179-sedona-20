@@ -1,0 +1,27 @@
+.phone-block {
+  display: flex;
+}
+
+.phone__label {
+  line-height: 26px;
+}
+
+.phone-block__input {
+  @include font-titles-black;
+  padding: 0;
+  background-color: $grey-color;
+  border: none;
+  min-width: 230px;
+  min-height: 58px;
+  font-weight: bold;
+}
+
+.phone-block__icon {
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 58px;
+  text-align: center;
+}

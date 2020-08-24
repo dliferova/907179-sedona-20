@@ -10,6 +10,12 @@
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
 
+// Blocks footer
+@import "blocks/page-footer.scss";
+@import "blocks/hashtag.scss";
+@import "blocks/copyright.scss";
+@import "blocks/social.scss";
+
 // Blocks page index.html
 @import "blocks/intro.scss";
 @import "blocks/advantages.scss";
@@ -33,19 +39,19 @@
 @import "blocks/vast-card.scss";
 @import "blocks/plants-card.scss";
 @import "blocks/road-card.scss";
+@import "blocks/player.scss";
+@import "blocks/timeline.scss";
 
 // Blocks page form.html
 @import "blocks/client-review.scss";
 @import "blocks/review-form.scss";
 @import "blocks/introduce-fieldset.scss";
+@import "blocks/phone.scss";
+@import "blocks/email.scss";
 @import "blocks/contacts-fieldset.scss";
 @import "blocks/impressions-fieldset.scss";
+@import "blocks/impression-choice.scss";
 @import "blocks/places-fieldset.scss";
+@import "blocks/place-choice.scss";
 @import "blocks/check-block.scss";
 @import "blocks/comments-fieldset.scss";
-
-// Blocks footer
-@import "blocks/page-footer.scss";
-@import "blocks/hashtag.scss";
-@import "blocks/copyright.scss";
-@import "blocks/social.scss";

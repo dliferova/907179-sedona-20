@@ -6,35 +6,3 @@
 .impressions-fieldset__legend {
   @include font-titles-black;
 }
-
-.choice-block__label {
-  @include font-titles-black;
-  text-transform: none;
-}
-
-.choice {
-  display: flex;
-}
-
-.choice-block__label {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  &::before {
-    display: inline-block;
-    content: "";
-    width: 18px;
-    height: 18px;
-    border: 15px solid #eeeeee;
-    border-radius: 25px;
-    margin-right: 26px;
-  }
-
-  .choice-block__input + &::before {
-    background-color: #eeeeee;
-  }
-
-  .choice-block__input:checked + &::before {
-    background-color: #333333;
-  }
-}
