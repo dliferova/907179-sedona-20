@@ -19,6 +19,12 @@
   line-height: 26px;
 }
 
+@mixin titles-form-desktop {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
 // Оформление кнопок
 @mixin style-btn {
   display: flex;

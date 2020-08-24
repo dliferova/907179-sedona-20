@@ -1,8 +1,38 @@
 .impressions-fieldset {
   border: 0 none;
-  border-bottom: 1px solid #e5e5e5;
+  padding: 0;
+  margin: 0;
+
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-area: impressions;
+    padding-top: 28px;
+  }
 }
 
-.impressions-fieldset__legend {
+.impressions-fieldset__title {
   @include font-titles-black;
+  margin: 0;
+
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include titles-form-desktop;
+  }
+}
+
+.impressions-fieldset__choices {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-top: 40px;
+
+    .impressions-fieldset__choice {
+      margin-top: 18px;
+    }
+  }
 }

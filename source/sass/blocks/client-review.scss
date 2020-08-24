@@ -1,20 +1,41 @@
 .client-review__text {
-  padding-top: 36px;
-  padding-bottom: 17px;
-  border-bottom: 1px solid #e5e5e5;
+  @media (max-width: $mobile-width-only) {
+    padding-top: 36px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 70px;
+    padding-left: 20%;
+    padding-right: 23%;
+    margin-bottom: 65px;
+  }
 }
 
 .client-review__title {
-  @include font-titles-black;
   text-align: center;
   margin: 0;
+
+  @media (max-width: $mobile-width-only) {
+    @include font-titles-black;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+    padding-bottom: 20px;
+  }
 }
 
 .client-review__slogan {
   line-height: 24px;
   text-align: center;
   margin: 0;
-  padding-top: 26px;
-  padding-left: 17px;
-  padding-right: 15px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 26px;
+    padding-left: 17px;
+    padding-right: 15px;
+  }
 }

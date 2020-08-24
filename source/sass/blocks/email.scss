@@ -10,6 +10,10 @@
   min-width: 230px;
   min-height: 58px;
   font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .email-block__icon {

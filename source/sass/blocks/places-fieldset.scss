@@ -1,15 +1,40 @@
 .places-fieldset {
   border: 0 none;
-  border-bottom: 1px solid #e5e5e5;
+
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-area: places;
+    margin: 0;
+    padding: 0;
+    justify-self: center;
+  }
 }
 
-.places-fieldset__legend {
+.places-fieldset__title {
   @include font-titles-black;
   text-align: center;
-  padding-top: 15px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include titles-form-desktop;
+  }
 }
 
 .check-block__label {
   @include font-titles-black;
   text-transform: none;
+}
+
+.places-fieldset__choices {
+  @media (min-width: $tablet-width) {
+    margin-top: 45px;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 30px;
+  }
 }
