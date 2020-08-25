@@ -32,6 +32,44 @@
   }
 }
 
-.intro-video__view-back {
-  background-color: $grey-color;
+.intro-video__view {
+  margin-top: 33px;
+  @media (min-width: $tablet-width) {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
+.intro-video__wrapper {
+  overflow: hidden;
+  margin: 0;
+
+  .video-image {
+    display: block;
+    width: 100%;
+  }
+}
+
+.intro-video__player {
+  display: grid;
+
+  @media (max-width: $mobile-width-only) {
+    grid-template-columns: 60% 20% 20%;
+    grid-template-rows: 45px 66px;
+    grid-template-areas: "timeline replay subtitles fullscreen";
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -45px;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 10% 70% 10% 10%;
+    grid-template-rows: 93px;
+    grid-template-areas: "replay timeline subtitles fullscreen";
+    position: relative;
+    top: -93px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
 }

@@ -13,10 +13,14 @@
   <div class="page__container">
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="img/logo-sedona-mobile.svg" width="102px" height="84px" alt="Логотип Седона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img src="img/logo-sedona-mobile.svg" alt="Логотип Седона">
+        </picture>
       </a>
       <nav class="main-nav main-nav--opened">
-        <button class="main-nav__button main-nav__button--open" type="button">
+        <button class="main-nav__button main-nav__button--opened" type="button">
           <span class="visually-hidden">Открыть меню</span>
 
           <svg class="main-nav__icon-menu" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -37,13 +41,13 @@
           </svg>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list main-nav__list--open site-list">
+          <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a class="site-list__link">
                 Главная
               </a>
             </li>
-            <li class="site-list__item site-list__second-block">
+            <li class="site-list__item">
               <a class="site-list__link" href="#">
                 Фото и видео
               </a>
@@ -66,17 +70,11 @@
     <main class="page-main">
       <h1 class="visually-hidden">Фото и видео Седоны</h1>
 
-      <!-- <section class="photo-video">
-      <div class="photo-video__cover">
-        <img class="photo-video__inscription" src="img/text-sedona.svg" alt="Надпись Седона" width="100%"
-          height="160px">
-      </div>
-    </section> -->
 
       <section class="intro-background">
         <div class="intro-background__cover">
-          <img class="intro-background__inscription" src="img/text-sedona.svg" alt="Надпись Седона" width="100%"
-            height="160px">
+          <img class="intro-background__inscription" src="img/text-sedona.svg" alt="Надпись Седона" width="229"
+            height="39">
         </div>
       </section>
 
@@ -93,11 +91,16 @@
           <div class="cards-section__square vast-card">
             <div class="cards-section__photo vast-card__photo">
               <a href="img/photo-sunset-mobile@1x.jpg">
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg">
-                  <img class="card-photo" src="img/photo-sunset-mobile@1x.jpg" alt="Закат в Седоне" width="280px"
-                    height="280px">
-                </picture>
+                <p class="vast-card__img-wrapper">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                    <img class="vast-card__image" src="img/photo-sunset-mobile@1x.jpg"
+                      srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Закат в Седоне">
+                  </picture>
+                </p>
               </a>
             </div>
 
@@ -108,18 +111,6 @@
               </div>
 
               <div class="cards-section__review vast-card__review">
-                <svg class="cards-section__icon vast-card__like-icon" version="1.0" id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
-                  <g id="Page-1">
-                    <g id="Core" transform="translate(-295.000000, -464.000000)">
-                      <g id="thumb-up" transform="translate(295.000000, 464.000000)">
-                        <path id="Shape" fill="#000000"
-                          d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z" />
-                      </g>
-                    </g>
-                  </g>
-                </svg>
                 <p class="cards-section__like-count vast-card__like-count">1350</p>
               </div>
             </div>
@@ -129,8 +120,16 @@
           <div class="cards-section__square plants-card">
             <div class="cards-section__photo plants-card__photo">
               <a href="img/photo-cactus-mobile@1x.jpg">
-                <img class="card-photo" src="img/photo-cactus-mobile@1x.jpg" alt="Фото кактуса" width="280px"
-                  height="280px">
+                <p class="plants-card__img-wrapper">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                    <img class="photo-cactus__image" src="img/photo-cactus-mobile@1x.jpg"
+                      srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Фото кактуса">
+                  </picture>
+                </p>
               </a>
             </div>
             <div class="cards-section__content plants-card__content">
@@ -139,18 +138,6 @@
                 <span class="plants-card__author card-author-name">Автор фото: Сергей</span>
               </div>
               <div class="cards-section__review plants-card__review card-review">
-                <svg class="cards-section__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px"
-                  viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
-                  <g id="Page-1">
-                    <g id="Core" transform="translate(-295.000000, -464.000000)">
-                      <g id="thumb-up" transform="translate(295.000000, 464.000000)">
-                        <path id="Shape" fill="#000000"
-                          d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z" />
-                      </g>
-                    </g>
-                  </g>
-                </svg>
                 <p class="cards-section__like-count">143</p>
               </div>
             </div>
@@ -160,8 +147,16 @@
           <div class="cards-section__square road-card">
             <div class="cards-section__photo road-card__photo">
               <a href="img/photo-roads-mobile@1x.jpg">
-                <img class="card__photo" src="img/photo-roads-mobile@1x.jpg" alt="Фото дорога" width="280px"
-                  height="280px">
+                <p class="road-card__img-wrapper">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                    <img class="road-card__image" src="img/photo-roads-mobile@1x.jpg"
+                      srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Фото дорога">
+                  </picture>
+                </p>
               </a>
             </div>
             <div class="cards-section__content road-card__content">
@@ -170,18 +165,6 @@
                 <span class="road-card__author card-author-name">Автор фото: Петр</span>
               </div>
               <div class="cards-section__review road-card__review">
-                <svg class="cards-section__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px"
-                  viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
-                  <g id="Page-1">
-                    <g id="Core" transform="translate(-295.000000, -464.000000)">
-                      <g id="thumb-up" transform="translate(295.000000, 464.000000)">
-                        <path id="Shape" fill="#000000"
-                          d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z" />
-                      </g>
-                    </g>
-                  </g>
-                </svg>
                 <p class="cards-section__like-count">96</p>
               </div>
             </div>
@@ -191,8 +174,16 @@
           <div class="cards-section__square bridge-card">
             <div class="cards-section__photo bridge-card__photo">
               <a href="img/main-bridge-mobile@1x.jpg">
-                <img class="card__photo" src="img/main-bridge-mobile@1x.jpg" alt="Фото моста дьявола" width="280px"
-                  height="280px">
+                <p class="bridge-card__img-wrapper">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+                    <img class="bridge-card__image" src="img/main-bridge-mobile@1x.jpg"
+                      srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Фото моста дьявола">
+                  </picture>
+                </p>
               </a>
             </div>
             <div class="cards-section__content bridge-card__content">
@@ -201,18 +192,6 @@
                 <span class="bridge-card__author card-author-name">Автор фото: Антон</span>
               </div>
               <div class="cards-section__review bridge-card__review">
-                <svg class="cards-section__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px"
-                  viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
-                  <g id="Page-1">
-                    <g id="Core" transform="translate(-295.000000, -464.000000)">
-                      <g id="thumb-up" transform="translate(295.000000, 464.000000)">
-                        <path id="Shape" fill="#000000"
-                          d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z" />
-                      </g>
-                    </g>
-                  </g>
-                </svg>
                 <p class="cards-section__like-count">254</p>
               </div>
             </div>
@@ -227,9 +206,33 @@
           <p class="intro-video__text">Смотрите видеопрезентацию и скорее за билетами,
             пока они не подорожали в очередной раз!</p>
         </div>
+
         <div class="intro-video__view">
-          <img class="intro-video__view-back" src="../img/video-mobile@1x.jpg" alt="Видеопрезентация" width="320px"
-            height="201px">
+          <p class="intro-video__wrapper">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="../img/video-desktop@1x.jpg 1x, ../img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="../img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img class="video-image" src="../img/video-mobile@1x.jpg" srcset="../img/video-mobile@2x.jpg 2x"
+                alt="Видеопрезентация">
+            </picture>
+          </p>
+
+          <div class="intro-video__player player">
+            <div class="player__timeline timeline">
+              <div class="timeline__bar"></div>
+              <div class="timeline__seek"></div>
+            </div>
+            <p class="player__button-replay">
+              <img src="../img/icon-video-replay.svg" alt="Начать видео сначала" width="16" height="20">
+            </p>
+            <p class="player__button-subtitles">
+              <img src="../img/icon-video-subtitles.svg" alt="Включить субтитры" width="32" height="20">
+            </p>
+            <p class="player__button-fullscreen">
+              <img src="../img/icon-video-fullscreen.svg" alt="Открыть на весь экран" width="20" height="20">
+            </p>
+          </div>
         </div>
       </section>
 
@@ -287,5 +290,6 @@
     </footer>
   </div>
 </body>
+<script src="js/main_nav_animation.js"></script>
 
 </html>

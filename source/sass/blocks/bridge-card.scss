@@ -25,3 +25,19 @@
     color: $white-color;
   }
 }
+
+.bridge-card__img-wrapper {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    height: 267px;
+    overflow: hidden;
+    margin: 0;
+  }
+}
+
+.bridge-card__image {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 267px;
+  }
+}

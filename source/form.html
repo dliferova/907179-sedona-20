@@ -13,11 +13,33 @@
   <div class="page__container">
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="img/logo-sedona-mobile.svg" alt="Логотип Седона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img src="img/logo-sedona-mobile.svg" alt="Логотип Седона">
+        </picture>
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span></button>
+      <nav class="main-nav main-nav--opened">
+        <button class="main-nav__button main-nav__button--opened" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+
+          <svg class="main-nav__icon-menu" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px"
+            viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+            <g>
+              <rect width="22.928" height="3.964" />
+              <rect y="9.009" width="22.928" height="3.964" />
+              <rect y="18.018" width="22.928" height="3.964" />
+            </g>
+          </svg>
+
+          <svg class="main-nav__icon-cross" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23px" height="23px"
+            viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
+            <polygon
+              points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 " />
+          </svg>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -129,68 +151,57 @@
 
         <fieldset class="review-form__fieldset impressions-fieldset">
           <legend сlass="impressions-fieldset__legend">Ваше общее впечатление:</legend>
-          <div class="impressions-fieldset__choice-block choice-block">
-            <div class="choice-block__input-wrapper">
-              <input class="choice-block__input" type="radio" id="rather-like" name="opinion"
+          <ul class="impressions-fieldset__choices">
+            <li class="impressions-fieldset__choice impression-choice">
+              <input class="impression-choice__input visually-hidden" type="radio" id="rather-like" name="opinion"
                 value="Скорее положительное" checked>
-            </div>
-            <label class="choice-block__label" for="rather-like">Скорее положительное</label><br>
-          </div>
-          <div class="impressions-fieldset__choice-block choice-block">
-            <div class="choice-block__input-wrapper">
-              <input class="choice-block__input" type="radio" id="rather-negative" name="opinion"
+              <label class="impression-choice__label" for="rather-like">Скорее положительное</label><br>
+            </li>
+            <li class="impressions-fieldset__choice impression-choice">
+              <input class="impression-choice__input visually-hidden" type="radio" id="rather-negative" name="opinion"
                 value="Скорее отрицательное">
-            </div>
-            <label class="choice-block__label" for="rather-negative">Скорее отрицательное</label><br>
-          </div>
-          <div class="impressions-fieldset__choice-block choice-block">
-            <div class="choice-block__input-wrapper">
-              <input class="choice-block__input" type="radio" id="no-answer" name="opinion"
+              <label class="impression-choice__label" for="rather-negative">Скорее отрицательное</label><br>
+            </li>
+            <li class="impressions-fieldset__choice impression-choice">
+              <input class="impression-choice__input visually-hidden" type="radio" id="no-answer" name="opinion"
                 value="Затрудняюсь ответить">
-            </div>
-            <label class="choice-block__label" for="no-answer">Затрудняюсь ответить</label><br>
-          </div>
+              <label class="impression-choice__label" for="no-answer">Затрудняюсь ответить</label><br>
+            </li>
+          </ul>
+
         </fieldset>
 
         <fieldset class="review-form__fieldset places-fieldset">
           <legend class="places-fieldset__legend">Посещенные достопримечательности</legend>
 
-          <div class="places-fieldset__check-block check-block">
 
-            <div class="check-block__input-wrapper">
-              <div class="check-block__input-square"></div>
-              <input class="check-block__input visually-hidden" type="checkbox" name="devil-bridge" id="devil-bridge"
+          <ul class="places-fieldset__choices">
+
+            <li class="places-fieldset__choice place-choice">
+              <input class="place-choice__input visually-hidden" type="checkbox" name="devil-bridge" id="devil-bridge"
                 value="Мост Дьявола" checked>
-            </div>
-            <label class="check-block__label" for="devil-bridge">Мост Дьявола</label>
-          </div>
-          <br>
-          <div class="places-fieldset__check-block check-block">
-            <div class="check-block__input-wrapper">
-              <div class="check-block__input-square"></div>
-              <input class="check-block__input visually-hidden" type="checkbox" name="bell-mountain" id="bell-mountain"
+              <label class="place-choice__label" for="devil-bridge">Мост Дьявола</label>
+            </li>
+
+            <li class="places-fieldset__choice place-choice">
+              <input class="place-choice__input visually-hidden" type="checkbox" name="bell-mountain" id="bell-mountain"
                 value="Гора-Колокол" checked>
-            </div>
-            <label class="check-block__label" for="bell-mountain">Гора-Колокол</label>
-          </div>
-          <br>
-          <div class="places-fieldset__check-block check-block">
-            <div class="check-block__input-wrapper">
-              <div class="check-block__input-square"></div>
-              <input class="check-block__input visually-hidden" type="checkbox" name="slide-park" id="slide-park"
+              <label class="place-choice__label" for="bell-mountain">Гора-Колокол</label>
+            </li>
+
+            <li class="places-fieldset__choice place-choice">
+              <input class="place-choice__input visually-hidden" type="checkbox" name="slide-park" id="slide-park"
                 value="Слайд-парк" checked>
-            </div>
-            <label class="check-block__label" for="slide-park">Слайд-парк</label>
-          </div>
-          <br>
-          <div class="places-fieldset__check-block check-block">
-            <div class="check-block__input-wrapper">
-              <div class="check-block__input-square"></div>
-              <input class="check-block__input visually-hidden" type="checkbox" name="red-rocks" id="red-rocks"
+              <label class="place-choice__label" for="slide-park">Слайд-парк</label>
+            </li>
+
+            <li class="places-fieldset__choice place-choice">
+              <input class="place-choice__input visually-hidden" type="checkbox" name="red-rocks" id="red-rocks"
                 value="Красные скалы">
-            </div>
-            <label class="check-block__label" for="red-rocks">Красные скалы</label>
-          </div>
+              <label class="place-choice__label" for="red-rocks">Красные скалы</label>
+            </li>
+
+          </ul>
         </fieldset>
 
         <fieldset class="review-form__fieldset comments-fieldset">
@@ -255,5 +266,6 @@
     </footer>
   </div>
 </body>
+<script src="js/main_nav_animation.js"></script>
 
 </html>

@@ -24,3 +24,18 @@
     padding-bottom: 26px;
   }
 }
+
+.vast-card__img-wrapper {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    margin: 0;
+  }
+}
+
+.vast-card__image {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}

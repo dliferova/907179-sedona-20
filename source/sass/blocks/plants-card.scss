@@ -26,3 +26,18 @@
     color: $white-color;
   }
 }
+
+.plants-card__img-wrapper {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    height: 267px;
+    overflow: hidden;
+    margin: 0;
+  }
+}
+
+.photo-cactus__image {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}

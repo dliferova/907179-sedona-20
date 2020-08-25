@@ -7,10 +7,15 @@
 }
 
 .page-header__logo {
-  height: 56px;
   text-align: center;
+  height: 56px;
   order: 2;
   z-index: 2;
+
+  @media (max-width: $mobile-width-only) {
+    position: relative;
+    top: -1px;
+  }
 
   @media (min-width: $tablet-width) {
     display: inline-block;
@@ -20,5 +25,12 @@
     z-index: 1;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  img {
+    @media (min-width: $desktop-width) {
+      width: 187px;
+      height: 97px;
+    }
   }
 }

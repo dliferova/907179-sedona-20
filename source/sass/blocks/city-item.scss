@@ -49,11 +49,32 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    grid-template-rows: 256px;
     margin-top: 53px;
   }
 }
 
-.city-item__bridge-photo {
-  height: auto;
+.city-item__city-photo {
   background-color: $grey-color;
+  overflow: hidden;
+}
+
+.city-item__photo {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+
+    @media (min-width: $desktop-width) {
+      position: relative;
+      bottom: 20%;
+    }
+  }
+}
+
+.city-item__photo-wrapper {
+  margin: 0;
+  overflow: hidden;
+
+  @media (max-width: $mobile-width-only) {
+    height: 260px;
+  }
 }

@@ -21,6 +21,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-template-rows: 256px;
     grid-template-areas: "photo description";
   }
 }
@@ -54,6 +55,30 @@
   }
 }
 
-.city-item__bridge-photo {
+.bridge-item__bridge-photo {
   grid-area: photo;
+  overflow: hidden;
+
+  @media (max-width: $mobile-width-only) {
+    height: 260px;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 256px;
+  }
+}
+
+.bridge-item__photo {
+  width: 100%;
+  position: relative;
+  bottom: 20%;
+}
+
+.bridge-item__photo-wrapper {
+  margin: 0;
+  overflow: hidden;
+
+  @media (max-width: $mobile-width-only) {
+    height: 260px;
+  }
 }

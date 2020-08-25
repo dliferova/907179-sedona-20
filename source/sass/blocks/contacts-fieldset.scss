@@ -1,8 +1,3 @@
-.phone__label,
-.email__label {
-  line-height: 26px;
-}
-
 .contacts-fieldset {
   border: 0 none;
   border-bottom: 1px solid #e5e5e5;
@@ -19,23 +14,4 @@
 
 .contacts-fieldset__phone {
   padding-top: 15px;
-}
-
-.phone-block__input,
-.email-block__input {
-  @include font-titles-black;
-
-  background-color: $grey-color;
-  border: none;
-  min-width: 230px;
-  min-height: 58px;
-  font-weight: bold;
-}
-
-.phone-block__icon,
-.email-block__icon {
-  background-color: $grey-color;
-  width: 58px;
-  height: 58px;
-  text-align: center;
 }

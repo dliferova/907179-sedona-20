@@ -26,6 +26,9 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
+    margin-left: 14%;
+    margin-right: 14%;
   }
 }
 
@@ -34,8 +37,9 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding-left: 20%;
-    padding-right: 20%;
+    letter-spacing: 2px;
+    padding-left: 15px;
+    padding-right: 10px;
 
     br {
       display: none;
@@ -56,6 +60,8 @@
   letter-spacing: 1px;
 
   @media (min-width: $tablet-width) {
+    letter-spacing: 0.25px;
+
     br {
       display: none;
     }
