@@ -15,6 +15,7 @@
 
   @media (min-width: $tablet-width) {
     grid-area: comments;
+    padding-top: 33px;
   }
 }
 
@@ -32,5 +33,12 @@
     min-height: 160px;
     margin-left: 19px;
     margin-right: 22px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 55px;
+    padding-top: 18px;
+    padding-left: 20px;
+    min-height: 158px;
   }
 }

@@ -1,9 +1,17 @@
 .phone-block {
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 8px;
+  }
 }
 
 .phone__label {
   line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 22px;
+  }
 }
 
 .phone-block__input {
@@ -17,6 +25,7 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    padding-left: 23px;
   }
 }
 

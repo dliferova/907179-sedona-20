@@ -116,6 +116,7 @@
 
 .first-name__input {
   @media (max-width: $mobile-width-only) {
+    width: 100%;
     margin-top: 15px;
     margin-left: 10px;
     margin-bottom: 21px;
@@ -123,33 +124,38 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 216px;
-    margin-left: 10px;
+    // width: 216px;
+    width: 100%;
+    margin-left: 14px;
     padding-left: 25px;
   }
 }
 
 .last-name__input {
   @media (max-width: $mobile-width-only) {
-    width: 192px;
+    // width: 192px;
+    width: 100%;
     margin-bottom: 15px;
     margin-left: 10px;
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 15px;
-    margin-left: 7px;
+    width: 100%;
+    padding-left: 21px;
+    margin-left: 15px;
   }
 }
 
 .middle-name__input {
   @media (max-width: $mobile-width-only) {
-    width: 192px;
+    // width: 192px;
+    width: 100%;
     margin-left: 10px;
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 15px;
-    margin-left: 7px;
+    width: 100%;
+    padding-left: 20px;
+    margin-left: 13px;
   }
 }

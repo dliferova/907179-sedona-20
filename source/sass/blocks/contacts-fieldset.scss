@@ -9,6 +9,7 @@
     padding: 0;
     margin: 0;
     grid-area: contacts;
+    margin-top: 70px;
   }
 }
 
@@ -24,4 +25,16 @@
 
 .contacts-fieldset__phone {
   padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 19px;
+  }
+}
+
+.contacts-fieldset__email {
+  padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+  }
 }
