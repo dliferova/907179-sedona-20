@@ -7,9 +7,15 @@
 
   @media (min-width: $tablet-width) {
     grid-area: places;
-    margin: 0;
     padding-top: 49px;
+    margin: 0;
     justify-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: stretch;
+    margin-top: 49px;
+    padding: 0;
   }
 }
 
@@ -30,11 +36,20 @@
 
 .places-fieldset__choices {
   @media (min-width: $tablet-width) {
-    margin-top: 45px;
-    margin-bottom: 0;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
     grid-gap: 30px;
+    margin-top: 45px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: none;
+    grid-gap: 30px;
+    margin-top: 43px;
+    margin-bottom: 36px;
   }
 }

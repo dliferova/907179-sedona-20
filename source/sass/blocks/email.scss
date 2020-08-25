@@ -33,4 +33,9 @@
   @media (min-width: $tablet-width) {
     padding-left: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 16px;
+    padding-left: 0px;
+  }
 }

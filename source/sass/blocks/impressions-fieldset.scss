@@ -23,6 +23,7 @@
 
   @media (min-width: $tablet-width) {
     @include titles-form-desktop;
+    margin-left: 80px;
   }
 }
 

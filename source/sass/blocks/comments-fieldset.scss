@@ -15,7 +15,11 @@
 
   @media (min-width: $tablet-width) {
     grid-area: comments;
-    padding-top: 33px;
+    margin-top: 33px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 33px;
   }
 }
 
@@ -40,5 +44,10 @@
     padding-top: 18px;
     padding-left: 20px;
     min-height: 158px;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 100%;
+    min-height: 138px;
   }
 }

@@ -12,6 +12,15 @@
   @media (min-width: $tablet-width) {
     padding-left: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    span {
+      display: none;
+    }
+
+    padding-right: 16px;
+    padding-left: 0px;
+  }
 }
 
 .phone-block__input {
@@ -22,6 +31,11 @@
   min-width: 230px;
   min-height: 58px;
   font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding-left: 23px;
+  }
 
   @media (min-width: $tablet-width) {
     width: 100%;

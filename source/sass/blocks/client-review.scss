@@ -11,6 +11,13 @@
     padding-right: 23%;
     margin-bottom: 65px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 32%;
+    padding-right: 31%;
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
 }
 
 .client-review__title {
@@ -26,6 +33,11 @@
     line-height: 26px;
     padding-bottom: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 11px;
+    padding-right: 12px;
+  }
 }
 
 .client-review__slogan {
@@ -37,5 +49,10 @@
     padding-top: 26px;
     padding-left: 17px;
     padding-right: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 12px;
+    padding-right: 9px;
   }
 }

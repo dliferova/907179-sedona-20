@@ -32,6 +32,10 @@
   @media (min-width: $tablet-width) {
     @include titles-form-desktop;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 24px;
+  }
 }
 
 .first-name__input,
@@ -93,6 +97,10 @@
     justify-content: space-between;
     padding-top: 55px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 23px;
+  }
 }
 
 .introduce-fieldset__last-name {
@@ -102,6 +110,10 @@
     justify-content: space-between;
     padding-top: 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 23px;
+  }
 }
 
 .introduce-fieldset__middle-name {
@@ -110,6 +122,10 @@
     flex-direction: row;
     justify-content: space-between;
     padding-top: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 23px;
   }
 }
 // Поле для заполнения
@@ -128,6 +144,13 @@
     width: 100%;
     margin-left: 14px;
     padding-left: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    // width: 216px;
+    width: 100%;
+    margin-left: 13px;
+    padding-left: 22px;
   }
 }
 

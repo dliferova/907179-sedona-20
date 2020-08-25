@@ -23,11 +23,27 @@
   }
 }
 
+.contacts-fieldset__section {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: none;
+    margin-top: 46px;
+  }
+}
+
 .contacts-fieldset__phone {
   padding-top: 15px;
 
   @media (min-width: $tablet-width) {
     padding-top: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
   }
 }
 
@@ -36,5 +52,12 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
   }
 }
