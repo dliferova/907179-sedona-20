@@ -91,36 +91,31 @@
     margin: 0;
     font-weight: bold;
     padding-top: 3px;
-    padding-left: 40px;
+    padding-left: 14px;
     position: relative;
-
-    &::before {
-      background-image: url("../img/icon-like.svg");
-
-      content: "";
-      position: absolute;
-      background-repeat: no-repeat;
-      background-position: center;
-
-      @media (max-width: $mobile-width-only) {
-        width: 23px;
-        height: 21px;
-        top: 0;
-        left: 0;
-      }
-
-      @media (min-width: $tablet-width) {
-        width: 23px;
-        height: 21px;
-        top: 40%;
-        left: -25px;
-      }
-    }
 
     @media (min-width: $tablet-width) {
       padding-top: 30px;
       padding-left: 9px;
       padding-right: 21px;
     }
+  }
+}
+
+.cards-section__like-icon {
+  width: 23px;
+  height: 21px;
+
+  @media (max-width: $tablet-width) {
+    fill: #000000;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    fill: #ffffff;
   }
 }
