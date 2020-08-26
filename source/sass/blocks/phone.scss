@@ -1,6 +1,9 @@
 .phone-block {
   display: flex;
 
+  @media (max-width: $mobile-width-only) {
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 8px;
   }
@@ -8,10 +11,7 @@
 
 .phone__label {
   line-height: 26px;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 22px;
-  }
+  padding-left: 21px;
 
   @media (min-width: $desktop-width) {
     span {

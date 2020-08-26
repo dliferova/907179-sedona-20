@@ -1,7 +1,10 @@
 .places-fieldset {
   border: 0 none;
+  padding: 0;
 
   @media (max-width: $mobile-width-only) {
+    margin-top: 14px;
+    padding-bottom: 10px;
     border-bottom: 1px solid #e5e5e5;
   }
 
@@ -35,6 +38,14 @@
 }
 
 .places-fieldset__choices {
+  @media (max-width: $mobile-width-only) {
+    padding-left: 17px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 28px;
+  }
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 50% 50%;

@@ -59,8 +59,26 @@
 .search-section__button {
   margin-top: 33px;
   margin-bottom: 33px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include style-btn;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+
+    .search-section__link {
+      opacity: 0.3;
+    }
+
+    &:disabled {
+      background-color: #e5e5e5;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     @include style-btn-tablet;

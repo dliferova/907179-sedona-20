@@ -16,4 +16,12 @@
 
 .copyright__link {
   padding-left: 12px;
+
+  &:hover {
+    fill: #81b3d2;
+  }
+
+  &:active {
+    fill: rgba($color: #000000, $alpha: 0.3);
+  }
 }

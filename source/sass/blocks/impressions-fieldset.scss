@@ -4,6 +4,8 @@
   margin: 0;
 
   @media (max-width: $mobile-width-only) {
+    margin-top: 21px;
+    padding-bottom: 53px;
     border-bottom: 1px solid #e5e5e5;
   }
 
@@ -28,6 +30,10 @@
 }
 
 .impressions-fieldset__choices {
+  @media (max-width: $mobile-width-only) {
+    padding-left: 21px;
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0;
     padding-top: 40px;

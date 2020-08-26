@@ -1,7 +1,11 @@
 .contacts-fieldset {
   border: 0 none;
+  padding: 0;
+  margin: 0;
 
   @media (max-width: $mobile-width-only) {
+    margin-top: 20px;
+    padding-bottom: 41px;
     border-bottom: 1px solid #e5e5e5;
   }
 
@@ -13,6 +17,19 @@
   }
 }
 
+.contacts-fieldset__section {
+  @media (max-width: $mobile-width-only) {
+    padding-left: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: none;
+    margin-top: 46px;
+  }
+}
+
 .contacts-fieldset__title {
   @include font-titles-black;
   text-align: center;
@@ -20,15 +37,6 @@
 
   @media (min-width: $tablet-width) {
     @include titles-form-desktop;
-  }
-}
-
-.contacts-fieldset__section {
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: none;
-    margin-top: 46px;
   }
 }
 

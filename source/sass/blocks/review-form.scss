@@ -23,6 +23,11 @@
 .review-form__submit-button {
   @include style-btn;
 
+  @media (max-width: $mobile-width-only) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @media (min-width: $desktop-width) {
     min-width: 324px;
     margin: 0;
@@ -31,5 +36,11 @@
   @media (min-width: $desktop-width) {
     min-width: 480px;
     padding-top: 5px;
+  }
+}
+
+.review-form__text-requared {
+  @media (max-width: $mobile-width-only) {
+    display: none;
   }
 }
