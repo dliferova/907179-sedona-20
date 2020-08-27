@@ -1,6 +1,10 @@
 .bridge-item__title {
-  @include font-titles-white;
+  @include title-mobile-white;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include title-desktop-white;
+  }
 }
 
 .bridge-item__title br {
@@ -10,11 +14,21 @@
 }
 
 .bridge-item__number {
-  padding-top: 9px;
+  padding-top: 10px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 12px;
+  }
 }
 
 .bridge-item__slogan {
-  padding-top: 15px;
+  padding-top: 17px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 24px;
+    padding-left: 56px;
+    padding-right: 55px;
+  }
 }
 
 .bridge-item__section {
@@ -38,7 +52,7 @@
 
   @media (max-width: $mobile-width-only) {
     padding-top: 40px;
-    padding-bottom: 38px;
+    padding-bottom: 35px;
     padding-left: 15px;
     padding-right: 16px;
   }
@@ -48,10 +62,15 @@
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 42px;
     padding-bottom: 41px;
     padding-left: 36px;
     padding-right: 36px;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    padding-top: 52px;
   }
 }
 

@@ -3,7 +3,8 @@
 }
 
 .tourists-item__section {
-  padding-top: 31px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     padding-top: 16%;
@@ -11,21 +12,29 @@
     padding-right: 19%;
     padding-bottom: 16%;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 11%;
+    padding-left: 18%;
+    padding-right: 17%;
+    padding-bottom: 16%;
+  }
 }
 
 .tourists-item__number {
   margin: 0;
-  padding-top: 8px;
+  padding-top: 11px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 14px;
+  }
 }
 
 .tourists-item__slogan {
   margin: 0;
-  padding-top: 15px;
-  padding-bottom: 27px;
+  padding-top: 18px;
 
   @media (min-width: $tablet-width) {
-    br {
-      display: none;
-    }
+    padding-top: 23px;
   }
 }

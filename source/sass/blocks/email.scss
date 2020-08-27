@@ -3,13 +3,12 @@
 }
 
 .email-block__input {
-  @include font-titles-black;
-  padding: 0;
+  @include title-mobile-black;
   background-color: $grey-color;
   border: none;
+  padding: 0;
   min-width: 230px;
   min-height: 58px;
-  font-weight: bold;
 
   @media (min-width: $tablet-width) {
     width: 100%;

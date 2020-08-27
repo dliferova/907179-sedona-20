@@ -30,12 +30,12 @@
   margin: 0;
 
   @media (max-width: $mobile-width-only) {
-    @include font-titles-black;
+    @include title-mobile-black;
     text-align: center;
   }
 
   @media (min-width: $tablet-width) {
-    @include titles-form-desktop;
+    @include title-desktop-black;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,7 +46,7 @@
 .first-name__input,
 .last-name__input,
 .middle-name__input {
-  @include font-titles-black;
+  @include title-mobile-black;
 
   display: inline-block;
 
@@ -59,7 +59,8 @@
 .last-name__label,
 .middle-name__label {
   @media (max-width: $mobile-width-only) {
-    line-height: 26px;
+    @include text-main-desktop;
+    color: #333333;
   }
 }
 

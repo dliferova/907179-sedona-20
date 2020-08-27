@@ -6,8 +6,8 @@
   @media (max-width: $mobile-width-only) {
     padding-top: 69px;
     padding-bottom: 39px;
-    padding-left: 23px;
-    padding-right: 23px;
+    padding-left: 13px;
+    padding-right: 13px;
   }
 
   @media (min-width: $tablet-width) {
@@ -20,6 +20,22 @@
     padding-left: 32px;
     padding-right: 32px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 67px;
+    padding-right: 69px;
+    padding-top: 47px;
+    justify-content: flex-start;
+  }
+}
+
+.city-item__facilities {
+  @media (max-width: $mobile-width-only) {
+    margin-top: 27px;
+    margin-left: 12px;
+    margin-right: 25px;
+    margin-bottom: 36px;
+  }
 }
 
 .city-item__description p {
@@ -27,21 +43,33 @@
 }
 
 .city-item__title {
-  @include font-titles-white;
+  @include title-mobile-white;
   margin: 0;
+
+  @media (max-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    @include title-desktop-white;
+  }
 }
 
 .city-item__number {
-  padding-top: 9px;
+  padding-top: 12px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 13px;
+  }
 }
 
 .city-item__slogan {
-  padding-top: 15px;
-}
+  padding-top: 17px;
 
-.city-item__title br {
-  @media (max-width: $mobile-width-only) {
-    display: none;
+  @media (min-width: $desktop-width) {
+    padding-top: 24px;
   }
 }
 
@@ -51,6 +79,10 @@
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 256px;
     margin-top: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 41px;
   }
 }
 

@@ -29,7 +29,7 @@
 }
 
 .album-section__title {
-  @include font-titles-black;
+  @include title-mobile-black;
   text-align: center;
   margin: 0;
 
@@ -39,11 +39,11 @@
 }
 
 .album-section__text {
-  line-height: 24px;
   text-align: center;
   margin: 0;
 
   @media (max-width: $mobile-width-only) {
+    @include text-main-photo;
     padding-top: 26px;
     padding-left: 25px;
     padding-right: 28px;

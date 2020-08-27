@@ -9,9 +9,9 @@
 }
 
 .copyright__text {
-  font-size: 14px;
-  line-height: 26px;
   margin: 0;
+
+  @include text-main-desktop;
 }
 
 .copyright__link {

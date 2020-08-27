@@ -5,8 +5,8 @@
 // border-width border-style border-color|initial|inherit;
 .square-item__section {
   text-align: center;
-  padding-top: 22px;
-  padding-bottom: 24px;
+  padding-top: 26px;
+  padding-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     padding-top: 16%;
@@ -14,20 +14,29 @@
     padding-right: 13%;
     padding-bottom: 24%;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 11%;
+    padding-left: 13%;
+    padding-right: 13%;
+    padding-bottom: 7%;
+  }
 }
 
 .square-item__number {
   margin: 0;
-  padding-top: 8px;
+  padding-top: 11px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 14px;
+  }
 }
 
 .square-item__slogan {
   margin: 0;
-  padding-top: 15px;
+  padding-top: 18px;
 
   @media (min-width: $tablet-width) {
-    br {
-      display: none;
-    }
+    padding-top: 23px;
   }
 }

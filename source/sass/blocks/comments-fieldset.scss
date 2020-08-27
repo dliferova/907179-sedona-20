@@ -18,13 +18,9 @@
 }
 
 .comments-fieldset__title {
-  @include font-titles-black;
+  @include title-mobile-black;
   text-align: center;
   margin: 0;
-
-  @media (min-width: $tablet-width) {
-    @include titles-form-desktop;
-  }
 }
 
 .comments-fieldset__input {

@@ -1,14 +1,11 @@
 .inscription {
   text-align: center;
-  margin-top: 40px;
-  letter-spacing: 1px;
+  margin-top: 32px;
 
   @media (max-width: $mobile-width-only) {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     position: relative;
-    min-height: 252px;
 
     &::after {
       content: "";
@@ -26,29 +23,36 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 43px;
     margin-left: 14%;
     margin-right: 14%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 56px;
+    margin-left: 25%;
+    margin-right: 25%;
   }
 }
 
 .inscription__slogan {
-  @include font-titles-black;
   margin: 0;
 
-  @media (min-width: $tablet-width) {
-    letter-spacing: 2px;
-    padding-left: 15px;
-    padding-right: 10px;
+  @media (max-width: $mobile-width-only) {
+    @include title-mobile-black;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 
-    br {
-      display: none;
-    }
+  @media (min-width: $tablet-width) {
+    @include title-desktop-black;
+    padding-left: 15px;
+    padding-right: 14px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 26%;
-    padding-right: 26%;
+    padding-left: 18px;
+    padding-right: 20px;
   }
 }
 
@@ -56,14 +60,17 @@
   font-size: 14px;
   line-height: 26px;
   margin: 0;
-  padding-top: 26px;
-  letter-spacing: 1px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 30px;
+    padding-bottom: 14px;
+  }
 
   @media (min-width: $tablet-width) {
     letter-spacing: 0.25px;
-
-    br {
-      display: none;
-    }
+    padding-top: 32px;
+    padding-left: 14px;
   }
 }

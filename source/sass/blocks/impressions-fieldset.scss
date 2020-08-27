@@ -16,7 +16,7 @@
 }
 
 .impressions-fieldset__title {
-  @include font-titles-black;
+  @include title-mobile-black;
   margin: 0;
 
   @media (max-width: $mobile-width-only) {
@@ -24,7 +24,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    @include titles-form-desktop;
+    @include title-desktop-black;
     margin-left: 80px;
   }
 }

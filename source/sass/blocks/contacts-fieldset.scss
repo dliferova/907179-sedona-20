@@ -31,12 +31,12 @@
 }
 
 .contacts-fieldset__title {
-  @include font-titles-black;
+  @include title-mobile-black;
   text-align: center;
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    @include titles-form-desktop;
+    @include title-desktop-black;
   }
 }
 
