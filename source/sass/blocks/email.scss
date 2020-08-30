@@ -10,6 +10,10 @@
   min-width: 230px;
   min-height: 58px;
 
+  &::placeholder {
+    color: $black-color;
+  }
+
   @media (min-width: $tablet-width) {
     width: 100%;
     padding-left: 23px;

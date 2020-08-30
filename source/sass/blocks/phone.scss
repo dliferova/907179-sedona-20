@@ -30,6 +30,10 @@
   min-height: 58px;
   font-weight: bold;
 
+  &::placeholder {
+    color: $black-color;
+  }
+
   @media (min-width: $tablet-width) {
     width: 100%;
     padding-left: 23px;

@@ -116,7 +116,8 @@
               </label>
 
               <div class="phone__input-block phone-block">
-                <input class="phone-block__input" type="tel" name="phone" id="phone" value="Введите телефон" required>
+                <input class="phone-block__input" type="tel" name="phone" id="phone" placeholder="Введите телефон"
+                  required pattern="[0-9]{3}[ -][0-9]{3}[ -][0-9]{4}">
 
                 <div class="phone-block__icon">
                   <svg class="phone-block__svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -139,7 +140,8 @@
               <label class="email__label" for="email">Электронная почта*:</label>
 
               <div class="email__input-block email-block">
-                <input class="email-block__input" type="email" id="email" name="email" value="Введите e-mail">
+                <input class="email-block__input" type="email" id="email" name="email" required
+                  placeholder="Введите e-mail">
                 <div class="email-block__icon">
                   <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px"
@@ -209,7 +211,8 @@
 
         <fieldset class="review-form__fieldset comments-fieldset">
           <h2 class="comments-fieldset__title">Опишите свои эмоции:</h2>
-          <textarea class="comments-fieldset__input" name="comment">Опишите подробно все свои восторги</textarea>
+          <textarea class="comments-fieldset__input" name="comment"
+            placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
 
         <input class="review-form__submit-button" type="submit" value="Отправить отзыв">

@@ -31,6 +31,10 @@
   line-height: 26px;
   border: none;
 
+  &::placeholder {
+    color: $black-color;
+  }
+
   @media (max-width: $mobile-width-only) {
     min-width: 279px;
     min-height: 160px;
