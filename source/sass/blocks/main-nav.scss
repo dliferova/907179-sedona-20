@@ -5,20 +5,22 @@
   order: 1;
   max-height: 0;
 
+  @media (max-width: $mobile-width-only) {
+    &--closed {
+      max-height: 0;
+      transition: max-height 0.5s ease-out;
+    }
+
+    &--opened {
+      max-height: 400px;
+      transition: max-height 0.5s ease-out;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     max-height: 400px;
     background-color: $white-color;
     order: 2;
-  }
-
-  &--closed {
-    max-height: 0;
-    transition: max-height 0.5s ease-out;
-  }
-
-  &--opened {
-    max-height: 400px;
-    transition: max-height 0.5s ease-out;
   }
 }
 
