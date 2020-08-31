@@ -1,5 +1,7 @@
 .road-item {
-  border-bottom: 1px solid #d6d6d6;
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid #d6d6d6;
+  }
 }
 
 .road-item__section {
@@ -18,7 +20,7 @@
     padding-top: 11%;
     padding-left: 15%;
     padding-right: 15%;
-    padding-bottom: 16%;
+    padding-bottom: 15%;
   }
 }
 
@@ -33,7 +35,12 @@
 
 .road-item__slogan {
   margin: 0;
-  padding-top: 17px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 17px;
+    padding-left: 38px;
+    padding-right: 39px;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 23px;
@@ -41,9 +48,9 @@
     padding-right: 22px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 20px;
     padding-right: 4px;
-    padding-left: 0px;
+    padding-left: 0;
   }
 }

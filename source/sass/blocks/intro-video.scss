@@ -5,9 +5,14 @@
   padding-left: 25px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 59px;
+    margin-top: 27px;
     padding-right: 161px;
     padding-left: 161px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 31%;
+    padding-left: 31%;
   }
 }
 
@@ -15,7 +20,7 @@
   @include title-mobile-black;
 
   margin: 0;
-  padding-top: 19px;
+  padding-top: 28px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -23,21 +28,34 @@
 }
 
 .intro-video__text {
-  line-height: 24px;
+  @include text-main-photo;
+
   margin: 0;
-  padding-top: 25px;
+  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 35px;
+    padding-top: 34px;
   }
 }
 
 .intro-video__view {
-  margin-top: 33px;
+  position: relative;
+  @media (max-width: $mobile-width-only) {
+    margin-top: 33px;
+    margin-bottom: 105px;
+  }
 
   @media (min-width: $tablet-width) {
+    margin-top: 80px;
     margin-left: 60px;
     margin-right: 60px;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 78px;
+    margin-left: 199px;
+    margin-right: 201px;
   }
 }
 
@@ -53,24 +71,24 @@
 
 .intro-video__player {
   display: grid;
+  position: absolute;
+  width: 100%;
 
   @media (max-width: $mobile-width-only) {
     grid-template-columns: 60% 20% 20%;
     grid-template-rows: 45px 66px;
     grid-template-areas: "timeline replay subtitles fullscreen";
     width: 280px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    top: -45px;
+    bottom: -66px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 10% 70% 10% 10%;
     grid-template-rows: 93px;
     grid-template-areas: "replay timeline subtitles fullscreen";
-    position: relative;
-    top: -93px;
+    bottom: 0;
     background-color: rgba(0, 0, 0, 0.6);
   }
 }

@@ -83,4 +83,10 @@
     margin-top: 43px;
     margin-bottom: 58px;
   }
+
+  @media (min-width: $desktop-width) {
+    @include style-btn-tablet;
+    margin-top: 43px;
+    margin-bottom: 71px;
+  }
 }

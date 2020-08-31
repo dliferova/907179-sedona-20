@@ -99,6 +99,10 @@
       position: relative;
       bottom: 20%;
     }
+
+    @media (min-width: $tablet-width) {
+      bottom: 27%;
+    }
   }
 }
 
@@ -108,5 +112,9 @@
 
   @media (max-width: $mobile-width-only) {
     height: 260px;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 256px;
   }
 }

@@ -34,11 +34,13 @@
 
 .places-fieldset__choices {
   @media (max-width: $mobile-width-only) {
+    margin: 0;
+    margin-top: 21px;
     padding-left: 17px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
-    grid-gap: 28px;
+    grid-gap: 25px;
   }
 
   @media (min-width: $tablet-width) {

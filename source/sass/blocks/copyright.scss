@@ -1,10 +1,10 @@
 .copyright {
   display: flex;
   justify-content: center;
-  padding-top: 43px;
+  padding-top: 40px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 62px;
+    padding-top: 38px;
   }
 }
 
@@ -12,6 +12,7 @@
   margin: 0;
 
   @include text-main-desktop;
+  padding-top: 3px;
 }
 
 .copyright__link {

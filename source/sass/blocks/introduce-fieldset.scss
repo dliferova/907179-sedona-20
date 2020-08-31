@@ -31,7 +31,7 @@
 
   @media (max-width: $mobile-width-only) {
     @include title-mobile-black;
-    text-align: center;
+    padding-left: 26%;
   }
 
   @media (min-width: $tablet-width) {
@@ -164,9 +164,10 @@
 
 .last-name__input {
   @media (max-width: $mobile-width-only) {
+    width: 55%;
     margin-bottom: 15px;
     margin-left: 11px;
-    padding-left: 12px;
+    padding-left: 21px;
   }
 
   @media (min-width: $tablet-width) {
@@ -178,7 +179,9 @@
 
 .middle-name__input {
   @media (max-width: $mobile-width-only) {
+    width: 55%;
     margin-left: 10px;
+    padding-left: 19px;
   }
 
   @media (min-width: $tablet-width) {

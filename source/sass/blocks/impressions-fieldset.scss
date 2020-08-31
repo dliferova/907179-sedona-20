@@ -5,7 +5,7 @@
 
   @media (max-width: $mobile-width-only) {
     margin-top: 21px;
-    padding-bottom: 53px;
+    padding-bottom: 30px;
     border-bottom: 1px solid #e5e5e5;
   }
 
@@ -31,15 +31,20 @@
 
 .impressions-fieldset__choices {
   @media (max-width: $mobile-width-only) {
+    margin: 0;
     padding-left: 21px;
   }
 
   @media (min-width: $tablet-width) {
     margin: 0;
     padding-top: 40px;
+  }
+}
 
-    .impressions-fieldset__choice {
-      margin-top: 21px;
-    }
+.impressions-fieldset__choice {
+  padding-top: 14px;
+
+  &:first-child {
+    padding-top: 20px;
   }
 }

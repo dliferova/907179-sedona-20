@@ -62,13 +62,13 @@
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    padding-top: 42px;
+    padding-top: 43px;
     padding-bottom: 41px;
     padding-left: 36px;
     padding-right: 36px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     justify-content: flex-start;
     padding-top: 52px;
   }
@@ -90,7 +90,18 @@
 .bridge-item__photo {
   width: 100%;
   position: relative;
-  bottom: 20%;
+
+  @media (max-width: $mobile-width-only) {
+    bottom: 24%;
+  }
+
+  @media (min-width: $tablet-width) {
+    bottom: 44%;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 59%;
+  }
 }
 
 .bridge-item__photo-wrapper {
@@ -99,5 +110,9 @@
 
   @media (max-width: $mobile-width-only) {
     height: 260px;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 256px;
   }
 }

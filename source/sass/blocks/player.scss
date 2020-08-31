@@ -46,6 +46,11 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 35px;
+    padding-left: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 35px;
   }
 }
 
@@ -64,6 +69,11 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 35px;
+    padding-left: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 18px;
   }
 }
 

@@ -1,6 +1,12 @@
 .phone-block {
   display: flex;
 
+  @media (max-width: $mobile-width-only) {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 8px;
   }
