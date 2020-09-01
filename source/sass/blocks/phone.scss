@@ -8,7 +8,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 8px;
+    padding-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 3px;
   }
 }
 
@@ -32,22 +36,25 @@
   background-color: $grey-color;
   border: none;
   padding: 0;
-  min-width: 230px;
   min-height: 58px;
   font-weight: bold;
+  box-sizing: border-box;
 
   &::placeholder {
     color: $black-color;
   }
 
-  @media (min-width: $tablet-width) {
-    width: 100%;
-    padding-left: 23px;
+  @media (max-width: $mobile-width-only) {
+    padding-left: 22px;
+    padding-right: 11px;
   }
 
   @media (min-width: $tablet-width) {
-    width: 100%;
     padding-left: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 44px;
   }
 }
 

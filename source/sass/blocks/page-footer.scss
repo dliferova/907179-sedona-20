@@ -16,4 +16,10 @@
     padding-left: 60px;
     padding-right: 60.5px;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    padding-left: 120px;
+    padding-right: 106px;
+  }
 }

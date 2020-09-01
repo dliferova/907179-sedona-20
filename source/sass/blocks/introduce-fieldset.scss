@@ -13,6 +13,10 @@
     border-left: 1px solid #e5e5e5;
     padding-top: 28px;
   }
+
+  @media (min-width: $tablet-width) {
+    border-left: none;
+  }
 }
 
 .introduce-fieldset__section {
@@ -23,6 +27,10 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-left: 1px solid #e5e5e5;
   }
 }
 
@@ -188,5 +196,10 @@
     width: 100%;
     padding-left: 20px;
     margin-left: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding-left: 25px;
   }
 }

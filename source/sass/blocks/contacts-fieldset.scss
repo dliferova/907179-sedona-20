@@ -5,7 +5,7 @@
 
   @media (max-width: $mobile-width-only) {
     margin-top: 20px;
-    padding-bottom: 32px;
+    padding-bottom: 27px;
     border-bottom: 1px solid #e5e5e5;
   }
 
@@ -56,10 +56,12 @@
 }
 
 .contacts-fieldset__email {
-  padding-top: 15px;
+  @media (max-width: $mobile-width-only) {
+    padding-top: 12px;
+  }
 
   @media (min-width: $tablet-width) {
-    padding-top: 25px;
+    padding-top: 23px;
   }
 
   @media (min-width: $desktop-width) {
@@ -67,5 +69,6 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    padding-top: 24px;
   }
 }

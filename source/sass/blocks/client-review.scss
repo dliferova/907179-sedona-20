@@ -7,13 +7,13 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 70px;
-    padding-left: 20%;
-    padding-right: 23%;
-    margin-bottom: 65px;
+    padding-left: 19%;
+    padding-right: 22%;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 32%;
+    padding-left: 30%;
     padding-right: 31%;
     margin-top: 100px;
     margin-bottom: 30px;
@@ -31,11 +31,12 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     padding-bottom: 20px;
+    padding-left: 20px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 11px;
-    padding-right: 12px;
+    padding-left: 26px;
   }
 }
 
@@ -50,8 +51,12 @@
     padding-right: 15px;
   }
 
+  @media (min-width: $tablet-width) {
+    margin-top: 18px;
+    padding-left: 18px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding-top: 12px;
-    padding-right: 9px;
+    padding-left: 25px;
   }
 }

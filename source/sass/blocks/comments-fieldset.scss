@@ -4,7 +4,7 @@
 
   @media (max-width: $mobile-width-only) {
     margin-top: 20px;
-    margin-bottom: 47px;
+    margin-bottom: 53px;
   }
 
   @media (min-width: $tablet-width) {
@@ -21,6 +21,10 @@
   @include title-mobile-black;
   text-align: center;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    @include title-desktop-black;
+  }
 }
 
 .comments-fieldset__input {
@@ -30,16 +34,19 @@
   font-size: 18px;
   line-height: 26px;
   border: none;
+  box-sizing: border-box;
 
   &::placeholder {
     color: $black-color;
   }
 
   @media (max-width: $mobile-width-only) {
-    min-width: 279px;
     min-height: 160px;
+    min-width: 279px;
+    padding-left: 20px;
+    padding-top: 14px;
     margin-top: 14px;
-    margin-left: 21px;
+    margin-left: 18px;
   }
 
   @media (min-width: $tablet-width) {

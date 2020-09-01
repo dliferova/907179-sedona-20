@@ -4,7 +4,7 @@
 
   @media (max-width: $mobile-width-only) {
     margin-top: 14px;
-    padding-bottom: 10px;
+    padding-bottom: 27px;
     border-bottom: 1px solid #e5e5e5;
   }
 
@@ -12,11 +12,10 @@
     grid-area: places;
     padding-top: 49px;
     margin: 0;
-    justify-self: center;
+    justify-self: stretch;
   }
 
   @media (min-width: $desktop-width) {
-    justify-self: stretch;
     margin-top: 49px;
     padding: 0;
   }
@@ -33,23 +32,25 @@
 }
 
 .places-fieldset__choices {
+  display: grid;
+
   @media (max-width: $mobile-width-only) {
     margin: 0;
     margin-top: 21px;
     padding-left: 17px;
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
     grid-gap: 25px;
   }
 
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 50% 50%;
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 51% 49%;
     grid-template-rows: 50% 50%;
-    grid-gap: 30px;
-    margin-top: 45px;
+    grid-gap: 23px;
+    margin-top: 37px;
     margin-bottom: 0;
+    padding-left: 97px;
+    padding-right: 95px;
   }
 
   @media (min-width: $desktop-width) {

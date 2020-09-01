@@ -25,7 +25,10 @@
 
   @media (min-width: $tablet-width) {
     @include title-desktop-black;
-    margin-left: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
   }
 }
 
@@ -46,5 +49,13 @@
 
   &:first-child {
     padding-top: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 23px;
+
+    &:first-child {
+      padding-top: 17px;
+    }
   }
 }

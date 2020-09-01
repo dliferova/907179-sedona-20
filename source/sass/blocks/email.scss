@@ -1,5 +1,13 @@
 .email-block {
   display: flex;
+
+  @media (max-width: $mobile-width-only) {
+    margin-top: 7px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 7px;
+  }
 }
 
 .email-block__input {
@@ -7,16 +15,24 @@
   background-color: $grey-color;
   border: none;
   padding: 0;
-  min-width: 230px;
   min-height: 58px;
+  box-sizing: border-box;
 
   &::placeholder {
     color: $black-color;
   }
 
+  @media (max-width: $mobile-width-only) {
+    padding-left: 21px;
+    padding-right: 11px;
+  }
+
   @media (min-width: $tablet-width) {
-    width: 100%;
     padding-left: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 47px;
   }
 }
 
@@ -32,6 +48,10 @@
 
 .email__label {
   line-height: 26px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-left: 20px;
+  }
 
   @media (min-width: $tablet-width) {
     padding-left: 22px;

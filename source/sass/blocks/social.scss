@@ -12,6 +12,12 @@
     padding-left: 15px;
     padding-right: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 37px;
+    padding-left: 15px;
+    padding-right: 20px;
+  }
 }
 
 .social__item {
