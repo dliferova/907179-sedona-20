@@ -85,7 +85,7 @@
         </div>
       </section>
 
-      <form class="review-form" name="review-form" method="GET">
+      <form id="review-form" class="review-form" name="review-form" method="GET">
 
         <fieldset class="review-form__fieldset introduce-fieldset">
           <div class="introduce-fieldset__section">
@@ -221,16 +221,16 @@
           <span class="review-form__text-requared">* &mdash; обязательные поля</span>
         </div>
 
-        <!-- <div class="review-form__modal--success">
+        <div id="modal-failed" class="review-form__modal-failed--hidden">
+          <h2>Что-то пошло не так!</h2>
+          <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button id="modal-failed-ok" type="button">Ок</button>
+        </div>
+
+        <!-- <div class="review-form__modal-success">
           <h2>Ваш отзыв отправлен</h2>
           <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
           <button>Закрыть окно</button>
-        </div> -->
-
-        <!-- <div class="review-form__modal--fail">
-          <h2>Что-то пошло не так!</h2>
-          <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          <button>Ок</button>
         </div> -->
       </form>
 
@@ -294,5 +294,6 @@
   </div>
 </body>
 <script src="js/main_nav_animation.js"></script>
+<script src="js/form_failed_modal.js"></script>
 
 </html>

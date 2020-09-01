@@ -57,3 +57,19 @@
     padding-top: 29px;
   }
 }
+
+.review-form__modal-failed--visible {
+  display: block;
+  z-index: 3;
+  position: absolute;
+  width: 320px;
+  height: 280px;
+  background-color: red;
+  bottom: 13%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.review-form__modal-failed--hidden {
+  display: none;
+}
