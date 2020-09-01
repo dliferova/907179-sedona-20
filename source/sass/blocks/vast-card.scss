@@ -24,6 +24,10 @@
   margin: 0;
   padding: 0;
 
+  @media (max-width: $mobile-width-only) {
+    height: 280px;
+  }
+
   @media (min-width: $tablet-width) {
     position: relative;
     height: 400px;
@@ -32,9 +36,8 @@
 }
 
 .vast-card__image {
-  @media (min-width: $tablet-width) {
-    width: 100%;
-  }
+  width: 100%;
+  height: 100%;
 }
 
 .vast-card__review {
