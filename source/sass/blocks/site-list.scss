@@ -10,6 +10,15 @@
 
     @media (max-width: $mobile-width-only) {
       color: $white-color;
+
+      &:hover {
+        background-color: #669ec0;
+      }
+
+      &:focus {
+        background-color: #5496bd;
+        color: rgba(255, 255, 255, 0.3);
+      }
     }
 
     @media (min-width: $tablet-width) {
@@ -19,6 +28,32 @@
 
       background: none;
       border: none;
+
+      &:hover {
+        color: #81b3d2;
+      }
+
+      &:focus {
+        color: #000000;
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+.site-list__item--active {
+  @media (min-width: $tablet-width) {
+    a {
+      color: #766357;
+
+      &:hover {
+        color: #604e43;
+      }
+
+      &:focus {
+        color: #766357;
+        opacity: 0.3;
+      }
     }
   }
 }

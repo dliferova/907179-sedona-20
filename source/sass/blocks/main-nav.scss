@@ -54,11 +54,11 @@
     fill: $main-color;
 
     &:hover {
-      fill: #81b3d2;
+      fill: rgba(129, 179, 210, 0.6);
     }
 
     &:active {
-      fill: rgba($color: #81b3d2, $alpha: 0.3);
+      fill: rgba(129, 179, 210, 0.3);
     }
   }
 
@@ -71,6 +71,14 @@
   .main-nav__icon-cross {
     display: none;
     fill: $white-color;
+
+    &:hover {
+      fill: rgba(255, 255, 255, 0.6);
+    }
+
+    &:active {
+      fill: rgba(255, 255, 255, 0.3);
+    }
   }
 
   .main-nav__button--closed .main-nav__icon-menu,

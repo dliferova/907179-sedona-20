@@ -29,6 +29,14 @@
 
     .impression-choice__input + & {
       background-color: #eeeeee;
+
+      &:hover {
+        background-color: #e5e5e5;
+      }
+
+      &:active {
+        background-color: #d5d5d5;
+      }
     }
 
     .impression-choice__input:checked + & {
