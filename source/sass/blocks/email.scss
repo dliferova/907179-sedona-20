@@ -28,11 +28,12 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: 100%;
     padding-left: 23px;
+    padding-top: 5px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 47px;
   }
 }
 
@@ -44,6 +45,16 @@
   width: 58px;
   height: 58px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 2px;
+    box-sizing: content-box;
+    padding-right: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 10px;
+  }
 }
 
 .email__label {
@@ -58,7 +69,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 16px;
     padding-left: 0;
   }
 }

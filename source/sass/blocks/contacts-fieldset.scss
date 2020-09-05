@@ -37,6 +37,34 @@
 
   @media (min-width: $tablet-width) {
     @include title-desktop-black;
+    position: relative;
+    z-index: 2;
+    background-color: $white-color;
+
+    // Добавление рамки для title
+    &::before {
+      content: "";
+      border-top: 1px solid #dbdbdb;
+      margin: 0 auto;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+      width: 122px;
+    }
+
+    &::after {
+      content: "";
+      border-top: 1px solid #dbdbdb;
+      margin: 0 auto;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      width: 122px;
+    }
   }
 }
 

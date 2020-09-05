@@ -60,11 +60,12 @@
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
-  min-width: 280px;
+  width: 280px;
   min-height: 58px;
   background-color: $main-color;
   color: $white-color;
   border: none;
+  box-sizing: border-box;
 }
 
 @mixin style-btn-tablet {
