@@ -59,18 +59,73 @@
   }
 }
 
+// Модальное окно "что-то пошло не так"
 .review-form__modal-failed--visible {
   display: block;
   z-index: 3;
   position: absolute;
   width: 320px;
-  height: 280px;
-  background-color: red;
-  bottom: 13%;
+  bottom: 31%;
   left: 50%;
   transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    bottom: 16%;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 12%;
+  }
 }
 
 .review-form__modal-failed--hidden {
   display: none;
+}
+
+.review-form__modal-failed {
+  background-color: $white-color;
+  padding-top: 40px;
+  padding-bottom: 35px;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+// Модальное окно "ваш отзыв отправлен"
+
+.review-form__modal-success--visible {
+  display: block;
+  z-index: 3;
+  position: absolute;
+  width: 320px;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    width: 640px;
+    bottom: 24%;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 26%;
+  }
+}
+
+.review-form__modal-success--hidden {
+  display: none;
+}
+
+.review-form__modal-success {
+  background-color: $white-color;
+  padding-top: 38px;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+  }
 }

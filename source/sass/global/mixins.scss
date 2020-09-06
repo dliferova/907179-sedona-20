@@ -53,6 +53,13 @@
   color: $white-color;
 }
 
+@mixin title-modal-tablet {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: bold;
+  color: $black-color;
+}
+
 // Оформление кнопок
 @mixin style-btn {
   display: flex;
@@ -84,6 +91,18 @@
   background-color: $main-color;
   color: $white-color;
   border: none;
+}
+
+@mixin modal-btn-form {
+  @include title-mobile-white;
+  border: none;
+  background-color: $main-color;
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 // Оформление cостояний кнопки и элементов пункта меню

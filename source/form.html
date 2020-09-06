@@ -108,11 +108,11 @@
         </fieldset>
 
         <fieldset class="review-form__fieldset contacts-fieldset">
-          <h2 class="contacts-fieldset__title"><span class="hru">Контактная информация:</span></h2>
+          <h2 class="contacts-fieldset__title"><span>Контактная информация:</span></h2>
 
           <section class="contacts-fieldset__section">
             <div class="contacts-fieldset__phone phone">
-              <label class="phone__label" for="phone"><span>Контактный</span>телефон*:</label>
+              <label class="phone__label" for="phone"><span>Контактный</span> телефон*:</label>
 
               <div class="phone__input-block phone-block">
                 <input class="phone-block__input" type="tel" name="phone" id="phone" placeholder="Введите телефон"
@@ -220,17 +220,22 @@
           <span class="review-form__text-requared">* &mdash; обязательные поля</span>
         </div>
 
-        <div id="modal-failed" class="review-form__modal-failed--hidden">
-          <h2>Что-то пошло не так!</h2>
-          <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          <button id="modal-failed-ok" type="button">Ок</button>
+        <div class="review-form__modal-failed review-form__modal-failed--hidden modal-form-failed" id="modal-failed">
+          <h2 class="modal-form-failed__title">Что-то пошло не так!</h2>
+          <p class="modal-form-failed__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="modal-form-failed__button-ok" type="button">Ок</button>
         </div>
 
-        <!-- <div class="review-form__modal-success">
-          <h2>Ваш отзыв отправлен</h2>
-          <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-          <button>Закрыть окно</button>
-        </div> -->
+        <div class="review-form__modal-success review-form__modal-success--visible modal-form-success">
+          <h2 class="modal-form-success__title">Ваш отзыв отправлен!</h2>
+          <p class="modal-form-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br>В ближайшее
+            время
+            мы
+            опубликуем его на сайте.</p>
+          <div class="modal-form-success__button-section">
+            <button class="modal-form-success__button-close" type="button">Закрыть окно</button>
+          </div>
+        </div>
       </form>
 
     </main>

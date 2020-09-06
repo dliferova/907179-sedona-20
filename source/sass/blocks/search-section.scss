@@ -52,9 +52,7 @@
 
 .search-section__link {
   color: hsl(0, 0%, 100%);
-}
 
-.search-section__link {
   @include style-btn;
 
   @media (max-width: $mobile-width-only) {
