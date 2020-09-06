@@ -36,6 +36,10 @@
       bottom: 0;
       z-index: 1;
       width: 122px;
+
+      @media (min-width: $desktop-width) {
+        width: 272px;
+      }
     }
 
     &::after {
@@ -48,6 +52,10 @@
       bottom: 0;
       z-index: 1;
       width: 122px;
+
+      @media (min-width: $desktop-width) {
+        width: 272px;
+      }
     }
   }
 }
@@ -60,10 +68,21 @@
   line-height: 26px;
   border: none;
   resize: none;
+  outline: none;
   box-sizing: border-box;
 
   &::placeholder {
     color: $black-color;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: $white-color;
+    border: 4px solid #e5e5e5;
+    outline: none;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -73,6 +92,11 @@
     padding-top: 14px;
     margin-top: 14px;
     margin-left: 18px;
+
+    &:focus {
+      padding-left: 16px;
+      padding-top: 10px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -81,10 +105,14 @@
     padding-top: 18px;
     padding-left: 20px;
     min-height: 158px;
+
+    &:focus {
+      padding-left: 16px;
+      padding-top: 14px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     max-width: 100%;
-    min-height: 138px;
   }
 }

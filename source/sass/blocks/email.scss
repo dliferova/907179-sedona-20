@@ -35,18 +35,31 @@
   @media (max-width: $mobile-width-only) {
     padding-left: 21px;
     padding-right: 11px;
+
+    &:focus {
+      padding-left: 17px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     width: 100%;
     padding-left: 23px;
     padding-top: 5px;
+
+    &:focus {
+      padding-left: 19px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 17px;
     padding-right: 29px;
     padding-top: 0;
+
+    &:focus {
+      padding-left: 19px;
+      padding-right: 25px;
+    }
   }
 }
 

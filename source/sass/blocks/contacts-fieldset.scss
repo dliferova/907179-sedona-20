@@ -52,6 +52,10 @@
       bottom: 0;
       z-index: 1;
       width: 122px;
+
+      @media (min-width: $desktop-width) {
+        width: 272px;
+      }
     }
 
     &::after {
@@ -64,6 +68,10 @@
       bottom: 0;
       z-index: 1;
       width: 122px;
+
+      @media (min-width: $desktop-width) {
+        width: 272px;
+      }
     }
   }
 }
