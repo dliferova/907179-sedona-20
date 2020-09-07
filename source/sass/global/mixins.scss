@@ -1,31 +1,68 @@
-// Оформление стилей шрифта
-@mixin font-header-mobil {
+// // Оформление стилей шрифта
+
+@mixin text-main {
+  font-size: 14px;
+  line-height: 21px;
+  color: $black-color;
+}
+
+@mixin text-main-photo {
+  font-size: 14px;
+  line-height: 24px;
+  color: $black-color;
+}
+
+@mixin text-main-bold {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $black-color;
+}
+
+@mixin text-main-desktop {
+  font-size: 14px;
+  line-height: 26px;
+  color: $black-color;
+}
+
+@mixin title-mobile-black {
   font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: $black-color;
+}
+
+@mixin title-mobile-white {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: $white-color;
+}
+
+@mixin title-desktop-black {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: $black-color;
+}
+
+@mixin title-desktop-white {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: $white-color;
+}
+
+@mixin title-modal-tablet {
+  font-size: 30px;
   line-height: 40px;
   font-weight: bold;
-  color: #ffffff;
-}
-
-@mixin font-titles-white {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 26px;
-  color: #ffffff;
-}
-
-@mixin font-titles-black {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 26px;
+  color: $black-color;
 }
 
 // Оформление кнопок
 @mixin style-btn {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -35,6 +72,7 @@
   background-color: $main-color;
   color: $white-color;
   border: none;
+  box-sizing: border-box;
 }
 
 @mixin style-btn-tablet {
@@ -48,11 +86,23 @@
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 49px;
-  width: 458px;
+  min-width: 458px;
   min-height: 58px;
   background-color: $main-color;
   color: $white-color;
   border: none;
+}
+
+@mixin modal-btn-form {
+  @include title-mobile-white;
+  border: none;
+  background-color: $main-color;
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 // Оформление cостояний кнопки и элементов пункта меню

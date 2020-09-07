@@ -1,15 +1,66 @@
 .email-block {
   display: flex;
+
+  @media (max-width: $mobile-width-only) {
+    margin-top: 7px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 7px;
+  }
 }
 
 .email-block__input {
-  @include font-titles-black;
-  padding: 0;
+  @include title-mobile-black;
   background-color: $grey-color;
   border: none;
-  min-width: 230px;
+  padding: 0;
   min-height: 58px;
-  font-weight: bold;
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: $black-color;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: $white-color;
+    border: 4px solid #e5e5e5;
+    outline: none;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding-left: 21px;
+    padding-right: 11px;
+
+    &:focus {
+      padding-left: 17px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding-left: 23px;
+    padding-top: 5px;
+
+    &:focus {
+      padding-left: 19px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 17px;
+    padding-right: 29px;
+    padding-top: 0;
+
+    &:focus {
+      padding-left: 19px;
+      padding-right: 25px;
+    }
+  }
 }
 
 .email-block__icon {
@@ -20,8 +71,30 @@
   width: 58px;
   height: 58px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 2px;
+    box-sizing: content-box;
+    padding-right: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+  }
 }
 
 .email__label {
   line-height: 26px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-left: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }

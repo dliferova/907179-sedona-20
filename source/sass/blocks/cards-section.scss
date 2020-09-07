@@ -4,7 +4,7 @@
 
     @media (max-width: $tablet-width) {
       grid-template-columns: 1fr 1fr;
-      margin-top: 65px;
+      margin-top: 77px;
       padding-left: 60px;
       padding-right: 60px;
     }
@@ -12,15 +12,15 @@
     @media (min-width: $desktop-width) {
       width: 100%;
       grid-template-columns: 1fr 1fr 1fr;
+      margin-top: 80px;
     }
   }
 
   .cards-section__photo {
     @media (max-width: $mobile-width-only) {
-      padding-top: 24px;
+      padding-top: 20px;
       padding-left: 20px;
       padding-right: 20px;
-      padding-bottom: 9px;
 
       @media (min-width: $desktop-width) {
         padding: 0;
@@ -29,9 +29,10 @@
   }
 
   .cards-section__content {
+    padding-top: 11px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 19px;
+    padding-bottom: 18px;
 
     @media (min-width: $tablet-width) {
       display: flex;
@@ -62,15 +63,22 @@
   .cards-section__descriprion {
     @media (min-width: $tablet-width) {
       padding-left: 20px;
-      padding-top: 22px;
+      padding-top: 16px;
       padding-bottom: 15px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 17px;
     }
   }
 
   .cards-section__review {
     display: flex;
     flex-direction: row;
-    padding-top: 7px;
+
+    @media (max-width: $mobile-width-only) {
+      margin-top: 13px;
+    }
   }
 
   .cards-section__icon {
@@ -90,37 +98,29 @@
   .cards-section__like-count {
     margin: 0;
     font-weight: bold;
-    padding-top: 3px;
-    padding-left: 40px;
     position: relative;
 
-    &::before {
-      background-image: url("../img/icon-like.svg");
-
-      content: "";
-      position: absolute;
-      background-repeat: no-repeat;
-      background-position: center;
-
-      @media (max-width: $mobile-width-only) {
-        width: 23px;
-        height: 21px;
-        top: 0;
-        left: 0;
-      }
-
-      @media (min-width: $tablet-width) {
-        width: 23px;
-        height: 21px;
-        top: 40%;
-        left: -25px;
-      }
+    @media (max-width: $mobile-width-only) {
+      padding-top: 3px;
+      padding-left: 14px;
     }
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      padding-top: 30px;
-      padding-left: 9px;
-      padding-right: 21px;
-    }
+.cards-section__like-icon {
+  width: 23px;
+  height: 21px;
+
+  @media (max-width: $tablet-width) {
+    fill: #000000;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    fill: #ffffff;
   }
 }

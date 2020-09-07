@@ -3,16 +3,18 @@
 }
 
 .place-choice__label {
+  @include title-mobile-black;
   display: flex;
   align-items: center;
   width: 100%;
+  text-transform: none;
 
   &::before {
     display: inline-block;
-    margin-right: 27px;
+    margin-right: 25px;
     content: "";
-    width: 48px;
-    height: 48px;
+    width: 54px;
+    height: 55px;
     background-color: #f2f2f2;
     background-position: center;
     border-radius: 5px;

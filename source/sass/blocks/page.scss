@@ -1,8 +1,8 @@
 .page {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  font-family: "PT Sans", "Arial", sans-serif;
   background-color: $white-color;
 }
 
@@ -15,12 +15,12 @@
 }
 
 .page__container {
-  margin: 0 auto;
-  background-color: white;
   display: flex;
   flex-direction: column;
   min-height: 100%;
   position: relative;
+  margin: 0 auto;
+  background-color: white;
   max-width: 1200px;
   box-shadow: 0 0 15px 5px rgba(0, 1, 1, 0.2);
 }

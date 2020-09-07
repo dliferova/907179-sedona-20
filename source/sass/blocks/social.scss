@@ -1,13 +1,6 @@
 // Стили для оформления секции ссылок на социальные сети
-.social {
-  @media (min-width: $tablet-width) {
-    padding-top: 19px;
-    padding-bottom: 36px;
-  }
-}
-
 .social__list {
-  padding-top: 36px;
+  padding-top: 33px;
   display: flex;
   flex-direction: row;
   margin: 0;
@@ -15,40 +8,50 @@
   padding-right: 85px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 27px;
-    padding-right: 36px;
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 37px;
+    padding-left: 15px;
+    padding-right: 20px;
   }
 }
 
 .social__item {
+  white-space: nowrap;
+  text-indent: 100%;
+  margin-right: 6px;
+}
+
+.social__link {
+  display: block;
   width: 46px;
   height: 48px;
   background-color: $main-color;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+
+    svg {
+      fill: rgba($color: #ffffff, $alpha: 0.3);
+    }
+  }
 }
 
 .social__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   fill: $white-color;
-}
-
-.twitter-item {
-  margin-right: 6px;
-  width: 47px;
-  height: 48px;
-}
-
-.twitter-icon {
-  margin-top: 16px;
-}
-
-.facebook-item {
-  margin-right: 6px;
-}
-
-.facebook-icon {
-  margin-top: 13px;
-}
-
-.youtube-icon {
-  margin-top: 17px;
 }

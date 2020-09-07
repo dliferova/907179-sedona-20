@@ -27,16 +27,34 @@
 }
 
 .road-card__img-wrapper {
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $mobile-width-only) {
+    height: 280px;
+  }
+
   @media (min-width: $tablet-width) {
     position: relative;
     height: 267px;
     overflow: hidden;
-    margin: 0;
   }
 }
 
 .road-card__image {
+  width: 100%;
+  height: 100%;
+}
+
+// Секция лайк и число
+
+.road-card__review {
   @media (min-width: $tablet-width) {
-    width: 100%;
+    padding-right: 36px;
+    padding-top: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 29px;
   }
 }

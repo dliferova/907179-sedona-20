@@ -1,0 +1,62 @@
+.modal-form-success__title {
+  text-align: center;
+  margin: 0;
+
+  @media (max-width: $mobile-width-only) {
+    @include title-mobile-black;
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include title-modal-tablet;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+.modal-form-success__text {
+  @include text-main-photo;
+  text-align: center;
+  margin: 0;
+
+  @media (max-width: $mobile-width-only) {
+    padding-left: 41px;
+    padding-right: 42px;
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 24px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 43px;
+  }
+}
+
+.modal-form-success__button-close {
+  @include modal-btn-form;
+
+  @media (max-width: $mobile-width-only) {
+    @include title-mobile-white;
+    min-width: 280px;
+    min-height: 58px;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include title-desktop-white;
+    min-width: 458px;
+    min-height: 58px;
+  }
+}
+
+.modal-form-success__button-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 98px;
+  background-color: $grey-color;
+
+  @media (min-width: $tablet-width) {
+    min-height: 146px;
+  }
+}

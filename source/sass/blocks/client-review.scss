@@ -1,20 +1,62 @@
 .client-review__text {
-  padding-top: 36px;
-  padding-bottom: 17px;
-  border-bottom: 1px solid #e5e5e5;
+  @media (max-width: $mobile-width-only) {
+    padding-top: 36px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 70px;
+    padding-left: 19%;
+    padding-right: 22%;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 30%;
+    padding-right: 31%;
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
 }
 
 .client-review__title {
-  @include font-titles-black;
   text-align: center;
   margin: 0;
+
+  @media (max-width: $mobile-width-only) {
+    @include title-mobile-black;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 11px;
+    padding-left: 26px;
+  }
 }
 
 .client-review__slogan {
-  line-height: 24px;
+  @include text-main-photo;
   text-align: center;
   margin: 0;
-  padding-top: 26px;
-  padding-left: 17px;
-  padding-right: 15px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 26px;
+    padding-left: 17px;
+    padding-right: 15px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 18px;
+    padding-left: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 25px;
+  }
 }

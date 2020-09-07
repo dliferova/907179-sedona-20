@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/normalize/normalize.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body class="page__body">
@@ -42,17 +42,17 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">
+              <a class="site-list__link" href="photo.html">
                 Фото и видео
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--active">
               <a class="site-list__link" href="#">
                 Форма отзыва
               </a>
@@ -72,8 +72,8 @@
 
       <section class="intro-background">
         <div class="intro-background__cover">
-          <img class="intro-background__inscription" src="img/text-sedona.svg" alt="Надпись Седона" width="100%"
-            height="160px">
+          <img class="intro-background__inscription" src="img/text-sedona.svg" alt="Надпись Седона" width="229"
+            height="39">
         </div>
       </section>
 
@@ -85,11 +85,11 @@
         </div>
       </section>
 
-      <form class="review-form" name="review-form" method="GET">
+      <form id="review-form" class="review-form" name="review-form" method="GET">
 
         <fieldset class="review-form__fieldset introduce-fieldset">
           <div class="introduce-fieldset__section">
-            <legend class="introduce-fieldset__legend">Представьтесь:</legend>
+            <h2 class="introduce-fieldset__title">Представьтесь:</h2>
             <div class="introduce-fieldset__first-name first-name">
               <label class="first-name__label" for="first-name">Имя*:</label>
               <input class="first-name__input" type="text" name="first-name" id="first-name" value="Петр" required>
@@ -101,56 +101,61 @@
             </div>
 
             <div class="introduce-fieldset__middle-name middle-name">
-              <label class="middle-name__label" for="middle-name">Отчество*:</label>
+              <label class="middle-name__label" for="middle-name">Отчество:</label>
               <input class="middle-name__input" type="text" name="middle-name" id="middle-name" value="Александрович">
             </div>
           </div>
         </fieldset>
 
         <fieldset class="review-form__fieldset contacts-fieldset">
+          <h2 class="contacts-fieldset__title"><span>Контактная информация:</span></h2>
 
-          <legend сlass="contacts-fieldset__legend">Контактная информация:</legend>
+          <section class="contacts-fieldset__section">
+            <div class="contacts-fieldset__phone phone">
+              <label class="phone__label" for="phone"><span>Контактный</span> телефон*:</label>
 
-          <div class="contacts-fieldset__phone phone">
-            <label class="phone__label" for="phone">Контактный телефон*:</label>
+              <div class="phone__input-block phone-block">
+                <input class="phone-block__input" type="tel" name="phone" id="phone" placeholder="Введите телефон"
+                  required pattern="[0-9]{3}[ -][0-9]{3}[ -][0-9]{4}">
 
-            <div class="phone__input-block phone-block">
-              <input class="phone-block__input" type="tel" name="phone" id="phone" value="Введите телефон" required>
-
-              <div class="phone-block__icon">
-                <svg class="phone-block__svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px"
-                  viewbox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
-                  <g id="Page-1">
-                    <g id="Icons-Communication" transform="translate(-85.000000, -126.000000)">
-                      <g id="phone" transform="translate(85.000000, 126.000000)">
-                        <path id="Shape" fill="#010101"
-                          d="M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z" />
+                <div class="phone-block__icon">
+                  <svg class="phone-block__svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px"
+                    viewbox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
+                    <g id="Page-1">
+                      <g id="Icons-Communication" transform="translate(-85.000000, -126.000000)">
+                        <g id="phone" transform="translate(85.000000, 126.000000)">
+                          <path id="Shape" fill="#010101"
+                            d="M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z" />
+                        </g>
                       </g>
                     </g>
-                  </g>
-                </svg>
+                  </svg>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="contacts-fieldset__email email">
-            <label class="email__label" for="email">Электронная почта*:</label>
-            <div class="email__input-block email-block">
-              <input class="email-block__input" type="email" id="email" name="email" value="Введите e-mail">
-              <div class="email-block__icon">
-                <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px"
-                  viewbox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
-                  <path
-                    d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z" />
-                </svg>
+
+            <div class="contacts-fieldset__email email">
+              <label class="email__label" for="email">Электронная почта*:</label>
+
+              <div class="email__input-block email-block">
+                <input class="email-block__input" type="email" id="email" name="email" required
+                  placeholder="Введите e-mail">
+                <div class="email-block__icon">
+                  <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px"
+                    viewbox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                    <path
+                      d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z" />
+                  </svg>
+                </div>
               </div>
             </div>
-          </div>
+          </section>
         </fieldset>
 
         <fieldset class="review-form__fieldset impressions-fieldset">
-          <legend сlass="impressions-fieldset__legend">Ваше общее впечатление:</legend>
+          <h2 class="impressions-fieldset__title">Ваше общее впечатление:</h2>
           <ul class="impressions-fieldset__choices">
             <li class="impressions-fieldset__choice impression-choice">
               <input class="impression-choice__input visually-hidden" type="radio" id="rather-like" name="opinion"
@@ -172,8 +177,7 @@
         </fieldset>
 
         <fieldset class="review-form__fieldset places-fieldset">
-          <legend class="places-fieldset__legend">Посещенные достопримечательности</legend>
-
+          <h2 class="places-fieldset__title"><span>Посещенные <br>достопримечательности:</span></h2>
 
           <ul class="places-fieldset__choices">
 
@@ -205,11 +209,33 @@
         </fieldset>
 
         <fieldset class="review-form__fieldset comments-fieldset">
-          <legend class="comments-fieldset__legend">Опишите свои эмоции</legend>
-          <textarea class="comments-fieldset__input" name="comment">Опишите подробно все свои восторги</textarea>
+          <h2 class="comments-fieldset__title">Опишите свои эмоции:</h2>
+          <textarea class="comments-fieldset__input" name="comment"
+            placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
 
         <input class="review-form__submit-button" type="submit" value="Отправить отзыв">
+
+        <div>
+          <span class="review-form__text-requared">* &mdash; обязательные поля</span>
+        </div>
+
+        <div class="review-form__modal-failed review-form__modal-failed--hidden modal-form-failed" id="modal-failed">
+          <h2 class="modal-form-failed__title">Что-то пошло не так!</h2>
+          <p class="modal-form-failed__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="modal-form-failed__button-ok" type="button">Ок</button>
+        </div>
+
+        <div class="review-form__modal-success review-form__modal-success--hidden modal-form-success">
+          <h2 class="modal-form-success__title">Ваш отзыв отправлен!</h2>
+          <p class="modal-form-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br>В ближайшее
+            время
+            мы
+            опубликуем его на сайте.</p>
+          <div class="modal-form-success__button-section">
+            <button class="modal-form-success__button-close" type="button">Закрыть окно</button>
+          </div>
+        </div>
       </form>
 
     </main>
@@ -258,8 +284,13 @@
         </div>
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img
-              src="img/logo-htmlacademy.svg" alt="Страница HTML Academy" width="27px" height="34px">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px"
+              viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+              <path
+                d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z" />
+            </svg>
           </a>
         </div>
       </div>

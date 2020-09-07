@@ -14,4 +14,12 @@
   height: 10px;
   border-radius: 6px;
   background-color: $white-color;
+
+  @media (min-width: $tablet-width) {
+    left: 31%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 22%;
+  }
 }

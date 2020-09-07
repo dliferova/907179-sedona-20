@@ -1,25 +1,118 @@
-.comments-fieldset__legend {
-  text-align: center;
-
-  @include font-titles-black;
-
-  padding-top: 20px;
-  padding-bottom: 15px;
-}
-
 .comments-fieldset {
   border: 0 none;
+  padding: 0;
+
+  @media (max-width: $mobile-width-only) {
+    margin-top: 20px;
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-area: comments;
+    margin-top: 33px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 33px;
+  }
+}
+
+.comments-fieldset__title {
+  @include title-mobile-black;
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include title-desktop-black;
+    position: relative;
+
+    &::before {
+      content: "";
+      border-top: 1px solid #dbdbdb;
+      margin: 0 auto;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+      width: 122px;
+
+      @media (min-width: $desktop-width) {
+        width: 272px;
+      }
+    }
+
+    &::after {
+      content: "";
+      border-top: 1px solid #dbdbdb;
+      margin: 0 auto;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      width: 122px;
+
+      @media (min-width: $desktop-width) {
+        width: 272px;
+      }
+    }
+  }
 }
 
 .comments-fieldset__input {
+  display: block;
   background-color: $grey-color;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
   border: none;
-  padding-left: 21px;
-  padding-right: 23px;
-  min-height: 160px;
-  margin-left: 19px;
-  margin-right: 22px;
+  resize: none;
+  outline: none;
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: $black-color;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: $white-color;
+    border: 4px solid #e5e5e5;
+    outline: none;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    min-height: 160px;
+    min-width: 279px;
+    padding-left: 20px;
+    padding-top: 14px;
+    margin-top: 14px;
+    margin-left: 18px;
+
+    &:focus {
+      padding-left: 16px;
+      padding-top: 10px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-top: 55px;
+    padding-top: 18px;
+    padding-left: 20px;
+    min-height: 158px;
+
+    &:focus {
+      padding-left: 16px;
+      padding-top: 14px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+  }
 }

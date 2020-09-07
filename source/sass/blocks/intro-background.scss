@@ -2,7 +2,6 @@
 .intro-background__cover {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   position: relative;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
   background-color: #46494e;
@@ -50,9 +49,15 @@
 .intro-background__inscription {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 50px;
 
   @media (min-width: $tablet-width) {
     width: 456px;
     height: 130px;
+    margin-top: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 76px;
   }
 }

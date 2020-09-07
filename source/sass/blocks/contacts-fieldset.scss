@@ -1,17 +1,110 @@
 .contacts-fieldset {
   border: 0 none;
-  border-bottom: 1px solid #e5e5e5;
+  padding: 0;
+  margin: 0;
+
+  @media (max-width: $mobile-width-only) {
+    margin-top: 20px;
+    padding-bottom: 27px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+    grid-area: contacts;
+    margin-top: 70px;
+  }
 }
 
-.contacts-fieldset__legend {
-  font-weight: bold;
+.contacts-fieldset__section {
+  @media (max-width: $mobile-width-only) {
+    padding-left: 21px;
+  }
 
-  @include font-titles-black;
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: none;
+    margin-top: 46px;
+  }
+}
 
+.contacts-fieldset__title {
+  @include title-mobile-black;
   text-align: center;
-  padding-top: 16px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include title-desktop-black;
+    position: relative;
+    z-index: 2;
+    background-color: $white-color;
+
+    // Добавление рамки для title
+    &::before {
+      content: "";
+      border-top: 1px solid #dbdbdb;
+      margin: 0 auto;
+      position: absolute;
+      top: 37%;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+      width: 122px;
+
+      @media (min-width: $desktop-width) {
+        width: 272px;
+      }
+    }
+
+    &::after {
+      content: "";
+      border-top: 1px solid #dbdbdb;
+      margin: 0 auto;
+      position: absolute;
+      top: 37%;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      width: 122px;
+
+      @media (min-width: $desktop-width) {
+        width: 272px;
+      }
+    }
+  }
 }
 
 .contacts-fieldset__phone {
   padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.contacts-fieldset__email {
+  @media (max-width: $mobile-width-only) {
+    padding-top: 12px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 24px;
+  }
 }

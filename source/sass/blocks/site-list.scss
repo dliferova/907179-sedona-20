@@ -6,12 +6,19 @@
     text-align: center;
     text-decoration: none;
     padding-top: 10px;
-    padding-bottom: 5px;
-    // border-bottom: 1px solid #ffffff;
-    // box-shadow: 0px 1px 0px 0px (#010101, 20%);
+    padding-bottom: 4px;
 
     @media (max-width: $mobile-width-only) {
       color: $white-color;
+
+      &:hover {
+        background-color: #669ec0;
+      }
+
+      &:focus {
+        background-color: #5496bd;
+        color: rgba(255, 255, 255, 0.3);
+      }
     }
 
     @media (min-width: $tablet-width) {
@@ -21,6 +28,32 @@
 
       background: none;
       border: none;
+
+      &:hover {
+        color: #81b3d2;
+      }
+
+      &:focus {
+        color: #000000;
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+.site-list__item--active {
+  @media (min-width: $tablet-width) {
+    a {
+      color: #766357;
+
+      &:hover {
+        color: #604e43;
+      }
+
+      &:focus {
+        color: #766357;
+        opacity: 0.3;
+      }
     }
   }
 }

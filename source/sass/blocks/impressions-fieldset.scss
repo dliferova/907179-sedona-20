@@ -1,8 +1,61 @@
 .impressions-fieldset {
   border: 0 none;
-  border-bottom: 1px solid #e5e5e5;
+  padding: 0;
+  margin: 0;
+
+  @media (max-width: $mobile-width-only) {
+    margin-top: 21px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-area: impressions;
+    padding-top: 28px;
+  }
 }
 
-.impressions-fieldset__legend {
-  @include font-titles-black;
+.impressions-fieldset__title {
+  @include title-mobile-black;
+  margin: 0;
+
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include title-desktop-black;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+  }
+}
+
+.impressions-fieldset__choices {
+  @media (max-width: $mobile-width-only) {
+    margin: 0;
+    padding-left: 21px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-top: 40px;
+  }
+}
+
+.impressions-fieldset__choice {
+  padding-top: 14px;
+
+  &:first-child {
+    padding-top: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 23px;
+
+    &:first-child {
+      padding-top: 17px;
+    }
+  }
 }

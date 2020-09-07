@@ -3,7 +3,17 @@
   flex-direction: column;
   justify-content: space-between;
 
-  @include font-header-mobil;
+  @media (max-width: $mobile-width-only) {
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: bold;
+    color: $white-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include text-main-desktop;
+    font-weight: bold;
+  }
 }
 
 .page-header__logo {
