@@ -8,20 +8,33 @@
   align-items: center;
   width: 100%;
   text-transform: none;
+}
 
-  &::before {
-    display: inline-block;
-    margin-right: 25px;
-    content: "";
-    width: 54px;
-    height: 55px;
-    background-color: #f2f2f2;
-    background-position: center;
-    border-radius: 5px;
+.place-choice__active-input {
+  display: inline-block;
+  margin-right: 25px;
+  content: "";
+  width: 54px;
+  height: 55px;
+  background-color: #f2f2f2;
+  background-position: center;
+  border-radius: 5px;
+  outline: none;
 
-    .place-choice__input:checked + & {
-      background-image: url("../img/icon-tick.svg");
-      background-repeat: no-repeat;
-    }
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #d5d5d5;
+  }
+}
+
+.place-choice__input:checked + .place-choice__label > .place-choice__active-input {
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+
+  &:focus {
+    background-image: url("../img/icon-tick-grey.svg");
   }
 }
