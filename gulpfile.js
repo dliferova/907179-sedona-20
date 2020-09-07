@@ -36,8 +36,7 @@ const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}", { base: "source" })
     .pipe(imagemin([
       imagemin.optipng({ optimizationLevel: 5 }),
-      imagemin.mozjpeg({ progressive: true }),
-      imagemin.svgo()
+      imagemin.mozjpeg({ progressive: true })
     ]))
     .pipe(gulp.dest("build"))
 }
@@ -109,8 +108,8 @@ exports.server = server;
 // Watcher
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(build));
-  gulp.watch("source/*.html").on("change", sync.reload);
-  gulp.watch("source/js/*.js").on("change", sync.reload);
+  gulp.watch("source/*.html").on("change", gulp.series(build));
+  gulp.watch("source/js/*.js").on("change", gulp.series(build));
 }
 
 exports.default = gulp.series(
