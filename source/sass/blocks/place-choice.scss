@@ -38,3 +38,15 @@
     background-image: url("../img/icon-tick-grey.svg");
   }
 }
+
+.place-choice__mountain-input {
+  @media (min-width: $desktop-width) {
+    margin-left: 7px;
+  }
+}
+
+.place-choice__park-input {
+  @media (min-width: $desktop-width) {
+    margin-left: 8px;
+  }
+}

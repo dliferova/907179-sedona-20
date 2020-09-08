@@ -25,10 +25,18 @@
       padding-top: 23px;
     }
 
-    br {
+    .facilities__souvenir-newline {
       display: none;
 
       @media (min-width: $desktop-width) {
+        display: block;
+      }
+    }
+
+    .facilities__food-newline {
+      display: none;
+
+      @media (min-width: $tablet-width) {
         display: block;
       }
     }
