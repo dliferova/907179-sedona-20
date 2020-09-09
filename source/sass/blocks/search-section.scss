@@ -33,6 +33,7 @@
 
 .search-section__subtitle {
   text-align: center;
+
   @include text-main-photo;
 
   @media (max-width: $mobile-width-only) {
