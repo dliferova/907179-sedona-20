@@ -1,0 +1,66 @@
+.first-name__label {
+  @media (max-width: $mobile-width-only) {
+    color: #333333;
+
+    @include text-main-desktop;
+  }
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+  }
+}
+
+.first-name__input {
+  @include title-mobile-black;
+
+  display: inline-block;
+
+  background-color: $grey-color;
+  border: none;
+  min-height: 58px;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: $white-color;
+    border: 4px solid #e5e5e5;
+    outline: none;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 229px;
+    margin-left: 10px;
+    padding-left: 22px;
+
+    &:focus {
+      padding-left: 18px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-left: 14px;
+    padding-left: 25px;
+
+    &:focus {
+      padding-left: 21px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-left: 13px;
+    padding-left: 22px;
+
+    &:focus {
+      padding-left: 18px;
+    }
+  }
+
+  &::placeholder {
+    color: $black-color;
+  }
+}
