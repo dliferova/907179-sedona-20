@@ -179,6 +179,10 @@
       padding-left: 18px;
     }
   }
+
+  &::placeholder {
+    color: $black-color;
+  }
 }
 
 .last-name__input {
@@ -201,6 +205,10 @@
     &:focus {
       padding-left: 17px;
     }
+  }
+
+  &::placeholder {
+    color: $black-color;
   }
 }
 
@@ -233,5 +241,9 @@
     &:focus {
       padding-left: 16px;
     }
+  }
+
+  &::placeholder {
+    color: $black-color;
   }
 }
