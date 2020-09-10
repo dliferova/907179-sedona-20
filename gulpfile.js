@@ -107,11 +107,11 @@ exports.server = server;
 
 // Watcher
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series(build));
+  gulp.watch("source/sass/**/*.scss", gulp.series("build"));
   gulp.watch("source/*.html").on("change", gulp.series(build));
   gulp.watch("source/js/*.js").on("change", gulp.series(build));
 }
 
 exports.default = gulp.series(
-  build, server, watcher
+  build, normalize, server, watcher
 );

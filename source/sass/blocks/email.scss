@@ -33,6 +33,8 @@
   }
 
   @media (max-width: $mobile-width-only) {
+    // firefox fix
+    width: 220px;
     padding-left: 21px;
     padding-right: 11px;
 
