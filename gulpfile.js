@@ -55,7 +55,7 @@ const styles = () => {
     .pipe(csso())
     .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 exports.styles = styles;
@@ -65,7 +65,7 @@ exports.styles = styles;
 // Normalize
 const normalize = () => {
   return gulp.src("node_modules/normalize.css/normalize.css")
-    .pipe(gulp.dest("source/css/normalize"))
+    .pipe(gulp.dest("build/css/normalize"))
 }
 exports.normalize = normalize;
 
@@ -92,7 +92,7 @@ exports.build = build;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     open: false,
     cors: true,
@@ -107,11 +107,11 @@ exports.server = server;
 
 // Watcher
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
-  gulp.watch("source/js/*.js").on("change", sync.reload);
+  gulp.watch("source/sass/**/*.scss", gulp.series("build"));
+  gulp.watch("source/*.html").on("change", gulp.series(build));
+  gulp.watch("source/js/*.js").on("change", gulp.series(build));
 }
 
 exports.default = gulp.series(
-  styles, normalize, server, watcher
+  build, normalize, server, watcher
 );
