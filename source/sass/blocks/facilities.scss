@@ -1,4 +1,6 @@
 .facilities {
+  list-style-type: none;
+
   @media (max-width: $mobile-width-only) {
     margin-top: 27px;
     margin-left: 12px;
@@ -11,186 +13,187 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "living food syvenirs";
     align-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 21px;
+  }
+}
+
+.facilities__slogan {
+  margin: 0;
+  padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 23px;
+  }
+
+  .facilities__souvenir-newline {
+    display: none;
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 21px;
+      display: block;
     }
   }
 
-  .facilities__slogan {
-    margin: 0;
-    padding-top: 15px;
+  .facilities__food-newline {
+    display: none;
 
     @media (min-width: $tablet-width) {
-      padding-top: 23px;
+      display: block;
     }
+  }
+}
 
-    .facilities__souvenir-newline {
-      display: none;
+.facilities__item {
+  @media (max-width: $mobile-width-only) {
+    padding-left: 10px;
+  }
 
-      @media (min-width: $desktop-width) {
-        display: block;
-      }
-    }
-
-    .facilities__food-newline {
-      display: none;
-
-      @media (min-width: $tablet-width) {
-        display: block;
-      }
+  &:first-child {
+    @media (min-width: $tablet-width) {
+      grid-area: living;
     }
   }
 
-  .facilities__item {
+  &:nth-child(2) {
     @media (max-width: $mobile-width-only) {
-      padding-left: 10px;
-    }
-
-    &:first-child {
-      @media (min-width: $tablet-width) {
-        grid-area: living;
-      }
-    }
-
-    &:nth-child(2) {
-      @media (max-width: $mobile-width-only) {
-        padding-top: 19px;
-      }
-
-      @media (min-width: $tablet-width) {
-        grid-area: syvenirs;
-      }
-    }
-
-    &:last-child {
-      @media (max-width: $mobile-width-only) {
-        padding-top: 19px;
-        padding-left: 6px;
-        padding-right: 16px;
-      }
-
-      @media (min-width: $tablet-width) {
-        grid-area: food;
-      }
-    }
-  }
-
-  .facilities__section {
-    @media (max-width: $mobile-width-only) {
-      display: flex;
-      flex-direction: row;
+      padding-left: 7px;
+      padding-top: 18px;
     }
 
     @media (min-width: $tablet-width) {
-      flex-direction: column;
-      justify-content: space-between;
-      text-align: center;
+      grid-area: syvenirs;
     }
   }
 
-  .facilities__title {
-    margin: 0;
-
-    @include title-mobile-black;
-
-    @media (min-width: $tablet-width) {
-      margin: 0;
-
-      @include title-desktop-black;
-    }
-  }
-
-  // Icons
-  .facilities__icon-house,
-  .facilities__icon-gift,
-  .facilities__icon-burger {
-    fill: #81b3d2;
-  }
-
-  .facilities__icon-house {
+  &:last-child {
     @media (max-width: $mobile-width-only) {
-      width: 73px;
-      height: 35px;
-    }
-
-    @media (min-width: $tablet-width) {
-      width: 75px;
-      height: 72px;
-      padding-top: 60px;
-      padding-left: 90px;
-      padding-right: 89px;
-    }
-  }
-
-  .facilities__icon-burger {
-    @media (max-width: $mobile-width-only) {
-      width: 73px;
-      height: 35px;
-      margin-right: 12px;
-    }
-
-    @media (min-width: $tablet-width) {
-      width: 76px;
-      height: 68px;
-      padding-top: 63px;
-      padding-left: 87px;
-      padding-right: 88px;
-    }
-  }
-
-  .facilities__icon-gift {
-    @media (max-width: $mobile-width-only) {
-      width: 73px;
-      height: 35px;
-    }
-
-    @media (min-width: $tablet-width) {
-      width: 64px;
-      height: 75px;
-      padding-top: 57px;
-      padding-right: 97px;
-      padding-left: 95px;
-    }
-  }
-
-  .facilities__text {
-    @media (max-width: $mobile-width-only) {
+      padding-top: 19px;
       padding-left: 6px;
-      padding-top: 8px;
+      padding-right: 16px;
     }
 
     @media (min-width: $tablet-width) {
-      padding-top: 20px;
-      padding-left: 12%;
-      padding-right: 13%;
-      padding-bottom: 60px;
+      grid-area: food;
     }
   }
+}
 
-  .facilities__text-burger {
-    @media (max-width: $mobile-width-only) {
-      padding-left: 9px;
-    }
-
-    @media (min-width: $tablet-width) {
-      padding-top: 20px;
-      padding-left: 15%;
-      padding-right: 15%;
-      padding-bottom: 60px;
-    }
+.facilities__section {
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    flex-direction: row;
   }
 
-  .facilities__text-gift {
-    @media (max-width: $mobile-width-only) {
-      padding-left: 9px;
-    }
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      padding-top: 20px;
-      padding-left: 15%;
-      padding-right: 15%;
-      padding-bottom: 81px;
-    }
+.facilities__title {
+  margin: 0;
+
+  @include title-mobile-black;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+
+    @include title-desktop-black;
+  }
+}
+
+// Icons
+.facilities__icon-house,
+.facilities__icon-gift,
+.facilities__icon-burger {
+  fill: #81b3d2;
+}
+
+.facilities__icon-house {
+  @media (max-width: $mobile-width-only) {
+    width: 73px;
+    height: 35px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 75px;
+    height: 72px;
+    padding-top: 60px;
+    padding-left: 90px;
+    padding-right: 89px;
+  }
+}
+
+.facilities__icon-burger {
+  @media (max-width: $mobile-width-only) {
+    width: 85px;
+    height: 41px;
+    margin-right: 6px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 76px;
+    height: 68px;
+    padding-top: 63px;
+    padding-left: 87px;
+    padding-right: 88px;
+  }
+}
+
+.facilities__icon-gift {
+  @media (max-width: $mobile-width-only) {
+    width: 73px;
+    height: 35px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 64px;
+    height: 75px;
+    padding-top: 57px;
+    padding-right: 97px;
+    padding-left: 95px;
+  }
+}
+
+.facilities__text {
+  @media (max-width: $mobile-width-only) {
+    padding-left: 6px;
+    padding-top: 8px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-left: 12%;
+    padding-right: 13%;
+    padding-bottom: 60px;
+  }
+}
+
+.facilities__text-burger {
+  @media (max-width: $mobile-width-only) {
+    padding-left: 9px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 60px;
+  }
+}
+
+.facilities__text-gift {
+  @media (max-width: $mobile-width-only) {
+    padding-left: 9px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 81px;
   }
 }

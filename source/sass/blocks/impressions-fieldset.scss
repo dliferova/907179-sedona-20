@@ -33,6 +33,8 @@
 }
 
 .impressions-fieldset__choices {
+  list-style-type: none;
+
   @media (max-width: $mobile-width-only) {
     margin: 0;
     padding-left: 21px;
