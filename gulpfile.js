@@ -5,7 +5,7 @@ const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const del = require("del");
-const csso = require('gulp-csso');
+const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const sync = require("browser-sync").create();
@@ -92,7 +92,7 @@ exports.build = build;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     open: false,
     cors: true,
