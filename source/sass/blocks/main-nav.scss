@@ -43,6 +43,10 @@
     right: 20px;
     cursor: pointer;
     z-index: 3;
+
+    &--hidden {
+      display: none;
+    }
   }
 }
 

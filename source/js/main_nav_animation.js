@@ -2,7 +2,7 @@
   const nav = document.querySelector(".main-nav");
   const menuButton = document.querySelector(".main-nav__button");
 
-  menuButton.classList.remove("main-nav__button--opened");
+  menuButton.classList.remove("main-nav__button--hidden");
   nav.classList.remove("main-nav--opened")
 
   menuButton.addEventListener("click", () => {
