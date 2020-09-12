@@ -24,11 +24,11 @@
 
 .review-form__submit-button {
   @include style-btn;
+  align-items: center;
+  justify-content: center;
 
   @media (max-width: $mobile-width-only) {
     margin-bottom: 37px;
-    align-items: center;
-    justify-content: center;
     margin-left: auto;
     margin-right: auto;
   }
@@ -36,15 +36,28 @@
   @media (min-width: $tablet-width) {
     min-width: 324px;
     margin-top: 7px;
-    padding-left: 65px;
-    padding-top: 8px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 6px;
     min-width: 480px;
-    padding-left: 151px;
-    padding-right: 145px;
+  }
+
+  &:hover {
+    background-color: #669ec0;
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: #5496bd;
+
+    .search-section__link {
+      opacity: 0.3;
+    }
+
+    &:disabled {
+      background-color: #e5e5e5;
+    }
   }
 }
 

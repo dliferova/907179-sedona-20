@@ -66,6 +66,7 @@
 
 .places-fieldset__choices {
   display: grid;
+  list-style-type: none;
 
   @media (max-width: $mobile-width-only) {
     margin: 0;

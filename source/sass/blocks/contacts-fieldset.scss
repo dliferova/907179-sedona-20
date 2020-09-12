@@ -24,7 +24,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 45% 55%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: none;
     margin-top: 46px;
   }
@@ -106,6 +106,6 @@
     justify-content: flex-start;
     align-items: center;
     padding-top: 24px;
-    margin-left: 46px;
+    margin-left: 0;
   }
 }

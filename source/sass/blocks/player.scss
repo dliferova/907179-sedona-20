@@ -82,6 +82,7 @@
 .player__replay-icon,
 .player__subtitles-icon,
 .player__fullscreen-icon {
+  cursor: pointer;
   // Стили по styleguide
   @media (max-width: $mobile-width-only) {
     fill: #5c6870;

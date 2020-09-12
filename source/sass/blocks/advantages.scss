@@ -22,6 +22,7 @@
 
 .advantages__section-cards {
   background-color: $grey-color;
+  list-style-type: none;
 
   @media (min-width: $tablet-width) {
     display: grid;
