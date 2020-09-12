@@ -1,9 +1,10 @@
 // Стили для оформления секции ссылок на социальные сети
 .social__list {
-  padding-top: 33px;
   display: flex;
   flex-direction: row;
   margin: 0;
+  padding-top: 33px;
+  padding-bottom: 0;
   padding-left: 84px;
   padding-right: 85px;
   list-style-type: none;
