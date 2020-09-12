@@ -55,6 +55,12 @@
   }
 
   .cards-section__square {
+    border-bottom: 1px solid #e5e5e5;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
+
     @media (min-width: $desktop-width) {
       position: relative;
     }
@@ -105,6 +111,17 @@
       padding-left: 14px;
     }
   }
+}
+
+.cards-section__title {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.cards-section__author-name {
+  text-transform: none;
+  line-height: 24px;
 }
 
 .cards-section__like-icon {
